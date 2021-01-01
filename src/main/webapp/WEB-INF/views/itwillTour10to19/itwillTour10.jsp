@@ -60,7 +60,7 @@
 				</div>
 				<div id="header_div2">
 					<div id="logo_div">
-						<a> </a>
+						<a></a>
 					</div>
 					<div id="search_div">
 						<input id="header_search" placeholder="검색어를 입력해 주세요" /> <span
