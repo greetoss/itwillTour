@@ -1,0 +1,340 @@
+/*공통*/
+*{
+    padding:0; margin:0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    color:black;
+    font-size:15px; font-weight:400;
+    background-repeat: no-repeat;
+}
+ul{
+    list-style-type:none;
+}
+a, a:link, a:hover, a:visited{
+    text-decoration:none;
+    display:inline-block;
+}
+#now_menu{
+    color:#e5236d;
+}
+/*header*/
+#header_container{
+    border-bottom:1px solid black;
+}
+#header_div1_wrap, #header_div2, #header_div3{
+    width:1200px;
+    margin:0 auto;
+}
+#header_wrap{
+    padding-top:10px;
+}
+#header_div1_wrap{
+    height:30px;
+}
+#header_div1{
+    width:fit-content;
+    float:right;
+}
+#header_div1 > div{
+    display:inline-block; 
+}
+#header_div1 a{
+    cursor:pointer;
+    font-size:12px;
+    text-align:center;
+    padding-left:10px;
+}
+#header_div2{
+    height:65px;
+}
+#header_div2 > div{
+    display:inline-block;
+} 
+#header_div3_wrap{
+    border-top:1px solid #ddd;
+}
+#header_div3 span{
+    cursor:pointer;
+}
+#all_menu_div, #header_nav_div2{
+    padding:15px 0; 
+    display:inline-block;
+}
+#all_menu_div{
+    width:136px;
+    border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+}
+#all_menu_div span{
+    display:inline-block;
+}
+#all_menu_icon{
+    float:left;
+    margin-left:30px; margin-right:10px; margin-top:5px;
+    width:16px; height:15px;
+    background-image:url("/itwillTour/resources/img/menu_icon.png");
+}
+#all_menu{
+    margin-right:20px;
+}
+#header_nav_div{
+    display:inline-block;
+    margin-left:20px;
+}
+#header_nav_div span{
+    display:inline-block;
+    margin-right:20px;
+}
+#header_nav_div a{
+    display:inline-block;
+    height:38px;
+}
+#header_nav_div a:hover{
+    border-bottom:2px solid #e5236d;
+    color:#e5236d;
+}
+#header_nav_div2{
+    float:right;
+}
+#header_nav_div2 span{ 
+    padding-left:20px;
+}
+#header_nav_div2 a:hover{ 
+    color:#e5236d;
+}
+#header_sub_nav{
+    height:40px;
+    border:1px solid #ddd;
+}
+#header_sub_nav_div{
+    width:900px;
+}
+#logo_div, #search_div{
+	float:left;
+}
+#logo_div{
+    cursor:pointer;
+    width:150px; height:50px;
+    margin-right:30px;
+}
+#logo_div a{
+	display:inline-block;
+    width:150px; height:50px;
+    background:url("/itwillTour/resources/img/main_logo.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:0 -5px;
+}
+#search_div{
+    width:410px; height:44px;
+    border:2px solid black; border-radius:100px;
+    margin-right:30px;
+    line-height:40px;
+    padding-left:20px;
+}
+#search_div div{
+    display:inline-block;
+}
+#header_search{
+    border:none; width:320px; height:30px;
+    position:relative; top:5px;
+}
+#header_search_btn{
+    cursor:pointer;
+    margin-top:10px; margin-right:20px;
+    display:block;
+    float:right;
+    width:18px; height:18px;
+    background-image:url("/itwillTour/resources/img/search_icon.png");
+}
+#mypage_div{
+    padding-top:5px;
+    float:right;
+}
+#mypage_div a{
+    cursor:pointer;
+    display:inline-block; width:45px; height:42px;
+    font-size:12px; text-align:center;
+    padding-top:25px; margin-left:15px;
+    background-position-x: center; 
+    background-position-y: top;
+}
+#mymenu_icon{
+    background-image:url("/itwillTour/resources/img/mymenu_icon.png");  
+}
+#reservation_icon{
+    background-image:url("/itwillTour/resources/img/reservation_icon.png");  
+}
+#shoppingcart_icon{
+    background-image:url("/itwillTour/resources/img/shoppingcart_icon.png");  
+}
+/*footer*/
+#footer_div1{
+    width:1200px; margin:0 auto;
+    margin-top:5px;
+}
+#footer_div1_wrap{
+    border-bottom:1px solid #ddd;
+    padding-bottom:15px;
+}
+#footer_div1_div2{
+    height:25px;
+    overflow:hidden;
+    margin-top:10px;
+}
+#footer_div1_div1{
+    float:left;
+    height:25px;
+    margin-top:12px;
+    margin-right:20px;
+}
+#footer_div1_div1 span{
+    font-weight:500; font-size:14px;
+    cursor:pointer;
+}
+#footer_wrap{
+    clear:both;
+    border-top:1px solid #ddd;
+    min-height:300px;
+}
+#footer_div1 > div{
+    display:inline-block; width:fit-content;
+}
+.slide ul{
+    height:calc(100% * 4); 
+    animation:slide 8s infinite;
+    animation-direction:normal;
+}
+.slide li{
+    height:calc(100% / 4);
+    padding:2px 0;
+    line-height:25px;
+    font-size:14px;
+    cursor:pointer;
+}
+@keyframes slide {
+    0% {margin-top:0;}
+    30% {margin-top:0;}
+    35% {margin-top:-25px;}
+    60% {margin-top:-25px;}
+    65% {margin-top:-50px;}
+    90% {margin-top:-50px;}
+    95% {margin-top:-75px;}
+    100% {margin-top:-75px;}
+}
+.app_icon{
+    display:inline-block;
+    width:20px; height:20px; 
+    border-radius:2px;
+    text-align:center; font-weight:400;
+    color:white;
+    line-height:18px;
+    margin-right:10px;
+}
+#app_i{
+    background:#e5236d;
+}
+#app_a{
+    background:blue;
+}
+#app_h{
+    background:orange;
+}
+#footer_div1_div3{
+    float:right; margin-top:12px;
+}
+.sns_icon{
+    display:inline-block;
+    width:28px; height:28px;
+    margin-left:10px;
+}
+#facebook_icon{
+    background:url("/itwillTour/resources/img/facebook_icon.png");
+}
+#instargram_icon{
+    background:url("/itwillTour/resources/img/instargram_icon.png");
+}
+#blog_icon{
+    background:url("/itwillTour/resources/img/blog_icon.png");
+}
+#kakaoplus_icon{
+    background:url("/itwillTour/resources/img/kakaoplus_icon.png");
+}
+#youtube_icon{
+    background:url("/itwillTour/resources/img/youtube_icon.png");
+}
+#kakaostory_icon{
+    background:url("/itwillTour/resources/img/kakaostory_icon.png");
+}
+#footer_div2{
+    width:1200px; margin:15px auto 10px auto;
+}
+#footer_div2_div1 span{
+    display:inline-block;
+    font-size:13px;
+    cursor:pointer;
+}
+.after_bar::after{
+    content:"|"; color:#ddd;
+    font-size:14px;
+}
+#footer_div3{
+    width:1200px; margin:0 auto;
+}
+#footer_div3 span{
+    font-size:13px; 
+}
+#footer_div3 > div{
+    padding:2px 0;
+}
+#headset_icon{
+    display:inline-block;
+    width:20px; height:20px;
+    background:url("/itwillTour/resources/img/headset_icon.png");
+}
+#footer_div4{
+    width:1200px; margin:0 auto;
+    padding:15px 0;
+}
+#footer_div4 p{
+    font-size:13px;
+}
+#footer_div5{
+    width:1200px; margin:0 auto;    
+}
+#footer_div5 p{
+    font-size:13px;
+}
+/*container*/
+#container{
+    width:1200px;
+    margin:0 auto;
+    margin-top:50px; 
+}
+#section_wrap > div{
+    min-height:363px;
+    float:left;
+}
+#nav{
+    width:150px; 
+    margin-right:30px;
+    padding-top:8px;
+}
+#nav_title{
+    padding-bottom:30px;
+}
+#nav_title h1{
+    font-size:24px;
+    font-weight:700;
+}
+#nav_ul_wrap{
+    border-top:2px solid black;
+    border-bottom:2px solid black;
+}
+#nav_ul li{
+    padding-top:15px; padding-bottom:15px;
+    border-bottom:1px solid #ddd;
+}
+#content{
+    width:1010px;
+}
