@@ -1,0 +1,121 @@
+#content{
+    margin-top:10px;
+}
+#content_article1 > div{
+    display:inline-block;
+    padding-bottom:20px;
+}
+#content_title{
+    font-size:22px; font-weight:600;
+}
+#search_select, #serch_keyword{
+    border:1px solid #ddd;
+    padding:5px 10px; height:36px;
+    line-height:34px;
+    font-size:14px;
+}
+#search_select{
+    width:140px;
+}
+#serch_keyword{
+    width:200px; color:#ddd;
+}
+#search_btn{
+    display:inline-block;
+    border:1px solid #e5236d;
+    width:90px; height:36px;
+    text-align:center;
+    color:#e5236d;
+    line-height:34px;
+    cursor:pointer;
+    border-radius:5px;
+    position: relative;
+    top:1px;
+}
+.float_right{
+    float:right;
+}
+#article2_tab td{
+    border-collapse: collapse;
+    border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid black;
+    width:250px; height:50px;
+    text-align:center; line-height:48px;
+}
+#article2_tab, #article2_tab tr{
+    border-collapse: collapse;
+    width:1010px;
+    cursor:pointer;
+}
+#td_all{
+    color:#e5236d;
+    border-left:1px solid black !important;
+    border-right:1px solid black !important;
+    border-top:1px solid black !important;
+    border-bottom:none !important;
+    font-weight:500;
+}
+#content_article3{
+    margin:40px 0;
+    border-top:1px solid black;
+}
+#article3_table{
+    border-collapse: collapse;
+}
+#article3_table thead{
+    border-bottom:1px solid #ddd;
+    background:#f7f7f7;
+}
+#article3_table thead th{
+    border-right:1px solid #ddd;
+}
+#article3_table tbody td{
+    border-bottom:1px solid #ddd;
+    border-right:1px solid #ddd;
+}
+#article3_table tr{
+    height:53px;
+}
+#article3_table td, #article3_table th{
+    padding:10px 15px; 
+}
+.text_center{
+    text-align:center;
+}
+#article4_paging{
+    width:fit-content; margin:0 auto;
+}
+#article4_paging span{
+    display:inline-block;
+    float:left;
+}
+.page_arrow{
+    width:26px; height:26px;
+    background-image:url("/itwillTour/resources/img/all_icons.png");
+    margin-right:5px;
+    cursor:pointer;
+}
+.page_num{
+    margin:0 10px;
+    cursor:pointer;
+}
+.now_page{
+    color:#e5236d;
+}
+#first_arrow{
+    background-position: -30px 0;
+}
+#prev_arrow{
+    background-position: -61px 0;
+}
+#next_arrow{
+    background-position: -92px 0;
+}
+#last_arrow{
+    background-position: -123px 0;
+}
+#content_article4{
+    padding-bottom:120px;
+}

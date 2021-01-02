@@ -1,0 +1,90 @@
+#content_article1{
+    padding-bottom:30px;
+}
+#content_title{
+    font-size:22px; font-weight:500;
+}
+#content_article2{
+    border-top:1px solid black;
+    padding-bottom:20px;
+}
+#article2_table{
+    border-collapse: collapse;
+}
+#article2_table th{
+    padding:15px; height:53px;
+    background:#f7f7f7;
+    font-weight:500;
+    border-right:1px solid #ddd;
+}
+#article2_table thead{
+    border-bottom:1px solid #ddd;
+}
+#article2_table tbody td{
+    height:50px;
+    border-bottom:1px solid #ddd;
+    text-align:center;
+    border-right:1px solid #ddd;
+}
+#article2_table td, th{
+    padding:10px 15px;
+}
+.none_right{
+    border-right:none !important;
+}
+.text_left{
+    text-align:left !important;
+}
+.page_arrow{
+    display:inline-block;
+    width:26px; height:26px;
+    background-image:url("/itwillTour/resources/img/all_icons.png");
+    margin-right:5px;
+    cursor:pointer;
+}
+.page_num{
+    margin:0 10px;
+    cursor:pointer;
+}
+.now_page{
+    color:#e5236d;
+}
+#first_arrow{
+    background-position: -30px 0;
+}
+#prev_arrow{
+    background-position: -61px 0;
+}
+#next_arrow{
+    background-position: -92px 0;
+}
+#last_arrow{
+    background-position: -123px 0;
+}
+#inquiry_btn{
+    float:right;
+    position:relative; top:10px;
+    width:130px; height:56px;
+    background:#e5236d;
+    border-radius:4px;
+    cursor:pointer;
+}
+#inquiry_btn span{
+    display:block;
+    line-height:54px;
+    text-align:center;
+    color:white;
+    font-size:17px;
+    top:50px;
+}
+#content_article4{
+    padding-bottom:120px;
+}
+#article4_paging{
+    width:fit-content;
+    margin:0 auto;
+    padding-top:30px;
+}
+#content{
+    margin-top:10px;
+}

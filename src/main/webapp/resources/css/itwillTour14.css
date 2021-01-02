@@ -1,0 +1,49 @@
+#content_title{
+    font-size:22px; font-weight: 500;
+}
+#content{
+    margin-top:10px;
+}
+#content_article1{
+    margin-bottom:20px;
+}
+#map{
+    width:100%;
+}
+#content_article2{
+    padding-bottom:20px;
+}
+#article3_table{
+    border-collapse: collapse;
+    width:100%;
+}
+#article3_table td, #article3_table th{
+    border-bottom:1px dashed #ddd;
+    padding:10px; 
+    line-height:25px;
+}
+#article3_table th{
+    text-align:left; font-weight:500;
+    width:70px;
+    vertical-align: top;
+}
+#article3_table td, #article3_table td span{
+    color:#666;
+}
+.subway_icon{
+    display:inline-block;
+    background:#3cb34b;
+    color:white !important;
+    padding:0 3px;
+    height:20px; line-height:20px;
+    width:42px;
+    text-align:center;
+    margin-right:10px;
+    position:relative; top:3px;
+}
+.bold_text{
+    font-weight:700;
+}
+#content_article3{
+    padding-bottom:120px;
+}
