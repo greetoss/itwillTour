@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <div id="header_div2">
-                    <div id="logo_div"><a>ITWILLTOUR</a></div>
+                    <div id="logo_div"><a></a></div>
                     <div id="search_div">
                         <input id="header_search" placeholder="검색어를 입력해 주세요" />
                         <span id="header_search_btn">
@@ -94,11 +94,11 @@
                 <div id="nav_list">
                     <div id="nav_ul_wrap">
                         <ul id="nav_ul">
-                            <li><a>자주 찾는 질문</a></li>
-                            <li><a>문의하기</a></li>
-                            <li><a>문의내역</a></li>
-                            <li><a>공지사항</a></li>
-                            <li style="border-bottom:none;"><a id="now_menu">오시는길</a></li>
+                                <li><a href="itwillTour10">자주 찾는 질문</a></li>
+                                <li><a href="itwillTour11">문의하기</a></li>
+                                <li><a href="itwillTour13">문의내역</a></li>
+                                <li><a href="itwillTour12">공지사항</a></li>
+                                <li style="border-bottom:none;"><a href="itwillTour14" id="now_menu">오시는길</a></li>
                         </ul>
                     </div>
                 </div>

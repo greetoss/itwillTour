@@ -41,10 +41,12 @@
     background-image:url("/itwillTour/resources/img/all_icons.png");
     margin-right:5px;
     cursor:pointer;
+    float:left;
 }
 .page_num{
     margin:0 10px;
     cursor:pointer;
+    float:left;
 }
 .now_page{
     color:#e5236d;

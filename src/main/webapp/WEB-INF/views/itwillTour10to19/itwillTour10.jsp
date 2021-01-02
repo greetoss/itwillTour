@@ -105,11 +105,11 @@
 				<div id="nav_list">
 					<div id="nav_ul_wrap">
 						<ul id="nav_ul">
-							<li><a id="now_menu">자주 찾는 질문</a></li>
-							<li><a>문의하기</a></li>
-							<li><a>문의내역</a></li>
-							<li><a>공지사항</a></li>
-							<li style="border-bottom: none;"><a>오시는길</a></li>
+							<li><a id="now_menu" href="itwillTour10">자주 찾는 질문</a></li>
+							<li><a href="itwillTour11">문의하기</a></li>
+							<li><a href="itwillTour13">문의내역</a></li>
+							<li><a href="itwillTour12">공지사항</a></li>
+							<li style="border-bottom: none;"><a href="itwillTour14">오시는길</a></li>
 						</ul>
 					</div>
 				</div>
@@ -121,15 +121,10 @@
 					</div>
 					<div id="content_filter">
 						<ul id="content_filter_ul">
-							<li><select id="filter1">
+							<li><select id="filter1" name="search_filter">
 									<option><span>전체</span></option>
 									<option><span>해외항공권</span></option>
 									<option><span>해외호텔</span></option>
-							</select></li>
-							<li><select id="filter2">
-									<option><span>전체</span></option>
-									<option><span>예약.대기</span></option>
-									<option><span>결제.발권.티켓수령</span></option>
 							</select></li>
 							<li id="search_input_li"><input id="search_input"
 								placeholder="검색어를 입력해 주세요." /></li>

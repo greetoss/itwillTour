@@ -91,11 +91,11 @@
                 <div id="nav_list">
                     <div id="nav_ul_wrap">
                         <ul id="nav_ul">
-                            <li><a>자주 찾는 질문</a></li>
-                            <li><a>문의하기</a></li>
-                            <li><a>문의내역</a></li>
-                            <li><a id="now_menu">공지사항</a></li>
-                            <li style="border-bottom:none;"><a>오시는길</a></li>
+                                <li><a href="itwillTour10">자주 찾는 질문</a></li>
+                                <li><a href="itwillTour11">문의하기</a></li>
+                                <li><a href="itwillTour13" >문의내역</a></li>
+                                <li><a href="itwillTour12" id="now_menu">공지사항</a></li>
+                                <li style="border-bottom:none;"><a href="itwillTour14">오시는길</a></li>
                         </ul>
                     </div>
                 </div>

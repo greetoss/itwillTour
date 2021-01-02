@@ -91,11 +91,11 @@
                     <div id="nav_list">
                         <div id="nav_ul_wrap">
                             <ul id="nav_ul">
-                                <li><a>자주 찾는 질문</a></li>
-                                <li><a  id="now_menu">문의하기</a></li>
-                                <li><a>문의내역</a></li>
-                                <li><a>공지사항</a></li>
-                                <li  style="border-bottom:none;"><a>오시는길</a></li>
+                                <li><a href="itwillTour10">자주 찾는 질문</a></li>
+                                <li><a id="now_menu" href="itwillTour11">문의하기</a></li>
+                                <li><a href="itwillTour13">문의내역</a></li>
+                                <li><a href="itwillTour12">공지사항</a></li>
+                                <li style="border-bottom:none;"><a href="itwillTour14">오시는길</a></li>
                             </ul>
                         </div>
                     </div>
@@ -116,7 +116,7 @@
                                 <li>· 여행상품의 판매 및 상담은 전국의 하나투어 <span>공식인증예약센터</span>와 함께 하고 있습니다.</li>
                             </ul>
                         </div>
-                        <div id="content_div2_table">
+                        <div id="content_div2_table" style="display:none;">
                             <table>
                                 <tr>
                                     <td>단체맞춤여행</td>
@@ -133,27 +133,30 @@
                             </table>
                         </div>
                     </div>
+                    
+                    <form name="myForm" action="submitInquiry.action" method="post">
                     <div id="content_div3">
                         <div id="content_div3_div1">
                             <table id="content_div3_table">
                                 <tr>
                                     <th><span id="after_attention" style="font-weight:600;">문의유형</span></th>
                                     <td>
-                                        <select>
-                                            <option>상담유형</option>
-                                            <option>국내여행</option>
-                                            <option>기타상담</option>
-                                            <option>법인여행</option>
-                                            <option>안전제안공모</option>
-                                            <option>해외여행</option>
+                                        <select name="category">
+                                            <option value="">상담유형</option>
+                                            <option value="guk">국내여행</option>
+                                            <option value="gi">기타상담</option>
+                                            <option value="bub">법인여행</option>
+                                            <option value="an">안전제안공모</option>
+                                            <option value="hae">해외여행</option>
                                         </select>
                                     </td>
                                 </tr>
                                 <tr>
                                     <th>작성자</th>
                                     <td><span>홍길동</span></td>
+                                    <input name="userName" value="홍길동" type="hidden"/>
                                 </tr>        
-                                <tr>
+                                <tr style="display:none;">
                                     <th>예약코드</th>
                                     <td>
                                         <p>
@@ -171,11 +174,11 @@
                                     <th><span  id="after_attention" style="font-weight:600;">답변알림수단</span></th>
                                     <td>
                                         <p>
-                                            <input type="radio" name="answer_method" value="cell" for="cell_text">
+                                            <input type="radio" name="answerMethod" value="cell" for="cell_text" checked>
                                             <span id="cell_text" style="margin-right:90px;">휴대폰 (010-****-0000)</span>
-                                            <input type="radio" name="answer_method" value="cell" for="mail_text">
+                                            <input type="radio" name="answerMethod" value="mail" for="mail_text">
                                             <span id="mail_text" style="margin-right:10px;">이메일 (itwill@itwill.com)</span>
-                                            <span id="modify_btn">정보수정</span>
+                                            <span id="modify_btn" style="display:none;">정보수정</span>
                                         </p>
                                         <p  class="before_attention" style="font-size:13px; color:#666; line-height:14px;">
                                             문의하신 내용에 답변이 등록되면 휴대폰(카카오 알림톡, 카카오 미설치 시 SMS 문자) 또는 이메일로 알림을 드립니다.
@@ -184,9 +187,9 @@
                                     </td>
                                 </tr>                             
                                 <tr>
-                                    <th><span id="after_attention">제목</span></th>
+                                    <th><span id="after_attention" style="font-weight:600;">제목</span></th>
                                     <td>
-                                        <p><input placeholder="제목을 입력해 주세요." style="padding:10px; width:755px; height:42px; border:1px solid #ddd; font-size:14px;"/></p>
+                                        <p><input placeholder="제목을 입력해 주세요." name="subject" style="padding:10px; width:755px; height:42px; border:1px solid #ddd; font-size:14px;"/></p>
                                     </td>
                                 </tr>
                                 <tr>
@@ -195,7 +198,7 @@
                                     </span></th>
                                     <td>
                                         <p style="padding:10px; width:755px; height:255px; border:1px solid #ddd;">
-                                            <textarea placeholder="최대 2500자까지 입력 가능합니다. 문의할 내용을 입력해 주세요." style="overflow:hidden; width:100%; height:100%; border:none; resize:none; font-size:14px;"></textarea>
+                                            <textarea name="content" placeholder="최대 2500자까지 입력 가능합니다. 문의할 내용을 입력해 주세요." style="overflow:hidden; width:100%; height:100%; border:none; resize:none; font-size:14px;"></textarea>
                                         </p>
                                     </td>
                                 </tr>
@@ -220,10 +223,11 @@
                         <div id="content_div3_div2">
                             <div id="content_div3_div2_div1">
                                 <span class="submit_btn" style="background:#5b606e;">취소</span>
-                                <span class="submit_btn" style="background:#e5236d;">등록</span>
+                                <span onclick="submitForm()" class="submit_btn" style="background:#e5236d;">등록</span>
                             </div>
                         </div>
                     </div>               
+                </form>
                 </div>
             </div>
         </div>
