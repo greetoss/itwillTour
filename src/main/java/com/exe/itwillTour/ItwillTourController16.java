@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class ItwillTourController16 {
 	
 	@RequestMapping ("/itwillTour16")
-	public String itwillTour14 () {
+	public String itwillTour16 () {
 		return "/itwillTour10to19/itwillTour16";
 		
 	}

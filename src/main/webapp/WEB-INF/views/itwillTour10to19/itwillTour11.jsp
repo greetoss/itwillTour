@@ -1,5 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%
 	request.setCharacterEncoding("UTF-8");
 	String cp = request.getContextPath();
@@ -135,6 +136,11 @@
                     </div>
                     
                     <form name="myForm" action="submitInquiry.action" method="post">
+                    
+                    <input name="user_name" value="${userInfo.USERNAME}" type="hidden"/>
+                    <input name="user_tel" value="${userInfo.USERTEL}" type="hidden"/>
+                    <input name="user_email" value="${userInfo.USEREMAIL}" type="hidden"/>
+                    
                     <div id="content_div3">
                         <div id="content_div3_div1">
                             <table id="content_div3_table">
@@ -143,18 +149,17 @@
                                     <td>
                                         <select name="category">
                                             <option value="">상담유형</option>
-                                            <option value="guk">국내여행</option>
-                                            <option value="gi">기타상담</option>
-                                            <option value="bub">법인여행</option>
-                                            <option value="an">안전제안공모</option>
-                                            <option value="hae">해외여행</option>
+                                            <option value="국내여행">국내여행</option>
+                                            <option value="기타상담">기타상담</option>
+                                            <option value="법인여행">법인여행</option>
+                                            <option value="안전제안공모">안전제안공모</option>
+                                            <option value="해외여행">해외여행</option>
                                         </select>
                                     </td>
                                 </tr>
                                 <tr>
                                     <th>작성자</th>
-                                    <td><span>홍길동</span></td>
-                                    <input name="userName" value="홍길동" type="hidden"/>
+                                    <td><span>${userInfo.USERNAME}</span></td>
                                 </tr>        
                                 <tr style="display:none;">
                                     <th>예약코드</th>
@@ -174,10 +179,15 @@
                                     <th><span  id="after_attention" style="font-weight:600;">답변알림수단</span></th>
                                     <td>
                                         <p>
-                                            <input type="radio" name="answerMethod" value="cell" for="cell_text" checked>
-                                            <span id="cell_text" style="margin-right:90px;">휴대폰 (010-****-0000)</span>
-                                            <input type="radio" name="answerMethod" value="mail" for="mail_text">
-                                            <span id="mail_text" style="margin-right:10px;">이메일 (itwill@itwill.com)</span>
+                                            <input type="radio" name="answerMethod" value="휴대폰" for="cell_text" checked>
+                                            <span id="cell_text" style="margin-right:90px;">
+                                            	휴대폰 (${fn:substring(userInfo.USERTEL,0,3)}-****-${fn:substring(userInfo.USERTEL,7,11)})
+                                            </span>
+                                            <input type="radio" name="answerMethod" value="이메일" for="mail_text">
+                                            <span id="mail_text" style="margin-right:10px;">
+                                            	<c:set var="arr" value="${fn:split(userInfo.USEREMAIL,'@') }"/>
+                                            	이메일 (${arr[0].substring(0,4)}****@${arr[1]})
+                                            </span>
                                             <span id="modify_btn" style="display:none;">정보수정</span>
                                         </p>
                                         <p  class="before_attention" style="font-size:13px; color:#666; line-height:14px;">

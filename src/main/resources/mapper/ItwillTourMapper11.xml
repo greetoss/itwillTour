@@ -9,8 +9,12 @@
 
 	<insert id="submitInquiry" parameterType="map">
 		insert into QnA2 
-		(QnA2category)
-		values(#{category})
+		(QNA2CATEGORY, QNA2USERNAME, QNA2SUBJECT, QNA2CONTENT, ${condition1})
+		values(#{category}, #{user_name}, #{subject}, #{content}, #{condition2} )
 	</insert>
+	
+	<select id="getUserInfo" resultType="map">
+		select * from member where userid = #{id}
+	</select>
 
 </mapper>
