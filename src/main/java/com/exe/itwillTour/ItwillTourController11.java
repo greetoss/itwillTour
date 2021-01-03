@@ -1,5 +1,7 @@
 package com.exe.itwillTour;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpSession;
@@ -10,6 +12,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.MultipartHttpServletRequest;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.exe.itwillTourDTO.ItwillTourDTO11;
 import com.exe.itwillTourService.ItwillTourService11;
@@ -33,13 +39,25 @@ public class ItwillTourController11 {
 		return "itwillTour10to19/itwillTour11";
 	}
 
+	@ResponseBody
 	@PostMapping("submitInquiry.action")
-	public String submitInquiry(@RequestParam Map<String, String> params) {
-		int result = serv.submitInquiry(params);
+	public String submitInquiry(/*@RequestParam Map<String, String> params*/MultipartHttpServletRequest multi) {
 		
-		if(result != 1) System.out.println("문의하기에 실패했습니다."); 
 		
-		return "redirect:itwillTour13";
+		multi.getParameter("category");
+		multi.getParameter("user_name");
+		multi.getParameter("user_tel");
+		multi.getParameter("user_email");
+		multi.getParameter("subject");
+		multi.getParameter("content");
+		
+		List<MultipartFile> fileList = new ArrayList<MultipartFile>();
+		fileList.add(multi.getFile("file1"));
+		fileList.add(multi.getFile("file2"));
+		fileList.add(multi.getFile("file3"));
+		
+		//int result = serv.submitInquiry(params);
+		return "itwillTour10to19/itwillTour11";
 	}	
 
 	/* @RequestParam으로 데이터 받는 방법

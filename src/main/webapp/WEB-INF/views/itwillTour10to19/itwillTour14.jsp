@@ -27,7 +27,7 @@
     <script src="jquery.ajax-cross-origin.min.js"></script>
 
     <!--JAVASCRIPT-->
-    <script src="/itwillTour/resources/js/itwillTour14.css.js"></script>
+    <script src="/itwillTour/resources/js/itwillTour14.js"></script>
 
     <!--css-->
     <link href="/itwillTour/resources/css/itwillTour15.css" rel="stylesheet">

@@ -135,7 +135,7 @@
                         </div>
                     </div>
                     
-                    <form name="myForm" action="submitInquiry.action" method="post">
+                    <form id="myForm" name="myForm" method="post" enctype="multipart/form-data">
                     
                     <input name="user_name" value="${userInfo.USERNAME}" type="hidden"/>
                     <input name="user_tel" value="${userInfo.USERTEL}" type="hidden"/>
@@ -215,11 +215,14 @@
                                 <tr>
                                     <th>파일첨부</th>
                                     <td>
-                                        <p style="margin-bottom:5px;">
-                                            <span class="file_click">+</span>
-                                            <span class="file_click">+</span>
-                                            <span class="file_click">+</span>
+                                        <p style="margin-bottom:5px;" style="display:none;">
+                                            <span class="file_click" style="display:none;">+</span>
+                                            <span class="file_click" style="display:none;">+</span>
+                                            <span class="file_click" style="display:none;">+</span>
                                         </p>
+                                        <input type="file" id="file1" name="file1">
+                                        <br/><input type="file" id="file2" name="file2">
+                                        <br/><input type="file" id="file3" name="file3">
                                         <p class="before_attention" style="font-size:13px; color:#666;">
                                             개당 3MB 미만의 BMP, GIF, JPG, JPEG, PNG, TIF 파일만 등록 가능합니다.
                                         </p>
