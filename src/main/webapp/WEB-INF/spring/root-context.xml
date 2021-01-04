@@ -7,7 +7,7 @@
 
 	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
 	  <property value="oracle.jdbc.driver.OracleDriver" name="driverClassName" />
-	  <property value="jdbc:oracle:thin:@localhost:1521:TestDB" name="jdbcUrl" />
+	  <property value="jdbc:oracle:thin:@localhost:1521:orcl" name="jdbcUrl" />
 	  <!-- 오라클 사용자 이름 -->
 	  <property value="itwilltour" name="username" />
 	  <!-- 오라클 사용자 비밀번호 -->
