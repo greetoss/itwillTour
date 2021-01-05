@@ -42,16 +42,13 @@ $(document).ready(function(){
 		thumbChange(3);
 	});	
 	$("#file_delete1").click(function(){
-		$("#file1").val("");
-		$("#file_click1").css("background-image", "none");
+		cancelFile(1);
 	});
 	$("#file_delete2").click(function(){
-		$("#file2").val("");
-		$("#file_click2").css("background-image", "none");
+		cancelFile(2);
 	});
 	$("#file_delete3").click(function(){
-		$("#file3").val("");
-		$("#file_click3").css("background-image", "none");
+		cancelFile(3);
 	});
 });
 
@@ -68,6 +65,11 @@ function thumbChange(num){
 	$("#file_click"+num).css("background-image", "url('"+URL.createObjectURL(file)+"')");
 	$("#file_click"+num).css("background-repeat", "no-repeat");
 	$("#file_click"+num).css("background-size", "cover");
+}
+
+function cancelFile(num){
+	$("#file"+num).val("");
+	$("#file_click"+num).css("background-image", "none");	
 }
 
 
