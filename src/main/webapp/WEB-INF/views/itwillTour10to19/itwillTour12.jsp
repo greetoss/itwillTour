@@ -1,8 +1,15 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%
 	request.setCharacterEncoding("UTF-8");
 	String cp = request.getContextPath();
+	
+	
+	
+	
+	
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -131,68 +138,16 @@
                             <th>제목</th>
                             <th style="border-right:none;">등록일</th>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td style="width:100px;" class="text_center">444</td>
-                                <td style="width:120px;" class="text_center">일반</td>
-                                <td style="width:658px;">ITWILLTOUR 마일리지 및 여행상품권 유효기간 6개월 연장 안내</td>
-                                <td style="width:131px; border-right:none;" class="text_center">2020.12.29</td>
-                            </tr>
-                            <tr>
-                                <td class="text_center">443</td>
-                                <td class="text_center">일반</td>
-                                <td>ITWILLTOUR 마일리지 및 여행상품권 유효기간 6개월 연장 안내</td>
-                                <td class="text_center" style="border-right:none;">2020.12.29</td>
-                            </tr>
-                            <tr>
-                                <td class="text_center">442</td>
-                                <td class="text_center">서비스</td>
-                                <td>ITWILLTOUR 마일리지 및 여행상품권 유효기간 6개월 연장 안내</td>
-                                <td class="text_center" style="border-right:none;">2020.12.29</td>
-                            </tr>
-                            <tr>
-                                <td class="text_center">441</td>
-                                <td class="text_center">일반</td>
-                                <td>ITWILLTOUR 마일리지 및 여행상품권 유효기간 6개월 연장 안내</td>
-                                <td class="text_center" style="border-right:none;">2020.12.29</td>
-                            </tr>
-                            <tr>
-                                <td class="text_center">440</td>
-                                <td class="text_center">당첨자발표</td>
-                                <td>ITWILLTOUR 마일리지 및 여행상품권 유효기간 6개월 연장 안내</td>
-                                <td class="text_center" style="border-right:none;">2020.12.29</td>
-                            </tr>
-                            <tr>
-                                <td class="text_center">439</td>
-                                <td class="text_center">일반</td>
-                                <td>ITWILLTOUR 마일리지 및 여행상품권 유효기간 6개월 연장 안내</td>
-                                <td class="text_center" style="border-right:none;">2020.12.29</td>
-                            </tr>
-                            <tr>
-                                <td class="text_center">438</td>
-                                <td class="text_center">일반</td>
-                                <td>ITWILLTOUR 마일리지 및 여행상품권 유효기간 6개월 연장 안내</td>
-                                <td class="text_center" style="border-right:none;">2020.12.29</td>
-                            </tr>
-                            <tr>
-                                <td class="text_center">437</td>
-                                <td class="text_center">일반</td>
-                                <td>ITWILLTOUR 마일리지 및 여행상품권 유효기간 6개월 연장 안내</td>
-                                <td class="text_center" style="border-right:none;">2020.12.29</td>
-                            </tr>
-                            <tr>
-                                <td class="text_center">436</td>
-                                <td class="text_center">서비스</td>
-                                <td>ITWILLTOUR 마일리지 및 여행상품권 유효기간 6개월 연장 안내</td>
-                                <td class="text_center" style="border-right:none;">2020.12.29</td>
-                            </tr>
-                            <tr>
-                                <td class="text_center">435</td>
-                                <td class="text_center">일반</td>
-                                <td>ITWILLTOUR 마일리지 및 여행상품권 유효기간 6개월 연장 안내</td>
-                                <td class="text_center" style="border-right:none;">2020.12.29</td>
-                            </tr>
-                        </tbody>
+		                	<tbody>
+                        		<c:forEach items="${noticeInfo}" var="item" varStatus="i">
+		                            <tr>
+		                                <td style="width:100px;" class="text_center">${noticeInfo.NOTICENO}</td>
+		                                <td style="width:120px;" class="text_center">${noticeInfo.NOTICECATEGORY}</td>
+		                                <td style="width:658px;"> ${noticeInfo.NOTICESUBJECT}</td>
+		                                <td style="width:131px; border-right:none;" class="text_center">${noticeInfo.NOTICECREATED}</td>
+		                            </tr>
+                            	</c:forEach>
+		            		</tbody>
                     </table>
                 </div>
                 <div id="content_article4">

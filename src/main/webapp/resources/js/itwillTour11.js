@@ -14,11 +14,7 @@ function submitForm(){
 		}
 		
 	});
-	
-	
-	
-	
-	
+
 	myForm.submit();
 	
 }

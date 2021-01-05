@@ -7,8 +7,7 @@ import org.springframework.stereotype.Repository;
 import com.zaxxer.hikari.HikariConfig;
 
 @Repository
-public interface ItwillTourDAO11 {
-	int submitInquiry(Map<String, String> params);
+public interface ItwillTourDAO12 {
 	
-	Map<String, String> getUserInfo(String id);	
+	List<Map<String, String>> getNoticeInfo(String notice);	
 }

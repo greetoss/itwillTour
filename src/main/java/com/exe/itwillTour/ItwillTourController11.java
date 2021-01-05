@@ -3,9 +3,7 @@ package com.exe.itwillTour;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-
 import javax.servlet.http.HttpSession;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -28,7 +26,7 @@ public class ItwillTourController11 {
 
 	@RequestMapping("/itwillTour11")
 	public String itwillTour11(HttpSession session, Model model) {
-		
+
 		//test
 		session.setAttribute("userID", "apple");
 		//test
@@ -43,19 +41,18 @@ public class ItwillTourController11 {
 	@PostMapping("submitInquiry.action")
 	public String submitInquiry(/*@RequestParam Map<String, String> params*/MultipartHttpServletRequest multi) {
 		
-		
 		multi.getParameter("category");
 		multi.getParameter("user_name");
 		multi.getParameter("user_tel");
 		multi.getParameter("user_email");
 		multi.getParameter("subject");
 		multi.getParameter("content");
-		
+
 		List<MultipartFile> fileList = new ArrayList<MultipartFile>();
 		fileList.add(multi.getFile("file1"));
 		fileList.add(multi.getFile("file2"));
 		fileList.add(multi.getFile("file3"));
-		
+
 		//int result = serv.submitInquiry(params);
 		return "itwillTour10to19/itwillTour11";
 	}	
