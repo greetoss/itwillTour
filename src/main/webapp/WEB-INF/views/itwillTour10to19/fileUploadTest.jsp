@@ -15,6 +15,10 @@
 
 	<!--JAVASCRIPT-->
 	<script src="/itwillTour/resources/js/fileUploadTest.js"></script>
+	
+	<!--css-->
+	<link href="/itwillTour/resources/css/itwillTour15.css" rel="stylesheet">
+	<link href="/itwillTour/resources/css/itwillTour11.css" rel="stylesheet">	
 
 </head>
 <body>
@@ -102,9 +106,9 @@
                                             <span class="file_click" id="file_click2">+</span>
                                             <span class="file_click" id="file_click3">+</span>
                                         </p>
-                                        <input type="file" id="file1" name="file1">
-                                        <br/><input type="file" id="file2" name="file2">
-                                        <br/><input type="file" id="file3" name="file3">
+                                        <input type="file" id="file1" name="file1" style="display:none;">
+                                        <input type="file" id="file2" name="file2" style="display:none;">
+                                        <input type="file" id="file3" name="file3" style="display:none;">
                                         <p class="before_attention" style="font-size:13px; color:#666;">
                                             개당 3MB 미만의 BMP, GIF, JPG, JPEG, PNG, TIF 파일만 등록 가능합니다.
                                         </p>
