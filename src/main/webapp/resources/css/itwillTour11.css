@@ -132,3 +132,24 @@
     width:fit-content;
     margin:0 auto;
 }
+.file_delete{
+	display: inline-block;
+    background: #e5236d;
+    text-align: center;
+    color: white;
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    top: 55px;
+    left: -13px;
+    cursor: pointer;
+}
+.file_add{
+	display:inline-block;
+	position:relative;
+    color:white; 
+    font-size:30px; text-align:center;
+    cursor:pointer;
+    height: 20px;
+    top: 2px;
+}
