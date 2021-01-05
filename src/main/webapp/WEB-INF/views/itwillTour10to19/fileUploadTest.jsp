@@ -18,7 +18,7 @@
 	
 	<!--css-->
 	<link href="/itwillTour/resources/css/itwillTour15.css" rel="stylesheet">
-	<link href="/itwillTour/resources/css/itwillTour11.css" rel="stylesheet">	
+	<link href="/itwillTour/resources/css/fileUploadTest.css" rel="stylesheet">	
 
 </head>
 <body>
@@ -102,9 +102,14 @@
                                     <th>파일첨부</th>
                                     <td>
                                         <p style="margin-bottom:5px;">
-                                            <span class="file_click" id="file_click1">+</span>
-                                            <span class="file_click" id="file_click2">+</span>
-                                            <span class="file_click" id="file_click3">+</span>
+                                            <span class="file_click" id="file_click1"><span class="file_add">+</span></span>
+                                            <span class="file_click" id="file_click2"><span class="file_add">+</span></span>
+                                            <span class="file_click" id="file_click3"><span class="file_add">+</span></span>
+                                        </p>
+                                        <p>
+                                        	<span class="file_delete" id="file_delete1">삭제</span>
+                                        	<span class="file_delete" id="file_delete2">삭제</span>
+                                        	<span class="file_delete" id="file_delete3">삭제</span>
                                         </p>
                                         <input type="file" id="file1" name="file1" style="display:none;">
                                         <input type="file" id="file2" name="file2" style="display:none;">
