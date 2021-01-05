@@ -137,9 +137,9 @@
                     
                     <form id="myForm" name="myForm" method="post" enctype="multipart/form-data">
                     
-                    <input name="user_name" value="${userInfo.USERNAME}" type="hidden"/>
-                    <input name="user_tel" value="${userInfo.USERTEL}" type="hidden"/>
-                    <input name="user_email" value="${userInfo.USEREMAIL}" type="hidden"/>
+                    <input name="user_name" value="홍길동" type="hidden"/>
+                    <input name="user_tel" value="010-6608-0000" type="hidden"/>
+                    <input name="user_email" value="test@itwilltour.com" type="hidden"/>
                     
                     <div id="content_div3">
                         <div id="content_div3_div1">
@@ -159,7 +159,7 @@
                                 </tr>
                                 <tr>
                                     <th>작성자</th>
-                                    <td><span>${userInfo.USERNAME}</span></td>
+                                    <td><span>홍길동</span></td>
                                 </tr>        
                                 <tr style="display:none;">
                                     <th>예약코드</th>
@@ -181,12 +181,11 @@
                                         <p>
                                             <input type="radio" name="answerMethod" value="휴대폰" for="cell_text" checked>
                                             <span id="cell_text" style="margin-right:90px;">
-                                            	휴대폰 (${fn:substring(userInfo.USERTEL,0,3)}-****-${fn:substring(userInfo.USERTEL,7,11)})
+                                            	휴대폰 (010-6608-1812)
                                             </span>
                                             <input type="radio" name="answerMethod" value="이메일" for="mail_text">
                                             <span id="mail_text" style="margin-right:10px;">
-                                            	<c:set var="arr" value="${fn:split(userInfo.USEREMAIL,'@') }"/>
-                                            	이메일 (${arr[0].substring(0,4)}****@${arr[1]})
+                                            	이메일 (test@itwilltour.com)
                                             </span>
                                             <span id="modify_btn" style="display:none;">정보수정</span>
                                         </p>
@@ -215,14 +214,19 @@
                                 <tr>
                                     <th>파일첨부</th>
                                     <td>
-                                        <p style="margin-bottom:5px;" style="display:none;">
-                                            <span class="file_click" style="display:none;">+</span>
-                                            <span class="file_click" style="display:none;">+</span>
-                                            <span class="file_click" style="display:none;">+</span>
+                                        <p style="margin-bottom:5px;">
+                                            <span class="file_click" id="file_click1"><span class="file_add">+</span></span>
+                                            <span class="file_click" id="file_click2"><span class="file_add">+</span></span>
+                                            <span class="file_click" id="file_click3"><span class="file_add">+</span></span>
                                         </p>
-                                        <input type="file" id="file1" name="file1">
-                                        <br/><input type="file" id="file2" name="file2">
-                                        <br/><input type="file" id="file3" name="file3">
+                                        <p>
+                                        	<span class="file_delete" id="file_delete1">삭제</span>
+                                        	<span class="file_delete" id="file_delete2">삭제</span>
+                                        	<span class="file_delete" id="file_delete3">삭제</span>
+                                        </p>
+                                        <input type="file" id="file1" name="file1" style="display:none;">
+                                        <input type="file" id="file2" name="file2" style="display:none;">
+                                        <input type="file" id="file3" name="file3" style="display:none;">
                                         <p class="before_attention" style="font-size:13px; color:#666;">
                                             개당 3MB 미만의 BMP, GIF, JPG, JPEG, PNG, TIF 파일만 등록 가능합니다.
                                         </p>
@@ -240,7 +244,7 @@
                             </div>
                         </div>
                     </div>               
-                </form>
+                </form>	
                 </div>
             </div>
         </div>
