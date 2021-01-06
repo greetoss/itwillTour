@@ -5,7 +5,7 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%
 	request.setCharacterEncoding("UTF-8");
 	String cp = request.getContextPath();
@@ -142,16 +142,16 @@
                         		<c:forEach items="${noticeInfo}" var="item" varStatus="vs">
 		                            <tr>
 		                                <td style="width:100px;" class="text_center">
-		                                <c:out value="${noticeInfo.NOTICENO}"/>
+		                                <c:out value="${item.NOTICENO}"/>
 		                                </td>
 		                                <td style="width:120px;" class="text_center">
-		                                <c:out value="${noticeInfo.NOTICECATEGORY}"/>
+		                                <c:out value="${item.NOTICECATEGORY}"/>s
 		                                </td>
 		                                <td style="width:658px;">
-		                                <c:out value="${noticeInfo.NOTICESUBJECT}"/>
+		                                <c:out value="${item.NOTICESUBJECT}"/>
 		                                </td>
 		                                <td style="width:131px; border-right:none;" class="text_center">
-		                                <c:out value="${noticeInfo.NOTICECREATED}"/>
+		                                <fmt:formatDate value="${item.NOTICECREATED}" pattern="yy.mm.dd"/>
 		                                </td>
 		                            </tr>
                             	</c:forEach>
