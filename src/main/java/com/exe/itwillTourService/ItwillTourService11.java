@@ -36,6 +36,28 @@ public class ItwillTourService11 {
 		params.put("condition1", condition1);
 		params.put("condition2", condition2);
 		
+		int fileCount = Integer.parseInt(params.get("fileCount"));
+		String fileColumn = "";
+		String fileValue = "";
+		if(fileCount == 0) {
+			params.put("fileColumn", "");
+			params.put("fileValue", "");
+		} else {
+			for(int i=0; i<fileCount; i++){
+				fileColumn+=", QNA2FILE"+(i+1);
+			}
+			for(int i=0; i<fileCount; i++){
+				fileValue+=", '"+params.get("file"+(i+1))+"'";
+			}		
+			params.put("fileColumn", fileColumn);
+			params.put("fileValue", fileValue);
+		}
+		
+		//test
+		System.out.println("fileColumn : "+fileColumn);
+		System.out.println("fileValue : "+fileValue);
+		//test
+		
 		int result = dao.submitInquiry(params);
 		
 		return result;

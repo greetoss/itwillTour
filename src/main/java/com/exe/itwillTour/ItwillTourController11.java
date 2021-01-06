@@ -71,6 +71,7 @@ public class ItwillTourController11 {
 		}
 		
 		System.out.println("upload된 파일 개수 : "+fileList.size());
+		paramMap.put("fileCount", fileList.size()+"");
 		
 		File fileDir = new File(uploadPath);
 		if(!fileDir.exists()) fileDir.mkdirs();
