@@ -23,7 +23,10 @@ public class ItwillTourController12 {
 	public String itwillTour12 (Model model) {
 		
 		String notice = "notice";
+		
 		model.addAttribute("noticeInfo", serv.getNoticeInfo(notice));
+		
+		
 
 		return "/itwillTour10to19/itwillTour12";
 
