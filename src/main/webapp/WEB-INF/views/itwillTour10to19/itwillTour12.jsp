@@ -1,15 +1,8 @@
-<%@page import="java.util.Map"%>
-<%@page import="com.exe.itwillTour.ItwillTourController12"%>
-<%@page import="org.springframework.ui.Model"%>
-<%@page import="java.util.List"%>
-<%@ page contentType="text/html; charset=UTF-8" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ page contentType="text/html; charset=UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%
 	request.setCharacterEncoding("UTF-8");
 	String cp = request.getContextPath();
-	
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -142,16 +135,16 @@
                         		<c:forEach items="${noticeInfo}" var="item" varStatus="vs">
 		                            <tr>
 		                                <td style="width:100px;" class="text_center">
-		                                <c:out value="${noticeInfo.NOTICENO}"/>
+		                                <c:out value="${item.NOTICENO}"/>
 		                                </td>
 		                                <td style="width:120px;" class="text_center">
-		                                <c:out value="${noticeInfo.NOTICECATEGORY}"/>
+		                                <c:out value="${item.NOTICECATEGORY}"/>
 		                                </td>
 		                                <td style="width:658px;">
-		                                <c:out value="${noticeInfo.NOTICESUBJECT}"/>
+		                                <c:out value="${item.NOTICESUBJECT}"/>
 		                                </td>
 		                                <td style="width:131px; border-right:none;" class="text_center">
-		                                <c:out value="${noticeInfo.NOTICECREATED}"/>
+		                                <c:out value="${item.NOTICECREATED}"/>
 		                                </td>
 		                            </tr>
                             	</c:forEach>

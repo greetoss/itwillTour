@@ -23,11 +23,15 @@ public class ItwillTourController12 {
 	public String itwillTour12 (Model model) {
 		
 		String notice = "notice";
+		List<Map<String, String>> resultList = serv.getNoticeInfo(notice);
+		System.out.println("resultList의 개수 :"+resultList.size());
+		System.out.println(resultList.get(0).get("NOTICENO"));
+		System.out.println(resultList.get(0).get("NOTICECATEGORY"));
+		System.out.println(resultList.get(0).get("NOTICESUBJECT"));
+		System.out.println(resultList.get(0).get("NOTICECREATED"));
+		System.out.println(resultList.get(0).get("NOTICENO").getClass().getName());
 		
-		model.addAttribute("noticeInfo", serv.getNoticeInfo(notice));
-		
-		
-
+		model.addAttribute("noticeInfo", resultList);
 		return "/itwillTour10to19/itwillTour12";
 
 	}

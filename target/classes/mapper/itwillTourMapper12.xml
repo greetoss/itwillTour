@@ -8,7 +8,7 @@
 <mapper namespace="com.exe.itwillTourDAO.ItwillTourDAO12">
 	
 	<select id="getNoticeInfo" resultType="map">
-		select to_char(noticeno ,'00009'), noticecategory, noticesubject, to_char(noticecreated , 'yy-mm-dd') from ${notice}
+		select to_char(noticeno ,'00009') noticeno, noticecategory, noticesubject, to_char(noticecreated , 'yy-mm-dd') noticecreated from ${notice}
 	</select>
 
 </mapper>
