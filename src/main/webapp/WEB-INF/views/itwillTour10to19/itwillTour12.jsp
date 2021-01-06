@@ -1,3 +1,5 @@
+<%@page import="java.util.List"%>
+<%@page import="java.util.Map"%>
 <%@ page contentType="text/html; charset=UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%
@@ -29,6 +31,21 @@
 	<!--css-->
 	<link href="/itwillTour/resources/css/itwillTour15.css" rel="stylesheet">
 	<link href="/itwillTour/resources/css/itwillTour12.css" rel="stylesheet">
+
+	<!-- javascript로 데이터 받기 -->
+	<script language="JavaScript">
+		var dataList = new Array();
+		<c:forEach items="${noticeInfo}" var="item">
+			dataList.push({
+				no:"${item.NOTICENO}",
+				category:"${item.NOTICECATEGORY}",
+				subject:"${item.NOTICESUBJECT}",
+				created:"${item.NOTICECREATED}",
+			});
+		</c:forEach>
+		console.log("dataList :"+dataList);
+		var dataListSize = dataList.length;
+	</script>
 
 </head>
 
@@ -125,30 +142,17 @@
                 </div>
                 <div id="content_article3">
                     <table id="article3_table">
-                        <thead>
-                            <th class="text_center">번호</th>
-                            <th>구분</th>
-                            <th>제목</th>
-                            <th style="border-right:none;">등록일</th>
+                    	<thead>
+	                        <tr>
+	                            <th class="text_center">번호</th>
+	                            <th>구분</th>
+	                            <th>제목</th>
+	                            <th style="border-right:none;">등록일</th>
+	                        </tr>
                         </thead>
-		                	<tbody>
-                        		<c:forEach items="${noticeInfo}" var="item" varStatus="vs">
-		                            <tr>
-		                                <td style="width:100px;" class="text_center">
-		                                <c:out value="${item.NOTICENO}"/>
-		                                </td>
-		                                <td style="width:120px;" class="text_center">
-		                                <c:out value="${item.NOTICECATEGORY}"/>
-		                                </td>
-		                                <td style="width:658px;">
-		                                <c:out value="${item.NOTICESUBJECT}"/>
-		                                </td>
-		                                <td style="width:131px; border-right:none;" class="text_center">
-		                                <c:out value="${item.NOTICECREATED}"/>
-		                                </td>
-		                            </tr>
-                            	</c:forEach>
-		            		</tbody>
+                        <tbody>
+                        
+                        </tbody>
                     </table>
                 </div>
                 <div id="content_article4">
@@ -159,16 +163,7 @@
                         <span class="page_arrow" id="prev_arrow"><a>
                                 <!--이전 게시물 화살표-->
                             </a></span>
-                        <span class="page_num"><a class="now_page">1</a></span>
-                        <span class="page_num"><a>2</a></span>
-                        <span class="page_num"><a>3</a></span>
-                        <span class="page_num"><a>4</a></span>
-                        <span class="page_num"><a>5</a></span>
-                        <span class="page_num"><a>6</a></span>
-                        <span class="page_num"><a>7</a></span>
-                        <span class="page_num"><a>8</a></span>
-                        <span class="page_num"><a>9</a></span>
-                        <span class="page_num"><a>10</a></span>
+                        <span class="page_num" id="page_one"><a class="now_page">1</a></span>
                         <span class="page_arrow" id="next_arrow"><a>
                                 <!--다음 게시물 화살표-->
                             </a></span>
@@ -248,6 +243,9 @@
             </div>
         </div>
     </div>
+    <script>
+    	noticeList(1);
+    </script>
 </body>
 
 </html>
