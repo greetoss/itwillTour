@@ -8,8 +8,8 @@
 
 	<insert id="submitInquiry" parameterType="map">
 		insert into QnA2 
-		(QNA2CATEGORY, QNA2USERNAME, QNA2SUBJECT, QNA2CONTENT, ${condition1})
-		values(#{category}, #{user_name}, #{subject}, #{content}, #{condition2} )
+		(QNA2CATEGORY, QNA2USERNAME, QNA2SUBJECT, QNA2CONTENT, ${condition1} ${fileColumn})
+		values(#{category}, #{user_name}, #{subject}, #{content}, #{condition2} ${fileValue})
 	</insert>
 	
 	<select id="getUserInfo" resultType="map">

@@ -143,6 +143,11 @@
                     <input name="user_name" value="홍길동" type="hidden"/>
                     <input name="user_tel" value="010-6608-0000" type="hidden"/>
                     <input name="user_email" value="test@itwilltour.com" type="hidden"/>
+
+                    <input name="user_name" value="${userInfo.USERNAME }" type="hidden"/>
+                    <input name="user_tel" value="${userInfo.USERTEL }" type="hidden"/>
+                    <input name="user_email" value="${userInfo.EMAIL }" type="hidden"/>
+
                     
                     <div id="content_div3">
                         <div id="content_div3_div1">
@@ -162,7 +167,7 @@
                                 </tr>
                                 <tr>
                                     <th>작성자</th>
-                                    <td><span>홍길동</span></td>
+                                    <td><span>${userInfo.USERNAME }</span></td>
                                 </tr>        
                                 <tr style="display:none;">
                                     <th>예약코드</th>
@@ -184,11 +189,11 @@
                                         <p>
                                             <input type="radio" name="answerMethod" value="휴대폰" for="cell_text" checked>
                                             <span id="cell_text" style="margin-right:90px;">
-                                            	휴대폰 (010-6608-1812)
+                                            	휴대폰 (${fn:substring(userInfo.USERTEL, 0, 3)}-****-${fn:substring(userInfo.USERTEL, 7, 12)})
                                             </span>
                                             <input type="radio" name="answerMethod" value="이메일" for="mail_text">
                                             <span id="mail_text" style="margin-right:10px;">
-                                            	이메일 (test@itwilltour.com)
+                                            	이메일 (${fn:substring(userInfo.USEREMAIL, 0, 4)}****@${fn:split(userInfo.USEREMAIL, "@")[1]})
                                             </span>
                                             <span id="modify_btn" style="display:none;">정보수정</span>
                                         </p>

@@ -71,6 +71,10 @@ public class ItwillTourController11 {
 		}
 		
 		System.out.println("파일 개수 : "+fileList.size());
+
+		System.out.println("upload된 파일 개수 : "+fileList.size());
+		paramMap.put("fileCount", fileList.size()+"");
+
 		
 		File fileDir = new File(uploadPath);
 		if(!fileDir.exists()) fileDir.mkdirs();
@@ -83,18 +87,42 @@ public class ItwillTourController11 {
 			for (MultipartFile mf : fileList) {
 				originFileName = mf.getOriginalFilename();
 				saveFileName = String.format("%d_%s",time,originFileName);
-				
-				if(saveFileName.getBytes().length>100) {
-					//여기 해야 함
+
+				if(saveFileName.getBytes().length>200) {
+					int lastDotIndex = saveFileName.lastIndexOf(".");
+					String frontName = saveFileName.substring(0, lastDotIndex);
+					String extent = saveFileName.substring(lastDotIndex, saveFileName.length());
+					System.out.println("extent : "+extent);
+					int frontNameBytes = frontName.getBytes().length;
+					int extentBytes = extent.getBytes().length;
+					int frontBytesLimit = 200-extentBytes;
+					
+					String strBuffer = ""; 
+					String str = "";
+					int strBytes = 0;
+					int bufferBytes = 0;
+					for(int i=0; i<frontBytesLimit; i++) {
+						str = String.valueOf(frontName.charAt(i));
+						strBytes = str.getBytes().length;
+						bufferBytes += strBytes;
+						if(bufferBytes>frontBytesLimit) break;
+						strBuffer += str;
+					}
+					saveFileName = strBuffer+extent;
+					System.out.println("이름이 200자가 넘어서 이름을 자른 파일(file"+(cnt+1)+") : "+saveFileName);
+					System.out.println("편집된 파일명 bytes(file"+(cnt+1)+") : "+saveFileName.getBytes().length);
 				}
 				
-				
+
 				paramMap.put("file"+(++cnt), saveFileName);
 				try {
 					mf.transferTo(new File(uploadPath, saveFileName));
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
+
+				System.out.println("upload된 파일명"+cnt+" : "+saveFileName);
+
 			}		
 		}
 		
