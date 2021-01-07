@@ -74,18 +74,29 @@ public class ItwillTourController11 {
 
 		System.out.println("upload된 파일 개수 : "+fileList.size());
 		paramMap.put("fileCount", fileList.size()+"");
-
 		
 		File fileDir = new File(uploadPath);
 		if(!fileDir.exists()) fileDir.mkdirs();
 		
 		if(fileList.size()!=0) {
-			time = System.currentTimeMillis();
 			
+			String temp_str = "";
+			long temp = 0;
 			int cnt = 0;
 			String originFileName, saveFileName;
+			
 			for (MultipartFile mf : fileList) {
+
 				originFileName = mf.getOriginalFilename();
+				time = System.currentTimeMillis();
+				
+				if (temp == time && originFileName.equals(temp_str)) {
+					time+= 1;
+				}
+				
+				temp=time;
+				temp_str = originFileName;
+				
 				saveFileName = String.format("%d_%s",time,originFileName);
 
 				if(saveFileName.getBytes().length>200) {

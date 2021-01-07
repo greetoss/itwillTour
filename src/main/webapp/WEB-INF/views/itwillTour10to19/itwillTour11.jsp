@@ -139,10 +139,6 @@
                     </div>
                     
                     <form id="myForm" name="myForm" method="post" enctype="multipart/form-data">
-                    
-                    <input name="user_name" value="홍길동" type="hidden"/>
-                    <input name="user_tel" value="010-6608-0000" type="hidden"/>
-                    <input name="user_email" value="test@itwilltour.com" type="hidden"/>
 
                     <input name="user_name" value="${userInfo.USERNAME }" type="hidden"/>
                     <input name="user_tel" value="${userInfo.USERTEL }" type="hidden"/>
