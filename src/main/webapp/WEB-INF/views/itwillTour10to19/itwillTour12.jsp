@@ -148,7 +148,7 @@
 		                                <c:out value="${item.NOTICENO}"/>
 		                                </td>
 		                                <td style="width:120px;" class="text_center">
-		                                <c:out value="${item.NOTICECATEGORY}"/>s
+		                                <c:out value="${item.NOTICECATEGORY}"/>
 		                                </td>
 		                                <td style="width:658px;">
 		                                <span onclick="submitForm()" class="submit_btn" style="background:#e5236d;">
