@@ -10,23 +10,24 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
-
-import com.exe.itwillTourService.ItwillTourService12;
+import com.exe.itwillTourService.ItwillTourService12_ok;
 
 @Controller
-public class ItwillTourController12 {
+public class ItwillTourController12_ok {
 
 	@Autowired
-	ItwillTourService12 serv;
+	ItwillTourService12_ok serv;
 
-	@RequestMapping ("/itwillTour12")
-	public String itwillTour12 (Model model) {
+	@RequestMapping ("/itwillTour12_ok")
+	public String itwillTour12_ok (Model model) {
 		
-		String notice = "notice";
+		//test
+		String subject = "테스트3";
+		//test
 		
-		model.addAttribute("noticeInfo", serv.getNoticeInfo(notice));
+		model.addAttribute("noticeCon", serv.getNoticeCon(subject));
 
-		return "/itwillTour10to19/itwillTour12";
+		return "/itwillTour10to19/itwillTour12_ok";
 
 	}
 

@@ -8,16 +8,16 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Service;
-import com.exe.itwillTourDAO.ItwillTourDAO12;
+import com.exe.itwillTourDAO.ItwillTourDAO12_ok;
 
 @Service
-public class ItwillTourService12 {
+public class ItwillTourService12_ok {
 	
 	@Autowired
-	ItwillTourDAO12 dao;
+	ItwillTourDAO12_ok dao;
 	
-	public List<Map<String, String>> getNoticeInfo(String notice) {
-		return dao.getNoticeInfo(notice);
+	public Map<String, String> getNoticeCon(String subject) {
+		return dao.getNoticeCon(subject);
 	}
 	
 }

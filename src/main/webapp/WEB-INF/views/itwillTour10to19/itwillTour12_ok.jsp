@@ -31,11 +31,11 @@
 	<script src="/itwillTour/resources/js/jquery.ajax-cross-origin.min.js"></script>
 	
 	<!--JAVASCRIPT-->
-	<script src="/itwillTour/resources/js/itwillTour12.js"></script>
+	<script src="/itwillTour/resources/js/itwillTour12_ok.js"></script>
     
 	<!--css-->
 	<link href="/itwillTour/resources/css/itwillTour15.css" rel="stylesheet">
-	<link href="/itwillTour/resources/css/itwillTour12.css" rel="stylesheet">
+	<link href="/itwillTour/resources/css/itwillTour12_ok.css" rel="stylesheet">
 
 </head>
 
@@ -89,110 +89,36 @@
             </div>
         </div>
     </div>
-    <div id="container">
-        <div id="section_wrap">
-            <div id="nav">
-                <div id="nav_title">
-                    <h1>고객센터</h1>
-                </div>
-                <div id="nav_list">
-                    <div id="nav_ul_wrap">
-                        <ul id="nav_ul">
-                                <li><a href="itwillTour10">자주 찾는 질문</a></li>
-                                <li><a href="itwillTour11">문의하기</a></li>
-                                <li><a href="itwillTour13" >문의내역</a></li>
-                                <li><a href="itwillTour12" id="now_menu">공지사항</a></li>
-                                <li style="border-bottom:none;"><a href="itwillTour14">오시는길</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div id="content">
-                <div id="content_article1">
-                    <div><span id="content_title">공지사항</span></div>
-                    <div class="float_right">
-                        <select id="search_select">
-                            <option>제목</option>
-                            <option>내용</option>
-                            <option>제목+내용</option>
-                        </select>
-                        <input id="serch_keyword" placeholder="검색어를 입력해 주세요.">
-                        <span id="search_btn">검색</span>
-                    </div>
-                </div>
-                <div id="content_article2">
-                    <table id="article2_tab">
-                        <tr>
-                            <td id="td_all">전체</td>
-                            <td id="td_ordinary">일반</td>
-                            <td id="td_service">서비스</td>
-                            <td id="td_win">당첨자발표</td>
-                        </tr>
-                    </table>
-                </div>
-                
-                <form id="myForm" name="myForm" method="post" enctype="multipart/form-data">
-                
-                <div id="content_article3">
-                    <table id="article3_table">
-                        <thead>
-                            <th class="text_center">번호</th>
-                            <th>구분</th>
-                            <th>제목</th>
-                            <th style="border-right:none;">등록일</th>
-                        </thead>
-		                	<tbody>
-                        		<c:forEach items="${noticeInfo}" var="item" varStatus="vs">
-		                            <tr>
-		                                <td style="width:100px;" class="text_center">
-		                                <c:out value="${item.NOTICENO}"/>
-		                                </td>
-		                                <td style="width:120px;" class="text_center">
-		                                <c:out value="${item.NOTICECATEGORY}"/>s
-		                                </td>
-		                                <td style="width:658px;">
-		                                <span onclick="submitForm()" class="submit_btn" style="background:#e5236d;">
-		                                <c:out value="${item.NOTICESUBJECT}"/>
-		                                </span>
-		                                </td>
-		                                <td style="width:131px; border-right:none;" class="text_center">
-		                                <fmt:formatDate value="${item.NOTICECREATED}" pattern="yy.mm.dd"/>
-		                                </td>
-		                            </tr>
-                            	</c:forEach>
-		            		</tbody>
-                    </table>
-                </div>
-                </form>
-                <div id="content_article4">
-                    <div id="article4_paging">
-                        <span class="page_arrow" id="first_arrow"><a>
-                                <!--처음 게시물 화살표-->
-                            </a></span>
-                        <span class="page_arrow" id="prev_arrow"><a>
-                                <!--이전 게시물 화살표-->
-                            </a></span>
-                        <span class="page_num"><a class="now_page">1</a></span>
-                        <span class="page_num"><a>2</a></span>
-                        <span class="page_num"><a>3</a></span>
-                        <span class="page_num"><a>4</a></span>
-                        <span class="page_num"><a>5</a></span>
-                        <span class="page_num"><a>6</a></span>
-                        <span class="page_num"><a>7</a></span>
-                        <span class="page_num"><a>8</a></span>
-                        <span class="page_num"><a>9</a></span>
-                        <span class="page_num"><a>10</a></span>
-                        <span class="page_arrow" id="next_arrow"><a>
-                                <!--다음 게시물 화살표-->
-                            </a></span>
-                        <span class="page_arrow" id="last_arrow"><a>
-                                <!--마지막 게시물 화살표-->
-                            </a></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+<div id="container"><div class="inr"><!----> <div id="contents" class="contents"><div class="text_wrap fix"><strong class="tit big">공지사항</strong></div> <div class="board_wrap"><div class="board_header"><!----> <!----> <span class="state">[당첨자발표]</span> <span class="tit">겨울 안전여행 댓글 이벤트 당첨자 발표</span> <span class="date">2021.01.06</span></div> <div class="board_cont"><div class="adminTextEditorLayer"><p>안녕하세요.</p>
+
+<p>하나투어&nbsp;이벤트&nbsp;담당자입니다.</p>
+
+<p>&nbsp;</p>
+
+<p>이벤트에&nbsp;참여해주신&nbsp;모든&nbsp;분들께&nbsp;감사드리며,</p>
+
+<p>아래와&nbsp;같이&nbsp;추첨을&nbsp;통해&nbsp;당첨자를&nbsp;발표합니다.</p>
+
+<p>&nbsp;</p>
+
+<br><u><span style="font-family: &quot;나눔고딕&quot;,NanumGothic,Sans-serif;">▶&nbsp;</span><span style="font-family: &quot;나눔고딕&quot;,NanumGothic,Sans-serif;"><a href="https://image.hanatour.com/usr/winnerlist/wintertour_event_210106.htm" target="_new">당첨자&nbsp;보러가기</a></span></u><p><br></p>
+<p>
+<br>
+</p>
+
+<p>[당첨자&nbsp;안내사항]</p>
+
+<p>※&nbsp;1, 2등&nbsp;당첨자분들께서는 위의 링크에&nbsp;접속하여&nbsp;1/12(화)까지&nbsp;기한내로&nbsp;추가&nbsp;당첨자&nbsp;정보를&nbsp;제출해&nbsp;주셔야&nbsp;경품&nbsp;발송이&nbsp;가능합니다.</p>
+
+<p>※&nbsp;3, 4등&nbsp;모바일&nbsp;상품권&nbsp;당첨자는&nbsp;회원정보에&nbsp;기재된&nbsp;개별&nbsp;휴대전화번호로&nbsp;약&nbsp;2주&nbsp;이내&nbsp;발송될&nbsp;예정입니다.</p>
+
+<p>※&nbsp;모든&nbsp;경품은&nbsp;당첨되신&nbsp;고객님께서&nbsp;기재한&nbsp;회원&nbsp;정보를&nbsp;근거로&nbsp;발송되며&nbsp;기재&nbsp;오류로&nbsp;인한&nbsp;경품&nbsp;미수령&nbsp;건에&nbsp;대해서는&nbsp;당사의&nbsp;책임이&nbsp;없습니다.</p>
+
+<p>&nbsp;</p></div></div></div> <div class="btn_wrap"><a href="#" class="btn big pink">목록</a></div> <ul class="board_list_area"><li><span class="ico prev">이전글</span> <a>이전글이 없습니다</a></li> <li><span class="ico next">다음글</span> <a href="#">하나투어 마일리지 및 여행상품권 유효기간 6개월 연장 안내</a></li></ul></div></div></div>
+
+
+
     <div id="footer_wrap">
         <div id="footer">
             <div id="footer_div1_wrap">
