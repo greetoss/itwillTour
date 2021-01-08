@@ -9,5 +9,6 @@ import com.zaxxer.hikari.HikariConfig;
 @Repository
 public interface ItwillTourDAO12 {
 	
-	List<Map<String, String>> getNoticeInfo(String notice);	
+	List<Map<String, String>> getNoticeInfo(String notice);
+	List<Map<String, String>> getNoticeINFO(String send);	
 }

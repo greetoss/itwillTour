@@ -10,5 +10,9 @@
 	<select id="getNoticeInfo" resultType="map">
 		select * from ${notice}
 	</select>
+	
+		<select id="getNoticeINFO" resultType="map">
+		select * from ${notice}
+	</select>
 
 </mapper>

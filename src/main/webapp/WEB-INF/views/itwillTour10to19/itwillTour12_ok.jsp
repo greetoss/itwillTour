@@ -37,6 +37,8 @@
 	<link href="/itwillTour/resources/css/itwillTour15.css" rel="stylesheet">
 	<link href="/itwillTour/resources/css/itwillTour12_ok.css" rel="stylesheet">
 
+
+
 </head>
 
 <body>
@@ -89,33 +91,44 @@
             </div>
         </div>
     </div>
+    
+    
+                    <input name="notice_category" value="${userInfo.USERNAME }" type="hidden"/>
+                    <input name="notice_subject" value="${userInfo.USERTEL }" type="hidden"/>
+                    <input name="notice_created" value="${userInfo.USEREMAIL }" type="hidden"/>
 
-<div id="container"><div class="inr"><!----> <div id="contents" class="contents"><div class="text_wrap fix"><strong class="tit big">공지사항</strong></div> <div class="board_wrap"><div class="board_header"><!----> <!----> <span class="state">[당첨자발표]</span> <span class="tit">겨울 안전여행 댓글 이벤트 당첨자 발표</span> <span class="date">2021.01.06</span></div> <div class="board_cont"><div class="adminTextEditorLayer"><p>안녕하세요.</p>
-
-<p>하나투어&nbsp;이벤트&nbsp;담당자입니다.</p>
-
-<p>&nbsp;</p>
-
-<p>이벤트에&nbsp;참여해주신&nbsp;모든&nbsp;분들께&nbsp;감사드리며,</p>
-
-<p>아래와&nbsp;같이&nbsp;추첨을&nbsp;통해&nbsp;당첨자를&nbsp;발표합니다.</p>
-
-<p>&nbsp;</p>
-
-<br><u><span style="font-family: &quot;나눔고딕&quot;,NanumGothic,Sans-serif;">▶&nbsp;</span><span style="font-family: &quot;나눔고딕&quot;,NanumGothic,Sans-serif;"><a href="https://image.hanatour.com/usr/winnerlist/wintertour_event_210106.htm" target="_new">당첨자&nbsp;보러가기</a></span></u><p><br></p>
-<p>
-<br>
-</p>
-
-<p>[당첨자&nbsp;안내사항]</p>
-
-<p>※&nbsp;1, 2등&nbsp;당첨자분들께서는 위의 링크에&nbsp;접속하여&nbsp;1/12(화)까지&nbsp;기한내로&nbsp;추가&nbsp;당첨자&nbsp;정보를&nbsp;제출해&nbsp;주셔야&nbsp;경품&nbsp;발송이&nbsp;가능합니다.</p>
-
-<p>※&nbsp;3, 4등&nbsp;모바일&nbsp;상품권&nbsp;당첨자는&nbsp;회원정보에&nbsp;기재된&nbsp;개별&nbsp;휴대전화번호로&nbsp;약&nbsp;2주&nbsp;이내&nbsp;발송될&nbsp;예정입니다.</p>
-
-<p>※&nbsp;모든&nbsp;경품은&nbsp;당첨되신&nbsp;고객님께서&nbsp;기재한&nbsp;회원&nbsp;정보를&nbsp;근거로&nbsp;발송되며&nbsp;기재&nbsp;오류로&nbsp;인한&nbsp;경품&nbsp;미수령&nbsp;건에&nbsp;대해서는&nbsp;당사의&nbsp;책임이&nbsp;없습니다.</p>
-
-<p>&nbsp;</p></div></div></div> <div class="btn_wrap"><a href="#" class="btn big pink">목록</a></div> <ul class="board_list_area"><li><span class="ico prev">이전글</span> <a>이전글이 없습니다</a></li> <li><span class="ico next">다음글</span> <a href="#">하나투어 마일리지 및 여행상품권 유효기간 6개월 연장 안내</a></li></ul></div></div></div>
+<div id="container">
+	<div class="inr"><!---->
+		<div id="contents" class="contents">
+			<div class="text_wrap fix">
+				<strong class="tit big">공지사항</strong>
+			</div>
+				<div class="board_wrap">
+					<div class="board_header"><!----> <!---->
+						<span class="state">[${noticeInfo.NOTICECATEGORY}]</span>
+						<span class="tit">${noticeInfo.NOTICESUBJECT}</span>
+						<span class="date">${noticeInfo.NOTICECREATED}</span>
+					</div>
+				<div class="board_cont">
+					<div class="adminTextEditorLayer">
+					${noticeInfo.NOTICECONTENT}
+					</div>
+				</div>
+			</div>
+			
+			<div class="btn_wrap">
+				<a href="#" class="btn big pink">목록</a>
+			</div>
+			
+			<ul class="board_list_area">
+				<li><span class="ico prev">이전글</span>
+				<a>이전글이 없습니다</a></li>
+				<li><span class="ico next">다음글</span>
+				<a href="#">하나투어 마일리지 및 여행상품권 유효기간 6개월 연장 안내</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
 
 
 

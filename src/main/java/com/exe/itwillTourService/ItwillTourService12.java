@@ -20,4 +20,8 @@ public class ItwillTourService12 {
 		return dao.getNoticeInfo(notice);
 	}
 	
+	public List<Map<String, String>> getNoticeINFO(String send) {
+		return dao.getNoticeINFO(send);
+	}
+	
 }

@@ -131,7 +131,7 @@
                     </table>
                 </div>
                 
-                <form id="myForm" name="myForm" method="post" enctype="multipart/form-data">
+                <form id="myForm" name="myForm" method="post" action="itwillTour12_ok">
                 
                 <div id="content_article3">
                     <table id="article3_table">
@@ -148,11 +148,13 @@
 		                                <c:out value="${item.NOTICENO}"/>
 		                                </td>
 		                                <td style="width:120px;" class="text_center">
-		                                <c:out value="${item.NOTICECATEGORY}"/>s
+		                                <c:out value="${item.NOTICECATEGORY}"/>
 		                                </td>
 		                                <td style="width:658px;">
-		                                <span onclick="submitForm()" class="submit_btn" style="background:#e5236d;">
-		                                <c:out value="${item.NOTICESUBJECT}"/>
+		                                <span class="submit_btn" onclick="submitForm()">
+		                                <a href="itwillTour12_ok">
+		                                <c:out  value="${item.NOTICESUBJECT}"/>
+		                                </a>
 		                                </span>
 		                                </td>
 		                                <td style="width:131px; border-right:none;" class="text_center">
