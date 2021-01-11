@@ -1,6 +1,26 @@
 var file1_buffer = "";
 
 function submitForm(){
+	
+	var cate = $("#cate").val();
+	var sub = $("#sub").val().trim();
+	var con = $("#con").val().trim();
+	
+	if (cate=="") {
+		alert("상담유형을 선택해주세요.");
+		return false;
+	}
+	
+	if (sub=="") {
+		alert("제목을 작성해주세요.");
+		return false;
+	}
+	
+	if (con=="") {
+		alert("내용을 입력해주세요.");
+		return false;
+	}
+	
 	var formData = new FormData($("#myForm")[0]);
 	$.ajax({
 		type:"POST",

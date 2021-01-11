@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 import com.exe.itwillTourService.ItwillTourService12_ok;
@@ -19,13 +20,9 @@ public class ItwillTourController12_ok {
 	ItwillTourService12_ok serv;
 
 	@RequestMapping ("/itwillTour12_ok")
-	public String itwillTour12_ok (Model model) {
-		
-		//test
-		String subject = "테스트3";
-		//test
-		
-		model.addAttribute("noticeCon", serv.getNoticeCon(subject));
+	public String itwillTour12_ok (Model model, @RequestParam("detail") int detail) {
+
+		model.addAttribute("noticeCon", serv.getNoticeCon(detail));
 
 		return "/itwillTour10to19/itwillTour12_ok";
 

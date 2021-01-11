@@ -9,5 +9,5 @@ import com.zaxxer.hikari.HikariConfig;
 @Repository
 public interface ItwillTourDAO12_ok {
 	
-	Map<String, String> getNoticeCon(String subject);	
+	Map<String, String> getNoticeCon(int detail);	
 }

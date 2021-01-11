@@ -16,8 +16,8 @@ public class ItwillTourService12_ok {
 	@Autowired
 	ItwillTourDAO12_ok dao;
 	
-	public Map<String, String> getNoticeCon(String subject) {
-		return dao.getNoticeCon(subject);
+	public Map<String, String> getNoticeCon(int detail) {
+		return dao.getNoticeCon(detail);
 	}
 	
 }

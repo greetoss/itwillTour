@@ -92,10 +92,7 @@
         </div>
     </div>
     
-    
-                    <input name="notice_category" value="${userInfo.USERNAME }" type="hidden"/>
-                    <input name="notice_subject" value="${userInfo.USERTEL }" type="hidden"/>
-                    <input name="notice_created" value="${userInfo.USEREMAIL }" type="hidden"/>
+
 
 <div id="container">
 	<div class="inr"><!---->
@@ -105,22 +102,22 @@
 			</div>
 				<div class="board_wrap">
 					<div class="board_header"><!----> <!---->
-						<span class="state">[${noticeInfo.NOTICECATEGORY}]</span>
-						<span class="tit">${noticeInfo.NOTICESUBJECT}</span>
-						<span class="date">${noticeInfo.NOTICECREATED}</span>
+						<span class="state">[${noticeCon.NOTICECATEGORY}]</span>
+						<span class="tit">${noticeCon.NOTICESUBJECT}</span>
+						<span class="date">${noticeCon.NOTICECREATED}</span>
 					</div>
 				<div class="board_cont">
 					<div class="adminTextEditorLayer">
-					${noticeInfo.NOTICECONTENT}
+					${noticeCon.NOTICECONTENT}
 					</div>
 				</div>
 			</div>
 			
 			<div class="btn_wrap">
-				<a href="#" class="btn big pink">목록</a>
+				<a href="itwillTour12" class="btn big pink" style="margin-bottom:50px">목록</a>
 			</div>
 			
-			<ul class="board_list_area">
+			<ul class="board_list_area" style="display: none;">
 				<li><span class="ico prev">이전글</span>
 				<a>이전글이 없습니다</a></li>
 				<li><span class="ico next">다음글</span>

@@ -111,16 +111,16 @@
                 <div id="content_article1">
                     <div><span id="content_title">공지사항</span></div>
                     <div class="float_right">
-                        <select id="search_select">
-                            <option>제목</option>
-                            <option>내용</option>
-                            <option>제목+내용</option>
+                        <select id="search_select" name="search_select">
+                            <option value="sub">제목</option>
+                            <option value="con">내용</option>
+                            <option value="sub_con">제목+내용</option>
                         </select>
-                        <input id="serch_keyword" placeholder="검색어를 입력해 주세요.">
+                        <input name="serch_keyword" id="serch_keyword" placeholder="검색어를 입력해 주세요.">
                         <span id="search_btn">검색</span>
                     </div>
                 </div>
-                <div id="content_article2">
+                <div id="content_article2" style="display: none;">
                     <table id="article2_tab">
                         <tr>
                             <td id="td_all">전체</td>
@@ -130,9 +130,7 @@
                         </tr>
                     </table>
                 </div>
-                
-                <form id="myForm" name="myForm" method="post" action="itwillTour12_ok">
-                
+
                 <div id="content_article3">
                     <table id="article3_table">
                         <thead>
@@ -151,8 +149,8 @@
 		                                <c:out value="${item.NOTICECATEGORY}"/>
 		                                </td>
 		                                <td style="width:658px;">
-		                                <span class="submit_btn" onclick="submitForm()">
-		                                <a href="itwillTour12_ok">
+		                                <span class="submit_btn" >
+		                                <a href="itwillTour12_ok?detail=${item.NOTICENO}">
 		                                <c:out  value="${item.NOTICESUBJECT}"/>
 		                                </a>
 		                                </span>
@@ -165,7 +163,6 @@
 		            		</tbody>
                     </table>
                 </div>
-                </form>
                 <div id="content_article4">
                     <div id="article4_paging">
                         <span class="page_arrow" id="first_arrow"><a>

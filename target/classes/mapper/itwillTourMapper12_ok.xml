@@ -8,7 +8,7 @@
 <mapper namespace="com.exe.itwillTourDAO.ItwillTourDAO12_ok">
 	
 	<select id="getNoticeCon" resultType="map">
-		select * from notice where noticesubject = '${subject}'
+		select * from notice where noticeno = ${detail}
 	</select>
 
 </mapper>

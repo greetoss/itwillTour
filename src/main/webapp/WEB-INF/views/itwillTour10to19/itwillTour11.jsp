@@ -151,7 +151,7 @@
                                 <tr>
                                     <th><span id="after_attention" style="font-weight:600;">문의유형</span></th>
                                     <td>
-                                        <select name="category">
+                                        <select id="cate" name="category">
                                             <option value="">상담유형</option>
                                             <option value="국내여행">국내여행</option>
                                             <option value="기타상담">기타상담</option>
@@ -202,7 +202,7 @@
                                 <tr>
                                     <th><span id="after_attention" style="font-weight:600;">제목</span></th>
                                     <td>
-                                        <p><input placeholder="제목을 입력해 주세요." name="subject" style="padding:10px; width:755px; height:42px; border:1px solid #ddd; font-size:14px;"/></p>
+                                        <p><input id="sub" placeholder="제목을 입력해 주세요." name="subject" style="padding:10px; width:755px; height:42px; border:1px solid #ddd; font-size:14px;"/></p>
                                     </td>
                                 </tr>
                                 <tr>
@@ -211,7 +211,7 @@
                                     </span></th>
                                     <td>
                                         <p style="padding:10px; width:755px; height:255px; border:1px solid #ddd;">
-                                            <textarea name="content" placeholder="최대 2500자까지 입력 가능합니다. 문의할 내용을 입력해 주세요." style="overflow:hidden; width:100%; height:100%; border:none; resize:none; font-size:14px;"></textarea>
+                                            <textarea id="con" name="content" placeholder="최대 2500자까지 입력 가능합니다. 문의할 내용을 입력해 주세요." style="overflow:hidden; width:100%; height:100%; border:none; resize:none; font-size:14px;"></textarea>
                                         </p>
                                     </td>
                                 </tr>

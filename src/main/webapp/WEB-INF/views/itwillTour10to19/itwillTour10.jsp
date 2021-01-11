@@ -119,7 +119,7 @@
 					<div id="content_title">
 						<h1>자주 찾는 질문</h1>
 					</div>
-					<div id="content_filter">
+					<div id="content_filter" style="display: none;">
 						<ul id="content_filter_ul">
 							<li><select id="filter1" name="search_filter">
 									<option><span>전체</span></option>
