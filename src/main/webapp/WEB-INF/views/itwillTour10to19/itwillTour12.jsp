@@ -139,28 +139,28 @@
                             <th>제목</th>
                             <th style="border-right:none;">등록일</th>
                         </thead>
-		                	<tbody>
-                        		<c:forEach items="${noticeInfo}" var="item" varStatus="vs">
-		                            <tr>
-		                                <td style="width:100px;" class="text_center">
-		                                <c:out value="${item.NOTICENO}"/>
-		                                </td>
-		                                <td style="width:120px;" class="text_center">
-		                                <c:out value="${item.NOTICECATEGORY}"/>
-		                                </td>
-		                                <td style="width:658px;">
-		                                <span class="submit_btn" >
-		                                <a href="itwillTour12_ok?detail=${item.NOTICENO}">
-		                                <c:out  value="${item.NOTICESUBJECT}"/>
-		                                </a>
-		                                </span>
-		                                </td>
-		                                <td style="width:131px; border-right:none;" class="text_center">
-		                                <fmt:formatDate value="${item.NOTICECREATED}" pattern="yy.mm.dd"/>
-		                                </td>
-		                            </tr>
-                            	</c:forEach>
-		            		</tbody>
+		                <tbody>
+                        	<c:forEach items="${noticeInfo}" var="item" varStatus="vs">
+		                    	<tr>
+		                        	<td style="width:100px;" class="text_center">
+		                            <c:out value="${item.NOTICENO}"/>
+		                            </td>
+		                            <td style="width:120px;" class="text_center">
+		                            <c:out value="${item.NOTICECATEGORY}"/>
+		                            </td>
+		                            <td style="width:658px;">
+		                            <span class="submit_btn" >
+		                            <a href="itwillTour12_ok?detail=${item.NOTICENO}">
+		                            <c:out  value="${item.NOTICESUBJECT}"/>
+		                            </a>
+		                            </span>
+		                            </td>
+		                            <td style="width:131px; border-right:none;" class="text_center">
+		                            <fmt:formatDate value="${item.NOTICECREATED}" />
+		                            </td>
+		                        </tr>
+                            </c:forEach>
+		            	</tbody>
                     </table>
                 </div>
                 <div id="content_article4">

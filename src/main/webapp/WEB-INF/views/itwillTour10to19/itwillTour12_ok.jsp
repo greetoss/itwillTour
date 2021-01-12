@@ -5,6 +5,7 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<% pageContext.setAttribute("replaceChar","\n");%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%
 	request.setCharacterEncoding("UTF-8");
@@ -91,8 +92,6 @@
             </div>
         </div>
     </div>
-    
-
 
 <div id="container">
 	<div class="inr"><!---->
@@ -104,11 +103,13 @@
 					<div class="board_header"><!----> <!---->
 						<span class="state">[${noticeCon.NOTICECATEGORY}]</span>
 						<span class="tit">${noticeCon.NOTICESUBJECT}</span>
-						<span class="date">${noticeCon.NOTICECREATED}</span>
+						<span class="date">
+						<fmt:formatDate value="${noticeCon.NOTICECREATED}"/>
+						</span>
 					</div>
 				<div class="board_cont">
 					<div class="adminTextEditorLayer">
-					${noticeCon.NOTICECONTENT}
+					${fn:replace(noticeCon.NOTICECONTENT,replaceChar,"<br>")}
 					</div>
 				</div>
 			</div>
@@ -126,8 +127,6 @@
 		</div>
 	</div>
 </div>
-
-
 
     <div id="footer_wrap">
         <div id="footer">

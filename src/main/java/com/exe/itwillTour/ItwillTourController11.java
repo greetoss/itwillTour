@@ -79,12 +79,12 @@ public class ItwillTourController11 {
 		if(!fileDir.exists()) fileDir.mkdirs();
 		
 		if(fileList.size()!=0) {
-			
+		
 			String temp_str = "";
 			long temp = 0;
 			int cnt = 0;
 			String originFileName, saveFileName;
-			
+		
 			for (MultipartFile mf : fileList) {
 				
 				originFileName = mf.getOriginalFilename();

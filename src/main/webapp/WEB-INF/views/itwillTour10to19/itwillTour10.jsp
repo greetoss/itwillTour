@@ -1,5 +1,7 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<% pageContext.setAttribute("LF", "\n"); %>
 <%
 	request.setCharacterEncoding("UTF-8");
 	String cp = request.getContextPath();
@@ -133,77 +135,38 @@
 					</div>
 				</div>
 				<div id="content1">
-					<ul id="content1_ul">
-						<li class="question"><span class="question_icon">Q</span> <span>호텔
-								요금 방금 봤는데 다시 검색하니까 요금이 확인되지를 않습니다?</span> <span class="open_icon">&nbsp;</span>
-						</li>
-						<li class="answer"><span class="answer_icon">A</span> <span>
-								객실 요금 및 보유 상황은 실시간으로 변동되므로, 다른 고객님께 준비된 객실이 판매된 경우 동일 요금 조회가
-								불가능할 수 있습니다. </span></li>
-						<li class="question"><span class="question_icon">Q</span> <span>ITWILLTOUR
-								사이트외에 해외박람회 상품을 이용하고 싶은데요</span> <span class="open_icon">&nbsp;</span>
-						</li>
-						<li class="answer"><span class="answer_icon">A</span> <span>
-								객실 요금 및 보유 상황은 실시간으로 변동되므로, 다른 고객님께 준비된 객실이 판매된 경우 동일 요금 조회가
-								불가능할 수 있습니다. </span></li>
-						<li class="question"><span class="question_icon">Q</span> <span>24시간이내
-								회신이 무슨뜻인가요?</span> <span class="open_icon">&nbsp;</span></li>
-						<li class="answer"><span class="answer_icon">A</span> <span>
-								객실 요금 및 보유 상황은 실시간으로 변동되므로, 다른 고객님께 준비된 객실이 판매된 경우 동일 요금 조회가
-								불가능할 수 있습니다. </span></li>
-
-						<li class="question"><span class="question_icon">Q</span> <span>ITWILLTOUR
-								박람회 참관상품은 언제 예약해야 할까요?</span> <span class="open_icon">&nbsp;</span></li>
-						<li class="answer"><span class="answer_icon">A</span> <span>
-								중국 및 일본을 포함한 아시아는 최소 45일 ~ 최대 7일 전까지 선착순 접수중에 있으며, 유럽 및 미주는 최소
-								90일 ~ 최대 15일 전까지 선착순 접수중에 있습니다. </span></li>
-						<li class="question"><span class="question_icon">Q</span> <span>항공사
-								마일리지로 좌석만 업그레이드 가능한가요?</span> <span class="open_icon">&nbsp;</span></li>
-						<li class="answer"><span class="answer_icon">A</span> <span>
-								해당 항공사 마일리지로 좌석만 업그레이드 하실 수는 있습니다. </span></li>
-						<li class="question"><span class="question_icon">Q</span> <span>온라인으로만
-								예약 가능한가요?</span> <span class="open_icon">&nbsp;</span></li>
-						<li class="answer"><span class="answer_icon">A</span> <span>
-								온라인 예약 외에도 ITWILLTOUR 공식인증예약센터를 통한 유선 예약이 가능합니다. </span></li>
-						<li class="question"><span class="question_icon">Q</span> <span>ITWILLTOUR
-								박람회 참관상품 예약에 어떤 서류가 필요한가요?</span> <span class="open_icon">&nbsp;</span>
-						</li>
-						<li class="answer"><span class="answer_icon">A</span> <span>
-								여권사본과 명함(국문/영문) 구비하여 주시면 됩니다. 명함은 입장권 신청시 사용하고 있습니다. </span></li>
-						<li class="question"><span class="question_icon">Q</span> <span>결제시한
-								확인해주세요?</span> <span class="open_icon">&nbsp;</span></li>
-						<li class="answer"><span class="answer_icon">A</span> <span>
-								항공권 결제 시한은 고객님께서 직접 ITWILLTOUR 닷컴 홈페이지를 통해 확인 가능합니다. </span></li>
-						<li class="question"><span class="question_icon">Q</span> <span>주말인데
-								당장 월요일 체크인으로 예약이 가능한가요?</span> <span class="open_icon">&nbsp;</span></li>
-						<li class="answer"><span class="answer_icon">A</span> <span>
-								호텔 상품 중 제공되는 객실 상태가 "바로확정"으로 제공되는 객실에 한해서 예약 진행이 가능합니다. </span></li>
-						<li class="question"><span class="question_icon">Q</span> <span>공항에서
-								호텔로 이동하는 픽업 서비스를 예약 하고 싶은데 가능할까요?</span> <span class="open_icon">&nbsp;</span>
-						</li>
-						<li class="answer"><span class="answer_icon">A</span> <span>
-								네, 가능합니다. 지역마다 셔틀버스, 미니버스, 승용차 등의 이용가능한 수단이 상이 할 수 있으며 요금도 차이가
-								있으니, 상품담당자분께 문의 부탁드립니다. </span></li>
-					</ul>
+					<c:forEach items="${qna1Info}" var="item" varStatus="vs">
+						<ul id="content1_ul">
+							<li class="question">
+							<span class="question_icon">Q</span>
+							<span>
+							<c:out value="${item.QNA1SUBJECT}"/>
+							</span>
+							<span class="open_icon">&nbsp;</span>
+							</li>
+							<li class="answer">
+							<table>
+								<tr>
+									<td valign="top">
+										<span class="answer_icon">A</span>
+									</td>
+									<td>
+										<span>
+										<c:out value="${fn:replace(item.QNA1CONTENT,LF,'<br>')}" escapeXml="false"/>
+										</span>
+									</td>
+								</tr>
+							</table>
+							</li>
+						</ul>
+					</c:forEach>
 				</div>
-				<div id="content_dummy">
+				
+				<br/>
+				<br/>
+				<div id="content_dummy" style="display: none;">
 					<div id="inquiry_btn">
-						<span>문의하기</span>
-					</div>
-					<div id="content2">
-						<div id="content2_ul">
-							<span class="page_arrow" id="first_arrow"><a> <!--처음 게시물 화살표-->
-							</a></span> <span class="page_arrow" id="prev_arrow"><a> <!--이전 게시물 화살표-->
-							</a></span> <span class="page_num"><a class="now_page">1</a></span> <span
-								class="page_num"><a>2</a></span> <span class="page_num"><a>3</a></span>
-							<span class="page_num"><a>4</a></span> <span class="page_num"><a>5</a></span>
-							<span class="page_num"><a>6</a></span> <span class="page_num"><a>7</a></span>
-							<span class="page_num"><a>8</a></span> <span class="page_num"><a>9</a></span>
-							<span class="page_num"><a>10</a></span> <span class="page_arrow"
-								id="next_arrow"><a> <!--다음 게시물 화살표-->
-							</a></span> <span class="page_arrow" id="last_arrow"><a> <!--마지막 게시물 화살표-->
-							</a></span>
-						</div>
+						<span><a href="itwillTour11" style="margin-bottom:50px;">문의하기</a></span>
 					</div>
 				</div>
 			</div>

@@ -22,6 +22,8 @@ public class ItwillTourController12_ok {
 	@RequestMapping ("/itwillTour12_ok")
 	public String itwillTour12_ok (Model model, @RequestParam("detail") int detail) {
 
+		
+		System.out.println(model.addAttribute("noticeCon", serv.getNoticeCon(detail)));
 		model.addAttribute("noticeCon", serv.getNoticeCon(detail));
 
 		return "/itwillTour10to19/itwillTour12_ok";

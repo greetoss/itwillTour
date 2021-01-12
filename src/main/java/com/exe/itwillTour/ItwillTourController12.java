@@ -27,9 +27,12 @@ public class ItwillTourController12 {
 	ItwillTourService12 serv;
 
 	@RequestMapping ("/itwillTour12")
-	public String itwillTour12 (Model model,
+	public String itwillTour12 (Model model
+			/*
 			@RequestParam("search_select") String category,
-			@RequestParam("serch_keyword") String userName, HttpServletRequest request) {
+			@RequestParam("serch_keyword") String userName, HttpServletRequest request
+			*/
+			) {
 		
 		//request.getParameter("search_select");
 		//request.getParameter("serch_keyword");
