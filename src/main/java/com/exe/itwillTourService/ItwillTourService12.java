@@ -19,13 +19,12 @@ public class ItwillTourService12 {
 	public List<Map<String, String>> getNoticeInfo(String notice) {
 		return dao.getNoticeInfo(notice);
 	}
-	
+
 	//-------------------------------------------------------------------
 	
 	public List<Map<String, String>> getSearchSubInfo(String search_keyword) {
 		System.out.println("서비스: " + "제목일 때 - " + search_keyword);
-		String keyword = search_keyword;
-		return dao.getSearchSubInfo(keyword);
+		return dao.getSearchSubInfo(search_keyword);
 	}
 	
 	public List<Map<String, String>> getSearchConInfo(String search_keyword) {
