@@ -20,8 +20,23 @@ public class ItwillTourService12 {
 		return dao.getNoticeInfo(notice);
 	}
 	
-	public List<Map<String, String>> getNoticeINFO(String send) {
-		return dao.getNoticeINFO(send);
+	//-------------------------------------------------------------------
+	
+	public List<Map<String, String>> getSearchSubInfo(String search_keyword) {
+		System.out.println("서비스: " + "제목일 때 - " + search_keyword);
+		String keyword = search_keyword;
+		return dao.getSearchSubInfo(keyword);
 	}
+	
+	public List<Map<String, String>> getSearchConInfo(String search_keyword) {
+		System.out.println("서비스: " + "내용일 때 - " + search_keyword);
+		return dao.getSearchConInfo(search_keyword);
+	}
+	
+	public List<Map<String, String>> getSearchSub_ConInfo(String search_keyword) {
+		System.out.println("서비스: " + "제목+내용일 때 - " + search_keyword);
+		return dao.getSearchSub_ConInfo(search_keyword);
+	}
+	
 	
 }

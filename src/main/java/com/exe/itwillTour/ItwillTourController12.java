@@ -9,6 +9,8 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Required;
+import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,38 +20,76 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 
+import com.exe.itwillTourDTO.ItwillTourDTO12;
 import com.exe.itwillTourService.ItwillTourService12;
+
 
 @Controller
 public class ItwillTourController12 {
 
 	@Autowired
 	ItwillTourService12 serv;
+	ItwillTourDTO12 itwillTourDTO12;
+	String notice = "notice";
+	String s_s, s_k ="";
 
-	@RequestMapping ("/itwillTour12")
-	public String itwillTour12 (Model model
-			/*
-			@RequestParam("search_select") String category,
-			@RequestParam("serch_keyword") String userName, HttpServletRequest request
-			*/
+	@RequestMapping("/itwillTour12")
+	public String itwillTour12 (Model model,
+			HttpServletRequest request,
+			@RequestParam(value="search_select",required = false) String search_select,
+			@RequestParam(value="serch_keyword",required = false) String search_keyword
 			) {
 		
-		//request.getParameter("search_select");
-		//request.getParameter("serch_keyword");
-		
-		String notice = "notice";
-		//카테고리랑 유저네임이 null 인지 확인
-		//(만약 오류가 뜨면 위 request 써보기)
+		System.out.println("1-분류는 '" + search_select + "' 입니다.");
+		System.out.println("1-키워드는 '" + search_keyword + "' 입니다.");
 		
 		
-		model.addAttribute("noticeInfo", serv.getNoticeInfo(notice));
+		if(search_select==null&&search_keyword==null) {
+			
+			if(search_select==null) {
+				search_select="";
+				
+			}
+			if(search_keyword==null) {
+				search_keyword="";
+			}
+		
+		if(search_select.equals("")||(search_keyword.equals(""))) {
+			
+			model.addAttribute("noticeInfo", serv.getNoticeInfo(notice));
+		}
+	}
+		
+		////////////////여기까지 완료
+		
+		if ((search_select.equals("sub"))&&(!(search_keyword.equals("")))) {//제목
+			model.addAttribute("searchInfo", serv.getSearchSubInfo(search_keyword));
+		}
+		
+		if ((search_select.equals("con")&&!(search_keyword.equals("")))) {//내용
+			model.addAttribute("searchInfo", serv.getSearchConInfo(search_keyword));
+		}
+		if ((search_select.equals("sub_con")&&!(search_keyword.equals("")))) {//제목+내용
+			model.addAttribute("searchInfo", serv.getSearchSub_ConInfo(search_keyword));
+		}
 		
 		
-
+		
+		
+		return "/itwillTour10to19/itwillTour12";
+	}
+	
+	@RequestMapping("/itwillTour12.action")
+	public String itwillTour12 (Model model,
+			@RequestParam(value="search_select",required = false) String search_select,
+			@RequestParam(value="serch_keyword",required = false) String search_keyword
+			) {
+		
+		
 		return "/itwillTour10to19/itwillTour12";
 
 	}
-	
+
 	@ResponseBody
 	@PostMapping("noticeINFO.action")
 	public String noticeINFOTestAction(HttpServletRequest multi) {
@@ -58,16 +98,7 @@ public class ItwillTourController12 {
 		send.put("notice_subject", multi.getParameter("notice_subject"));
 		System.out.println(send.put("notice_subject", multi.getParameter("notice_subject")));
 
-
-
-		
-		//serv.getNoticeINFO(send);
-		
 		return "itwillTour10to19/itwillTour12_ok";
 	}
-	
-	
-	
-	
 
 }

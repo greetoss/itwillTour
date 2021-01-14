@@ -26,6 +26,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
 
 	<!--JQUERY(AJAX)-->
+	<script   src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="/itwillTour/resources/js/jquery.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="/itwillTour/resources/js/jquery.ajax-cross-origin.min.js"></script>
@@ -107,7 +108,11 @@
                     </div>
                 </div>
             </div>
+            
             <div id="content">
+            
+            	<!-- 검색 -->
+            	<form id="myForm" name="myForm" method="get" action="itwillTour12">
                 <div id="content_article1">
                     <div><span id="content_title">공지사항</span></div>
                     <div class="float_right">
@@ -116,10 +121,13 @@
                             <option value="con">내용</option>
                             <option value="sub_con">제목+내용</option>
                         </select>
-                        <input name="serch_keyword" id="serch_keyword" placeholder="검색어를 입력해 주세요.">
-                        <span id="search_btn">검색</span>
+                        <input name="serch_keyword" id="serch_keyword"  placeholder="검색어를 입력해 주세요.">
+                        <button type="submit" id="search_btn">검색</button>
                     </div>
                 </div>
+                </form>
+                <!-- 검색 -->
+                
                 <div id="content_article2" style="display: none;">
                     <table id="article2_tab">
                         <tr>
@@ -132,12 +140,12 @@
                 </div>
 
                 <div id="content_article3">
-                    <table id="article3_table">
-                        <thead>
-                            <th class="text_center">번호</th>
-                            <th>구분</th>
-                            <th>제목</th>
-                            <th style="border-right:none;">등록일</th>
+                    <table id="article3_table" width="100%">
+                        <thead >
+                            <th class="text_center" width="10%">번호</th>
+                            <th width="10%">구분</th>
+                            <th width="65%">제목</th>
+                            <th style="border-right:none;" width="15%">등록일</th>
                         </thead>
 		                <tbody>
                         	<c:forEach items="${noticeInfo}" var="item" varStatus="vs">
@@ -163,6 +171,9 @@
 		            	</tbody>
                     </table>
                 </div>
+                
+                <!-- 페이징 -->
+                
                 <div id="content_article4">
                     <div id="article4_paging">
                         <span class="page_arrow" id="first_arrow"><a>

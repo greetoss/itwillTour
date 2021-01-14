@@ -10,5 +10,9 @@ import com.zaxxer.hikari.HikariConfig;
 public interface ItwillTourDAO12 {
 	
 	List<Map<String, String>> getNoticeInfo(String notice);
-	List<Map<String, String>> getNoticeINFO(String send);	
+	List<Map<String, String>> getSearchSubInfo(String search_keyword);
+	List<Map<String, String>> getSearchConInfo(String search_keyword);
+	List<Map<String, String>> getSearchSub_ConInfo(String search_keyword);
+	
+
 }

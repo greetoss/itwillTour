@@ -11,8 +11,21 @@
 		select * from ${notice} order by noticeno desc
 	</select>
 	
-		<select id="getNoticeINFO" resultType="map">
-		select * from ${notice}
+	
+	
+	
+		<select id="getSearchSubInfo" resultType="map">
+		select * from notice where noticesubject like '%'||#{search_keyword}||'%' order by noticeno desc
 	</select>
+	
+			<select id="getSearchConInfo" resultType="map">
+		select * from notice where noticecontent like '%'||#{search_keyword}||'%' order by noticeno desc
+	</select>
+	
+				<select id="getSearchSub_ConInfo" resultType="map">
+		select * from notice where noticesubject like '%'||#{search_keyword}||'%' or 
+		noticecontent like '%'||#{search_keyword}||'%' order by noticeno desc
+	</select>
+
 
 </mapper>
