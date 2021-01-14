@@ -1,6 +1,7 @@
 package com.exe.itwillTour;
 
 import java.io.File;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -21,7 +22,9 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 
 import com.exe.itwillTourDTO.ItwillTourDTO12;
+
 import com.exe.itwillTourService.ItwillTourService12;
+
 
 
 @Controller
@@ -32,6 +35,7 @@ public class ItwillTourController12 {
 	ItwillTourDTO12 itwillTourDTO12;
 	String notice = "notice";
 	String s_s, s_k ="";
+	
 
 	@RequestMapping("/itwillTour12")
 	public String itwillTour12 (Model model,
@@ -44,7 +48,7 @@ public class ItwillTourController12 {
 		System.out.println("1-키워드는 '" + search_keyword + "' 입니다.");
 		
 		
-		if(search_select==null&&search_keyword==null) {
+		if(search_select==null||search_keyword==null) {
 			
 			if(search_select==null) {
 				search_select="";
@@ -61,17 +65,23 @@ public class ItwillTourController12 {
 	}
 		
 		////////////////여기까지 완료
-		
-		if ((search_select.equals("sub"))&&(!(search_keyword.equals("")))) {//제목
-			model.addAttribute("searchInfo", serv.getSearchSubInfo(search_keyword));
+		if(search_keyword!=null) {
+
+			if (search_select.equals("sub")) {//제목
+				
+				model.addAttribute("searchInfo", serv.getSearchSubInfo(search_keyword));
+			}
+			
+			if (search_select.equals("con")) {//내용
+				model.addAttribute("searchInfo", serv.getSearchConInfo(search_keyword));
+			}
+			if (search_select.equals("sub_con")) {//제목+내용
+				model.addAttribute("searchInfo", serv.getSearchSub_ConInfo(search_keyword));
+			}
+			
 		}
 		
-		if ((search_select.equals("con")&&!(search_keyword.equals("")))) {//내용
-			model.addAttribute("searchInfo", serv.getSearchConInfo(search_keyword));
-		}
-		if ((search_select.equals("sub_con")&&!(search_keyword.equals("")))) {//제목+내용
-			model.addAttribute("searchInfo", serv.getSearchSub_ConInfo(search_keyword));
-		}
+		
 		
 		
 		
