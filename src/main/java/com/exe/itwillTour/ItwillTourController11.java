@@ -7,9 +7,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 import javax.servlet.http.HttpSession;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -131,13 +129,13 @@ public class ItwillTourController11 {
 				}
 
 				System.out.println("upload된 파일명"+cnt+" : "+saveFileName);
-
+				
 			}
 		}
 		
 		serv.submitInquiry(paramMap);
 		
-		return "itwillTour10to19/fileUploadTest";
+		return "itwillTour10to19/itwillTour11";
 	}
 	
 /*	

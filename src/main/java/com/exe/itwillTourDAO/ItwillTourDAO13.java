@@ -9,6 +9,6 @@ import com.zaxxer.hikari.HikariConfig;
 @Repository
 public interface ItwillTourDAO13 {
 	
-	List<Map<String, String>> getUserInfo(String id);
+	List<Map<String, String>> getQna2Info(String name);
 
 }

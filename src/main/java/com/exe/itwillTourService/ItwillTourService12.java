@@ -29,7 +29,9 @@ public class ItwillTourService12 {
 	
 	public List<Map<String, String>> getSearchConInfo(String search_keyword) {
 		System.out.println("서비스: " + "내용일 때 - " + search_keyword);
-		return dao.getSearchConInfo(search_keyword);
+		List<Map<String, String>> resultMap = dao.getSearchConInfo(search_keyword);
+		System.out.println(resultMap.size());
+		return resultMap;
 	}
 	
 	public List<Map<String, String>> getSearchSub_ConInfo(String search_keyword) {

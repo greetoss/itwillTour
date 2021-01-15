@@ -1,5 +1,8 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<% pageContext.setAttribute("LF", "\n"); %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%
 	request.setCharacterEncoding("UTF-8");
 	String cp = request.getContextPath();
@@ -31,6 +34,7 @@
 
     <!--css-->
     <link href="/itwillTour/resources/css/itwillTour15.css" rel="stylesheet">
+    <link href="/itwillTour/resources/css/itwillTour11.css" rel="stylesheet">
     <link href="/itwillTour/resources/css/itwillTour13.css" rel="stylesheet">
 
 </head>
@@ -103,71 +107,92 @@
                     </div>
                 </div>
             </div>
-            <div id="content">
-                <div id="content_article1">
-                    <div><span id="content_title">1:1문의내역</span></div>
-                </div>
-                <div id="content_article2">
-                    <table id="article2_table">
-                        <thead>
-                            <th class="text_center" style="width:200px;">유형</th>
-                            <th style="width:558px;">제목</th>
-                            <th style="width:151px;">작성일</th>
-                            <th style="width:100px;" class="none_right">답변상태</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>일반</td>
-                                <td class="text_left">제목1</td>
-                                <td>2021.01.01</td>
-                                <td class="none_right">답변대기</td>
-                            </tr>
-                            <tr>
-                                <td>서비스</td>
-                                <td class="text_left">제목2</td>
-                                <td>2021.01.01</td>
-                                <td class="none_right">답변완료</td>
-                            </tr>
-                            <tr>
-                                <td>당첨자발표</td>
-                                <td class="text_left">제목3</td>
-                                <td>2021.01.01</td>
-                                <td class="none_right">답변완료</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div id="content_article4">
-                    <div id="inquiry_btn"><span>문의하기</span></div>
-                    <div id="article4_paging">
-                        <span class="page_arrow" id="first_arrow"><a>
-                                <!--처음 게시물 화살표-->
-                            </a></span>
-                        <span class="page_arrow" id="prev_arrow"><a>
-                                <!--이전 게시물 화살표-->
-                            </a></span>
-                        <span class="page_num"><a class="now_page">1</a></span>
-                        <span class="page_num"><a>2</a></span>
-                        <span class="page_num"><a>3</a></span>
-                        <span class="page_num"><a>4</a></span>
-                        <span class="page_num"><a>5</a></span>
-                        <span class="page_num"><a>6</a></span>
-                        <span class="page_num"><a>7</a></span>
-                        <span class="page_num"><a>8</a></span>
-                        <span class="page_num"><a>9</a></span>
-                        <span class="page_num"><a>10</a></span>
-                        <span class="page_arrow" id="next_arrow"><a>
-                                <!--다음 게시물 화살표-->
-                            </a></span>
-                        <span class="page_arrow" id="last_arrow"><a>
-                                <!--마지막 게시물 화살표-->
-                            </a></span>
+            
+                <!-- 문의내역시작 -->
+                <div id="content">
+              		<div id="content_article1">
+                    	<div>
+                    	<span id="content_title">1:1문의내역</span>
+                    	</div>
+                	</div>
+                	
+
+
+                    <c:forEach items="${qna2Info}" var="item" varStatus="vs">
+                    <div id="content_div3">
+                        <div id="content_div3_div1">
+                        
+                            <table id="content_div3_table" width="100%">
+                                <tr>
+                                    <th>답변상태</th>
+                                    <td>
+                                        <p id="cate" name="category">
+                                        <c:out value="${item.QNA2BOOKING}"/>
+                                        </p>
+                                    </td>
+                                </tr>
+                        
+                                <tr>
+                                    <th>문의유형 / 제목</th>
+                                    <td >
+                                        <p id="sub" name="subject" style="font-size:14px;">
+                                        [<c:out value="${item.QNA2CATEGORY}"/>]
+                                        <c:out value="${item.QNA2SUBJECT}"/>
+                                        </p>
+                                        
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <th>문의내용</th>
+                                    <td>
+                                        <p id="con" name="content" style="font-size:14px;">
+                                        <c:out value="${fn:replace(item.QNA2CONTENT,LF,'<br>')}" escapeXml="false"/>
+                                        </p>
+                                        <br/>
+                                        <p style="font-size: 12px; color: gray;">(작성일: <c:out value="${item.QNA2CREATED}"/>)</p>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th>첨부파일</th>
+                                    <td>
+                                       <p id="file" name="file" style="font-size:14px; font-color: red;">
+                                        ※첨부된 파일이 없습니다.
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                 <tr>
+                                    <th>답변</th>
+                                    <td>
+                                        <p id="sub" name="subject" style="font-size:14px;">
+                                        <c:out value="${fn:replace(item.QNA2ANSWER,LF,'<br>')}" escapeXml="false"/>
+                                        </p>
+                                        <br/>
+                                        <p style="font-size: 12px; color: gray;">(답변일: <c:out value="${item.QNA2ANSWERCREATED}"/>)</p>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td align="center">
+                                       <span class="submit_btn" style="background:#5b606e;">문의수정</span>
+                                    </td>
+                                    <td align="left">
+                                       <span class="submit_btn" style="background:#e5236d;">문의삭제</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
-                    
+                    </c:forEach> 
+                
                 </div>
-            </div>
         </div>
     </div>
+    
+    <br/>
+    <br/>
     <div id="footer_wrap">
         <div id="footer">
             <div id="footer_div1_wrap">

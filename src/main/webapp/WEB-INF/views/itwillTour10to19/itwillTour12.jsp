@@ -112,7 +112,7 @@
             <div id="content">
             
             	<!-- 검색 -->
-            	<form id="myForm" name="myForm" method="get" action="itwillTour12">
+            	<form id="myForm" name="myForm" method="get" action="itwillTour12" onsubmit="return Formsubmit();">
                 <div id="content_article1">
                     <div><span id="content_title">공지사항</span></div>
                     <div class="float_right">
@@ -121,7 +121,7 @@
                             <option value="con">내용</option>
                             <option value="sub_con">제목+내용</option>
                         </select>
-                        <input name="serch_keyword" id="serch_keyword"  placeholder="검색어를 입력해 주세요.">
+                        <input name="search_keyword" id="search_keyword"  placeholder="검색어를 입력해 주세요.">
                         <button type="submit" id="search_btn">검색</button>
                     </div>
                 </div>
