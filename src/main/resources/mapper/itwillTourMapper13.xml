@@ -14,7 +14,7 @@
 		from qna2 b
 		join member a
 		on a.username=b.qna2username and (a.usertel=b.qna2usertel or a.useremail=b.qnauseremail)
-		where a.username = '유재석'
+		where a.username = #{name} order by qna2created
 		
 	</select>
 

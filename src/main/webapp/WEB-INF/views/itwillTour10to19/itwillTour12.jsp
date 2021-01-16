@@ -171,35 +171,7 @@
 		            	</tbody>
                     </table>
                 </div>
-                
-                <!-- 페이징 -->
-                
-                <div id="content_article4">
-                    <div id="article4_paging">
-                        <span class="page_arrow" id="first_arrow"><a>
-                                <!--처음 게시물 화살표-->
-                            </a></span>
-                        <span class="page_arrow" id="prev_arrow"><a>
-                                <!--이전 게시물 화살표-->
-                            </a></span>
-                        <span class="page_num"><a class="now_page">1</a></span>
-                        <span class="page_num"><a>2</a></span>
-                        <span class="page_num"><a>3</a></span>
-                        <span class="page_num"><a>4</a></span>
-                        <span class="page_num"><a>5</a></span>
-                        <span class="page_num"><a>6</a></span>
-                        <span class="page_num"><a>7</a></span>
-                        <span class="page_num"><a>8</a></span>
-                        <span class="page_num"><a>9</a></span>
-                        <span class="page_num"><a>10</a></span>
-                        <span class="page_arrow" id="next_arrow"><a>
-                                <!--다음 게시물 화살표-->
-                            </a></span>
-                        <span class="page_arrow" id="last_arrow"><a>
-                                <!--마지막 게시물 화살표-->
-                            </a></span>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>

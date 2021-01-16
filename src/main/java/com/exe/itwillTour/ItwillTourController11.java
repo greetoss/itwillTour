@@ -34,8 +34,8 @@ public class ItwillTourController11 {
 		//test
 		
 		String id = (String) session.getAttribute("userID");
-		model.addAttribute("userInfo", serv.getUserInfo(id));
 		
+		model.addAttribute("userInfo", serv.getUserInfo(id));
 		return "itwillTour10to19/itwillTour11";
 	}
 	

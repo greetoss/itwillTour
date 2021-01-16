@@ -5,15 +5,15 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.exe.itwillTourDAO.ItwillTourDAO11">
-
-	<insert id="submitInquiry" parameterType="map">
-		insert into QnA2 
-		(qna2booking, qna2category, qna2username, qna2subject, qna2content,qna2created, ${condition1} ${fileColumn})
-		values('답변대기중', #{category}, #{user_name}, #{subject}, #{content},SYSDATE, #{condition2} ${fileValue})
-	</insert>
 	
 	<select id="getUserInfo" resultType="map">
 		select * from member where userid = #{id}
 	</select>
+	
+	<insert id="submitInquiry" parameterType="map">
+		insert into QnA2 
+		(qna2booking, qna2created, qna2category, qna2username, qna2subject, qna2content, ${condition1} ${fileColumn})
+		values('답변대기중', SYSDATE, #{category}, #{user_name}, #{subject}, #{content}, #{condition2} ${fileValue})
+	</insert>
 
 </mapper>

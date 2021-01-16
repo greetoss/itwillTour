@@ -57,7 +57,7 @@ public class ItwillTourService11 {
 		//test
 		
 		int result = dao.submitInquiry(params);
-		
+		System.out.println(result);
 		return result;
 	}		
 	
