@@ -7,7 +7,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%
 	request.setCharacterEncoding("UTF-8");
-String cp = request.getContextPath();
+	String cp = request.getContextPath();
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -133,12 +133,23 @@ String cp = request.getContextPath();
 					</div>
 				</div>
 
-
-
+				<c:set var="qna2" value="${qna2Info}"/>
+				<c:if test="${qna2 eq null}">
+					<table id="content_div3_table" width="100%">
+						<tr>
+							<td>
+								<p>※등록된 문의가 없습니다.</p>
+							</td>
+						</tr>
+					</table>
+				</c:if>
+				
+				<c:set var="qna2" value="${qna2Info}"/>
+				<c:if test="${qna2 ne null}">
 				<c:forEach items="${qna2Info}" var="item" varStatus="vs">
 					<div id="content_div3">
 						<div id="content_div3_div1">
-							
+							<form method="post">
 								<table id="content_div3_table" width="100%">
 									<tr>
 										<th>답변상태</th>
@@ -153,11 +164,11 @@ String cp = request.getContextPath();
 										<th>문의유형 / 제목</th>
 										<td>
 											<p id="sub" name="subject" style="font-size: 14px;">
-												[
-												<c:out value="${item.QNA2CATEGORY}" />
-												]
+												[<c:out value="${item.QNA2CATEGORY}" />]
 												<c:out value="${item.QNA2SUBJECT}" />
 											</p>
+											<p><input id="qna2no" name="qna2no" value="qna2no" style="display: none;">
+											${item.QNA2NO}</p>
 
 										</td>
 									</tr>
@@ -182,17 +193,17 @@ String cp = request.getContextPath();
 										<td>
 										<c:set var="file1" value="${item.QNA2FILE1}"/>
 										<c:if test="${file1 ne null}">
-										<img src="/resources/upload/${item.QNA2FILE1}">
+										<img src="<%=cp %>/resources/upload/${item.QNA2FILE1}">
 										</c:if>
 										
 										<c:set var="file2" value="${item.QNA2FILE2}"/>
 										<c:if test="${file2 ne null}">
-										<img src="/resources/upload/${item.QNA2FILE2}">
+										<img src="<%=cp %>/resources/upload/${item.QNA2FILE2}">
 										</c:if>
 										
 										<c:set var="file3" value="${item.QNA2FILE3}"/>
 										<c:if test="${file3 ne null}">
-										<img src="/resources/upload/${item.QNA2FILE3}">
+										<img src="<%=cp %>/resources/upload/${item.QNA2FILE3}">
 										</c:if>
 										
 										<c:if test="${file1 eq null || file1 eq '' }">
@@ -206,6 +217,9 @@ String cp = request.getContextPath();
 									<tr>
 										<th>답변</th>
 										<td>
+										
+										<c:set var="answer" value="${item.QNA2ANSWER}"/>
+										<c:if test="${answer ne null}">
 											<p id="sub" name="subject" style="font-size: 14px;">
 												<c:out value="${fn:replace(item.QNA2ANSWER,LF,'<br>')}"
 													escapeXml="false" />
@@ -215,21 +229,33 @@ String cp = request.getContextPath();
 												<c:out value="${item.QNA2ANSWERCREATED}" />
 												)
 											</p>
+										</c:if>
+										
+										<c:set var="answer" value="${item.QNA2ANSWER}"/>
+										<c:if test="${answer eq null}">
+											<p id="anwser" name="anwser"
+												style="font-size: 14px; font-color: red;">※등록된 답변이 없습니다.
+											</p>
+										</c:if>
+										
 										</td>
+										
 									</tr>
 
 
 									<tr>
-										<td align="left"><span class="submit_btn" style="background: #e5236d; display: none">
-												문의삭제 </span></td>
+										<td align="left">
+										<button id="delete" name="delete" type="submit" class="submit_btn" value="delete" style="background: #e5236d;">문의삭제</button>
+										
+										</td>
 									</tr>
 
 								</table>
-							
+							</form>
 						</div>
 					</div>
 				</c:forEach>
-
+				</c:if>
 			</div>
 		</div>
 	</div>

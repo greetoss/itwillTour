@@ -20,5 +20,11 @@ public class ItwillTourService13 {
 	public List<Map<String, String>> getQna2Info(String name) {
 		return dao.getQna2Info(name);
 	}
+	
+	public String deleteQna2(String qna2no) {
+		
+		return dao.deleteQna2(qna2no);
+	}
+
 
 }

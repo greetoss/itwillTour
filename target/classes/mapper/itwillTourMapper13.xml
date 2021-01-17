@@ -8,14 +8,16 @@
 <mapper namespace="com.exe.itwillTourDAO.ItwillTourDAO13">
 	
 	<select id="getQna2Info" resultType="map">
-	
 	select qna2booking, qna2category, qna2subject, qna2content, qna2created,
 		qna2file1, qna2file2, qna2file3, qna2answer, qna2answercreated
 		from qna2 b
 		join member a
 		on a.username=b.qna2username and (a.usertel=b.qna2usertel or a.useremail=b.qnauseremail)
-		where a.username = #{name} order by qna2created
-		
+		where a.username = #{name} order by qna2created desc
 	</select>
+	
+	<delete id="deleteQna2" parameterType="string">
+		delete from qna2 where qna2no = to_number(${qna2no})
+	</delete>
 
 </mapper>
