@@ -138,10 +138,10 @@
                     </div>
                     
                     <form id="myForm" name="myForm" method="post" enctype="multipart/form-data">
-
-                    <input name="user_name" value="${userInfo.USERNAME }" type="hidden"/>
-                    <input name="user_tel" value="${userInfo.USERTEL }" type="hidden"/>
-                    <input name="user_email" value="${userInfo.USEREMAIL }" type="hidden"/>
+					<input name="user_id" value="${userInfo.USEID}" type="hidden"/>
+                    <input name="user_name" value="${userInfo.USERNAME}" type="hidden"/>
+                    <input name="user_tel" value="${userInfo.USERTEL}" type="hidden"/>
+                    <input name="user_email" value="${userInfo.USEREMAIL}" type="hidden"/>
 
                     
                     <div id="content_div3">
@@ -162,7 +162,7 @@
                                 </tr>
                                 <tr>
                                     <th>작성자</th>
-                                    <td><span>${userInfo.USERNAME }</span></td>
+                                    <td><span>${userInfo.USERNAME}</span></td>
                                 </tr>        
                                 <tr style="display:none;">
                                     <th>예약코드</th>

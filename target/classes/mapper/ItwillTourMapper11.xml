@@ -12,8 +12,8 @@
 	
 	<insert id="submitInquiry" parameterType="map">
 		insert into QnA2 
-		(qna2no, qna2booking, qna2created, qna2category, qna2username, qna2subject, qna2content, ${condition1} ${fileColumn})
-		values(qna2_inc.nextval, '답변대기중', SYSDATE, #{category}, #{user_name}, #{subject}, #{content}, #{condition2} ${fileValue})
+		(qna2userid, qna2no, qna2booking, qna2created, qna2category, qna2username, qna2subject, qna2content, ${condition1} ${fileColumn})
+		values(#{user_id}, qna2_inc.nextval, '답변대기중', SYSDATE, #{category}, #{user_name}, #{subject}, #{content}, #{condition2} ${fileValue})
 	</insert>
 
 </mapper>
