@@ -25,67 +25,277 @@
     <script src="jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="jquery.ajax-cross-origin.min.js"></script>
-
+    
+    <!--추가-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
     <!--JAVASCRIPT-->
     <script src="/itwillTour/resources/js/itwillTour14.js"></script>
 
     <!--css-->
     <link href="/itwillTour/resources/css/itwillTour15.css" rel="stylesheet">
     <link href="/itwillTour/resources/css/itwillTour14.css" rel="stylesheet">
+    
+    <!--추가-->
+        <link type="text/css" rel="stylesheet" href="<%=cp %>/resources/css/main/base.css">
+    <link type="text/css" rel="stylesheet" href="<%=cp %>/resources/css/main/com2.css">
+    <link type="text/css" rel="stylesheet" href="<%=cp %>/resources/css/main/layout3.css">
+        <link type="text/css" rel="stylesheet" href="<%=cp %>/resources/css/main/base.css">
+    <link type="text/css" rel="stylesheet" href="<%=cp %>/resources/css/main/com.css">
+    <link type="text/css" rel="stylesheet" href="<%=cp %>/resources/css/main/layout.css">
+
+    
 
 </head>
 
 <body>
-    <div id="header_container">
-        <div id="header_wrap">
-            <div id="header">
-                <div id="header_div1_wrap">
-                    <div id="header_div1">
-                        <div><a>로그인</a></div>
-                        <div><a>회원가입</a></div>
-                        <div><a>고객센터</a></div>
-                    </div>
-                </div>
-                <div id="header_div2">
-                    <div id="logo_div"><a></a></div>
-                    <div id="search_div">
-                        <input id="header_search" placeholder="검색어를 입력해 주세요" />
-                        <span id="header_search_btn">
-                            <!--돋보기 아이콘-->
-                        </span>
-                        <!--검색창-->
-                    </div>
-                    <div id="hot_chart"><a>
-                            <!--검색어-->
-                        </a></div>
-                    <div id="mypage_div">
-                        <a id="mymenu_icon">마이메뉴</a>
-                        <a id="reservation_icon">예약내역</a>
-                        <a id="shoppingcart_icon">장바구니</a>
-                    </div>
-                </div>
-                <div id="header_div3_wrap">
-                    <div id="header_div3">
-                        <div id="all_menu_div"><span id="all_menu_icon"></span><span id="all_menu">전체메뉴</span></div>
-                        <div id="header_nav_div">
-                            <span><a id="1">미리 준비하는 해외여행</a></span>
-                            <span><a id="2">국내여행</a></span>
-                            <span><a id="3">항공</a></span>
-                            <span><a id="4">호텔/펜션</a></span>
-                            <span><a id="5">투어/입장권</a></span>
-                            <span><a id="6">테마여행</a></span>
-                            <span><a id="7">럭셔리여행</a></span>
-                        </div>
-                        <div id="header_nav_div2">
-                            <span><a>여행기획전</a></span>
-                            <span><a>기업여행</a></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div class="global_menu_wrap">
+	<div class="fr">
+	
+		<ul class="maeng">
+			<li><a href="/itwillTour/login">로그인</a></li>
+			<li><a href="/itwillTour/join1">회원가입</a></li>
+			<li><a href="/itwillTour/fqna">고객센터</a></li>
+		</ul>
+		
+	</div>
+</div>
+
+
+<div class="inr">
+    <div class="local_menu_wrap">
+    
+    	<div class="fl">
+    	
+    		<h1 class="logo"><a href="/itwillTour"><img src="<%=cp %>/resources/img/main_logo.png" style="margin-left: 40px"></a></h1>
+			<div class="searchform_com">
+				<div class="box_search deletable">
+				
+					<input type="text" id="input_keyword" name title="검색어" placeholder="검색어를 입력해 주세요" value="" class="input_keyword">
+					
+					<button type="submit" class="btn_search"></button>
+					
+				</div>
+			</div>
+			
+   		</div>
+   		
+   		<div class="fr">
+			<div class="private_menu">
+	
+				<ul class="maeng">
+					<li><a href="/itwillTour/bag" class="link_my">마이메뉴</a></li>
+					<li><a href="/itwillTour/bag" class="link_basket">장바구니</a></li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div style="width:100%; height:1px;background:#eeeeee"></div>
+
+<!-- Start Navigation Bar -->
+<div class="mobile-menu">
+  <i class="fa fa-bars fa-3x js-menu-icon"></i>
+</div>
+<nav class="navbar js-navbar">
+  <ul class="menu">
+  
+<li>
+<div style="width:1px; height:100%;background:#eeeeee"></div>
+<a class="hasDropdown"><img src="<%=cp %>/resources/img/main/menu-logo.png"><b>전체메뉴</b><i class="fa fa-angle-down"></i></a>
+<div style="width:1px; height:100%;background:#eeeeee"></div>
+      <ul class="container has-multi" style="color: black">
+        <div class="container__list container__list-multi">
+          <div class="container__listItem">
+            <div><h2>국내여행</h2></div>
+          </div>
+          <div style="width:100%; height:2px;background:#000000"></div>
+          <div class="container__listItem">
+            <div><h3><font color="#E5236D" >자유여행</font></h3></div>
+          </div>
+          <div class="container__listItem">
+            <div onclick="javascript:location='hotel';">호텔/펜션/풀빌라</div>
+          </div>
+          <div class="container__listItem">
+            <div onclick="javascript:location='airline';">항공</div>
+          </div>
+          <div class="container__listItem">
+            <div onclick="javascript:location='ticket';">투어/입장권</div>
+          </div>
+          <div class="container__listItem">
+            <div onclick="javascript:location='train';">기차</div>
+          </div>
+          <div class="container__listItem">
+            <div onclick="javascript:location='korea';">국내여행패키지</div>
+          </div>
         </div>
-    </div>
-    <div id="container">
+        
+        <div class="container__list container__list-multi">
+          <div class="container__listItem">
+            <div><h2>해외여행</h2></div>
+          </div>
+          <div style="width:100%; height:2px;background:#000000"></div>
+          <div class="container__listItem">
+            <div onclick="javascript:location='asia';">일본/중국/홍콩</div>
+          </div>
+          <div class="container__listItem">
+            <div onclick="javascript:location='sasia';">동남아시아</div>
+          </div>
+          <div class="container__listItem">
+            <div onclick="javascript:location='europe';">유럽</div>
+          </div>
+          <div class="container__listItem">
+            <div onclick="javascript:location='america';">미주</div>
+          </div>
+          <div class="container__listItem">
+            <div onclick="javascript:location='pacific';">남태평양</div>
+          </div>
+          <div class="container__listItem">
+            <div onclick="javascript:location='oversea';">해외여행 패키지(전체)</div>
+          </div><div class="container__listItem"></div><div class="container__listItem"></div>
+        </div>
+        
+        <div class="container__list container__list-multi">
+          <div class="container__listItem">
+            <div><h2>항공</h2></div>
+          </div>
+          <div style="width:100%; height:2px;background:#000000"></div>
+          <div class="container__listItem">
+            <div onclick="javascript:location='airline';">국내/해외항공</div>
+          </div>
+          <div class="container__listItem">
+            <div onclick="javascript:location='airline';"></div>
+          </div><div class="container__listItem"></div><div class="container__listItem"></div><div class="container__listItem"></div><div class="container__listItem"></div><div class="container__listItem"></div><div class="container__listItem"></div><div class="container__listItem"></div><div class="container__listItem"></div><div class="container__listItem"></div><div class="container__listItem"></div><div class="container__listItem"></div>
+        </div>
+        
+        <div class="container__list container__list-multi">
+          <div class="container__listItem">
+            <div><h2>투어/입장권</h2></div>
+          </div>
+          <div style="width:100%; height:2px;background:#000000"></div>
+          <div class="container__listItem">
+          	 <div onclick="javascript:location='ticket';">투어/입장권</div></div><div class="container__listItem"></div><div class="container__listItem"></div><div class="container__listItem"></div><div class="container__listItem"></div><div class="container__listItem"></div><div class="container__listItem"></div><div class="container__listItem"></div><div class="container__listItem"></div><div class="container__listItem"></div><div class="container__listItem"></div><div class="container__listItem"></div><div class="container__listItem"></div><div class="container__listItem"></div><div class="container__listItem"></div><div class="container__listItem"></div>
+        </div>
+        
+        <div class="container__list container__list-multi">
+          <div class="container__listItem">
+            <div><h2>가이드북</h2></div>
+          </div>
+          <div style="width:100%; height:2px;background:#000000"></div>
+          <div class="container__listItem">
+            <div onclick="javascript:location='/itwillTour/guideFood';">여행지 음식</div>
+          </div>
+          <div class="container__listItem">
+            <div onclick="javascript:location='/itwillTour/guideTraffic';">여행지 교통</div>
+          </div>
+          <div class="container__listItem">
+            <div onclick="javascript:location='/itwillTour/guideWeather';">여행지 날씨</div>
+          </div>
+          <div class="container__listItem">
+            <div onclick="javascript:location='/itwillTour/infographic';">인포그래픽</div>
+          </div><div class="container__listItem"></div><div class="container__listItem"></div><div class="container__listItem"></div><div class="container__listItem"></div><div class="container__listItem"></div><div class="container__listItem"></div>
+        </div>
+      </ul>
+</li>
+    
+<li>
+      <a class="hasDropdown" href="/itwillTour/oversea">해외여행<i class="fa fa-angle-down"></i></a>
+      <ul class="container">
+        <div class="container__list">
+        
+		<div class="container__listItem">
+			<div onclick="javascript:location='asia';">일본/중국/홍콩</div>
+		</div>
+		<div class="container__listItem">
+			<div onclick="javascript:location='sasia';">동남아시아</div>
+		</div>
+		<div class="container__listItem">
+			<div onclick="javascript:location='europe';">유럽</div>
+		</div>
+		<div class="container__listItem">
+			<div onclick="javascript:location='america';">미주</div>
+		</div>
+		<div class="container__listItem">
+			<div onclick="javascript:location='pacific';">남태평양</div>
+		</div>
+		<div class="container__listItem">
+			<div onclick="javascript:location='oversea';">해외여행 패키지(전체)</div>
+		</div>
+          
+        </div>
+      </ul>
+</li>
+    
+<li>
+      <a class="hasDropdown" href="/itwillTour/korea">국내여행<i class="fa fa-angle-down"></i></a>
+      <ul class="container">
+        <div class="container__list">
+
+		<div class="container__listItem">
+			<div onclick="javascript:location='hotel';">호텔/펜션/풀빌라</div>
+		</div>
+		<div class="container__listItem">
+			<div onclick="javascript:location='airline';">항공</div>
+		</div>
+		<div class="container__listItem">
+			<div onclick="javascript:location='ticket';">투어/입장권</div>
+		</div>
+		<div class="container__listItem">
+			<div onclick="javascript:location='train';">기차</div>
+		</div>
+		<div class="container__listItem">
+			<div onclick="javascript:location='korea';">국내여행패키지</div>
+		</div>
+          
+        </div>
+      </ul>
+</li>
+
+<li>
+      <a href="/itwillTour/airline">국내/해외항공</a>
+</li>
+
+<li>
+      <a href="/itwillTour/hotel">호텔/펜션</a>
+</li>
+
+<li>
+	<a href="/itwillTour/ticket">투어/입장권</a>
+</li>
+
+<li>
+      <a class="hasDropdown" href="#">가이드북<i class="fa fa-angle-down"></i></a>
+      <ul class="container">
+        <div class="container__list">
+		<div class="container__listItem">
+			<div onclick="javascript:location='/itwillTour/guideFood';">여행지 음식</div>
+		</div>
+		<div class="container__listItem">
+			<div onclick="javascript:location='/itwillTour/guideTraffic';">여행지 교통</div>
+		</div>
+		<div class="container__listItem">
+			<div onclick="javascript:location='/itwillTour/guideWeather';">여행지 날씨</div>
+		</div>
+		<div class="container__listItem">
+			<div onclick="javascript:location='/itwillTour/infographic';">인포그래픽</div>
+		</div>
+          
+        </div>
+      </ul>
+</li>
+
+</ul>
+</nav>
+
+<!-- End Navigation Bar -->
+
+<div style="width:100%; height:1px;background:#000000"></div>
+    
+    
+    <div id="container" style="background-color: #ffffff;">
         <div id="section_wrap">
             <div id="nav">
                 <div id="nav_title">
@@ -152,74 +362,179 @@
             </div>
         </div>
     </div>
-    <div id="footer_wrap">
-        <div id="footer">
-            <div id="footer_div1_wrap">
-                <div id="footer_div1">
-                    <div id="footer_div1_div1"><span>ITWILLTOUR 모바일앱을 소개 합니다.</span></div>
-                    <div id="footer_div1_div2" class="slide">
-                        <ul>
-                            <li><span class="app_icon" id="app_i">I</span>ITWILLTOUR - 해외여행, 항공, 호텔, 현지투어, 국내여행 하나면 돼!
-                            </li>
-                            <li><span class="app_icon" id="app_a">A</span>ITWILLTOUR 항공 - 전세계 최저가 항공권 실시간 예약!</li>
-                            <li><span class="app_icon" id="app_h">H</span>ITWILLTOUR 호텔 - 전세계 호텔 쉽고 빠른 최저가 예약!</li>
-                            <li><span class="app_icon" id="app_i">I</span>ITWILLTOUR - 해외여행, 항공, 호텔, 현지투어, 국내여행 하나면 돼!
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="footer_div1_div3">
-                        <span class="sns_icon" id="facebook_icon">&nbsp;</span>
-                        <span class="sns_icon" id="instargram_icon">&nbsp;</span>
-                        <span class="sns_icon" id="blog_icon">&nbsp;</span>
-                        <span class="sns_icon" id="kakaoplus_icon">&nbsp;</span>
-                        <span class="sns_icon" id="youtube_icon">&nbsp;</span>
-                        <span class="sns_icon" id="kakaostory_icon">&nbsp;</span>
-                    </div>
-                </div>
-            </div>
-            <div id="footer_div2">
-                <div id="footer_div2_div1">
-                    <span class="after_bar">회사소개&nbsp;&nbsp;&nbsp;</span>
-                    <span class="after_bar">&nbsp;&nbsp;&nbsp;이용약관&nbsp;&nbsp;&nbsp;</span>
-                    <span class="after_bar">&nbsp;&nbsp;&nbsp;개인정보처리방침&nbsp;&nbsp;&nbsp;</span>
-                    <span class="after_bar">&nbsp;&nbsp;&nbsp;여행약관&nbsp;&nbsp;&nbsp;</span>
-                    <span class="after_bar">&nbsp;&nbsp;&nbsp;해외여행자보험&nbsp;&nbsp;&nbsp;</span>
-                    <span class="after_bar">&nbsp;&nbsp;&nbsp;마케팅제휴&nbsp;&nbsp;&nbsp;</span>
-                    <span>&nbsp;&nbsp;&nbsp;공식인증예약센터 검색</span>
-                </div>
-            </div>
-            <div id="footer_div3">
-                <div id="footer_div3_div1">
-                    <span class="after_bar" style="font-weight:500;">(주)ITWILLTOUR&nbsp;&nbsp;&nbsp;</span>
-                    <span class="after_bar">&nbsp;&nbsp;&nbsp;대표 : 유재석, 박명수&nbsp;&nbsp;&nbsp;</span>
-                    <span>&nbsp;&nbsp;&nbsp;주소 : 강남구 테헤란로 124 4층</span>
-                </div>
-                <div id="footer_div3_div2">
-                    <span class="after_bar">사업자등록번호 : 000-00-000000&nbsp;&nbsp;&nbsp;</span>
-                    <span class="after_bar">&nbsp;&nbsp;&nbsp;<span
-                            style="text-decoration:underline; font-weight:600;">사업자정보확인</span>&nbsp;&nbsp;&nbsp;</span>
-                    <span class="after_bar">&nbsp;&nbsp;&nbsp;통신판매업신고번호 : 아이티윌00-0000호&nbsp;&nbsp;&nbsp;</span>
-                    <span>&nbsp;&nbsp;&nbsp;관광사업자 등록번호 : 제0000-000000호</span>
-                </div>
-                <div id="footer_div3_div3">
-                    <span class="after_bar">개인정보 보호책임자 : 정형돈 &nbsp;&nbsp;&nbsp;</span>
-                    <span class="after_bar">&nbsp;&nbsp;&nbsp;영업보증보험 : 00억 0천만원 가입&nbsp;&nbsp;&nbsp;</span>
-                    <span class="after_bar">&nbsp;&nbsp;&nbsp;팩스: 00-000-0000&nbsp;&nbsp;&nbsp;</span>
-                    <span style="font-size:15px; font-weight:700;">&nbsp;&nbsp;&nbsp;<span
-                            id="headset_icon"></span>&nbsp;<span style="font-size:13px; font-weight:700;">고객센터</span>
-                        1577-1233</span>
-                </div>
-            </div>
-            <div id="footer_div4">
-                <p>※ 부득이한 사정에 의해 여행일정이 변경되는 경우 사전 동의를 받습니다.</p>
-                <p>※ ITWILLTOUR는 개별 항공권 단독 판매, 단품 및 일부 여행상품에 대하여 통신판매중개자로서 통신판매의 당사자가 아니며 해당상품의 거래정보 및 거래등에 대해 책임을 지지
-                    않습니다.</p>
-            </div>
-            <div id="footer_div5">
-                <p>COPYRIGHTⓒ ITWILLTOUR SERVICE INC. ALL RIGHTS RESERVED</p>
-            </div>
-        </div>
-    </div>
+    
+    <div id="footer" style="padding-top: 900px;">
+	<div data-component="@theme-CHPC0MAN0001S212" data-iid="1737568920"
+		class="submain" style="position: relative;" data-v-57ed15ad>
+		<div class="item item10"  style="background-color: #ffffff;">
+			<div class="inr">
+				<ul>
+					<li><a href="#">SAFETY&JOY</a></li>
+					<li><a href="#">티마크호텔</a></li>
+					<li><a href="#">외국인여행</a></li>
+					<li><a href="#">공연/전시</a></li>
+					<li><a href="#">아이티윌투어상품권</a></li>
+					<li><a href="#">제우스 </a></li>
+					<li><a href="#">교육여행/단체</a></li>
+					<li><a href="#">기업출장/단체</a></li>
+					<li><a href="#">여행정보</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="item item11" style="background-color: #ffffff;">
+			<div class="inr">
+				<div class="ly_wrap">
+					<div class="inr left">
+						<div class="text_wrap big">
+							<strong class="tit">아이티윌투어닷컴<br>고객센터
+							</strong>
+						</div>
+						<strong class="tel">1577-1233</strong> <a href="#"
+							class="txt arrow_r">자주 찾는 질문</a> <a href="#" class="txt arrow_r">ARS상담번호
+							안내</a>
+					</div>
+					<div class="inr center">
+						<ul>
+							<li><strong>해외여행 문의</strong>
+								<ul>
+									<li>평일: 09:00~18:00</li>
+									<li>※ 코로나 바이러스19로 인한 근무 시간 축소로<br>주말 및 야간 상담 서비스가 임시
+										중단 됩니다.<br>더 나은 서비스로 찾아뵐 수 있도록 하겠습니다.
+									</li>
+								</ul> <strong>상담번호 안내</strong>
+								<ul>
+									<li>1번 예약상담</li>
+									<li>2번 ARS 예약 확인 및 결제 확인</li>
+									<li>3번 국내공연예매, 마일리지 및 제휴카드, 기타문의</li>
+								</ul></li>
+							<li><strong>국내여행/기업출장/교육여행 단체 문의</strong>
+								<ul>
+									<li>평일: 09:00~18:00</li>
+								</ul> <strong>법인고객 전용상담 <span class="tel">02-6255-8002</span></strong> <strong>안심카드결제
+									ARS <span class="tel">02-6255-8002</span>
+							</strong> <a href="#" class="btn">카드/제휴혜택</a></li>
+						</ul>
+					</div>
+					<div class="inr right">
+						<a href="#"><img
+							src="https://image.hanatour.com/usr/static/img/pc/temp/temp_man_item11_01.png"
+							title="" data-src="" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+		<div class="inr">
+			<div class="service_info_wrap">
+				<div class="fl">
+					<dl>
+						<dt style="width: 250px;">아이티윌투어 모바일앱을 소개 합니다.</dt>
+						<dd>
+							<div class="notice_list swiper-container v-swiper2">
+								<div class="swiper-wrapper"></div>
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<div class="fr">
+					<ul class="sns_list">
+						<li><a href="#"
+							target="_blank" class="facebook">facebook</a></li>
+						<li><a href="#"
+							target="_blank" class="instagram">instagram</a></li>
+						<li><a href="#" target="_blank"
+							class="blog">blog</a></li>
+						<li><a href="#" target="_blank"
+							class="kakaoplus">kakaoplus</a></li>
+						<li><a href="#"
+							target="_blank" class="youtube">youtube</a></li>
+						<li><a href="#"
+							target="_blank" class="kakaostory">kakaostory</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="company_info_wrap">
+				<div class="fl">
+					<ul class="company_provision">
+						<li><a
+							href="http://www.hanatourcompany.com/kor/main/main.asp?hanacode=main_bottom_01"
+							target="_blank">회사소개</a></li>
+						<li><a href="/els/prv/CHPC0PRV0004M200">이용약관</a></li>
+						<li><a href="/els/prv/CHPC0PRV0002M200"><strong>개인정보처리방침</strong></a></li>
+						<li><a href="/els/prv/CHPC0PRV0003M200">여행약관</a></li>
+						<li><a href="/els/etc/CHPC0ETC0008M200">해외여행자보험</a></li>
+						<li><a href="/els/etc/CHPC0ETC0001M200">마케팅제휴</a></li>
+						<li><a href="/els/etc/CHPC0ETC0004M200">공식인증예약센터 검색</a></li>
+					</ul>
+					<div>
+						<address>
+							<span><strong>(주)아이티윌투어</strong></span><span>대표 : 115기 3조</span><span>주소
+								: 서울특별시 강남구 테헤란로 124 4층 (역삼동, 삼원타워)</span>
+						</address>
+						<p>
+							<span>사업자등록번호 : 220-86-20171</span><span><a
+								href="http://www.ftc.go.kr/info/bizinfo/communicationList.jsp"
+								target="_blank">사업자정보확인</a></span><span>통신판매업신고번호 : 강남 제-3339호</span><span>관광사업자
+								등록번호 : 제1993-000006호</span>
+						</p>
+						<p>
+							<span>개인정보 보호책임자 : 115기 3조</span><span>영업보증보험 : 22억 1천만원 가입</span><span>팩스:
+								02-569-8069</span><span>이메일 : itwilltour@itwilltour.com</span><span><strong
+								class="customer_center"><span>고객센터</span>  02-6255-8061</strong></span>
+						</p>
+						<p class="guide_txt">
+							※ 부득이한 사정에 의해 여행일정이 변경되는 경우 사전 동의를 받습니다.<br> ※ 아이티윌투어는 개별
+							항공권 단독 판매에 대하여 통신판매중개자로서 통신판매의 당사자가 아니며 해당상품의 거래정보 및 거래등에 대해 책임을
+							지지 않습니다.
+						</p>
+						<p class="copy">COPYRIGHTⓒ ITWILLTOUR SERVICE INC. ALL RIGHTS
+							RESERVED</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+          <div class="certification_mark">
+          <div class="list_merit">
+          <div class="award_list_wrap">
+          <div class="award_list swiper-container v-swiper2"> 
+		  <div class="swiper-wrapper">
+          
+          <div id="show5">
+         	  <div class="item swiper-slide"><span>
+			  <img src="https://image.hanatour.com/usr/static/img/pc/com/award-logo-01.png" alt="로고"></span>대한민국<br>100대 브랜드</div>
+	          <div class="item swiper-slide"><span><img src="https://image.hanatour.com/usr/static/img/pc/com/award-logo-02.png" alt="로고"></span>
+	          한국능률협회선정<br>15년연속(2005~2019)<br>브랜드파워 1위</div> 
+	          <div class="item swiper-slide"><span><img src="https://image.hanatour.com/usr/static/img/pc/com/award-logo-03.png" alt="로고"></span>
+	          브랜드스톡선정<br>15년연속(2005~2019)<br>브랜드스타 1위</div> 
+	          <div class="item swiper-slide"><span><img src="https://image.hanatour.com/usr/static/img/pc/com/award-logo-04.png" alt="로고"></span>
+	          KMAC 선정<br>11년 연속(2009~2019)<br>한국산업의 고객만족도 여행사부문1위</div> 
+          </div>
+          
+          <div id="show6" style="display: none;">
+	          <div class="item swiper-slide"><span><img src="https://image.hanatour.com/usr/static/img/pc/com/award-logo-05.png" alt="로고"></span>
+	          국가고객만족도(NCSI)<br>여행사 서비스업 부문 6년 연속 1위<br>(2014~2019)</div> 
+	          <div class="item swiper-slide"><span><img src="https://image.hanatour.com/usr/static/img/pc/com/award-logo-06.png" alt="로고"></span>
+	          한국능률협회선정<br>12년연속 (2017~2019)<br>한국에서 가장 존경받는 기업 대상</div> 
+	          <div class="item swiper-slide"><span><img src="https://image.hanatour.com/usr/static/img/pc/com/award-logo-07.png" alt="로고"></span>
+	          2016<br>존경받는사회공헌기업대상<br>메세나ㆍ문화예술부문 대상</div> 
+	          <div class="item swiper-slide"><span><img src="https://image.hanatour.com/usr/static/img/pc/com/award-logo-12.png" alt="로고"></span>
+	          2017 제5회<br>사랑의열매<br>기부 분야 금상 수상</div>
+	      </div>
+          </div></div> 
+          
+          <a onclick="show5();" href="javascript:void(0);" class="btn_prev">이전보기</a>
+          <a onclick="show6();" href="javascript:void(0);" class="btn_next">다음보기</a></div> 
+          
+          <ul class="travel_mark"><li><a href="http://tourinfo.or.kr/standard/standard_01.asp" target="_blank">
+          <span><img src="https://image.hanatour.com/usr/static/img/pc/com/mark_01.png" alt="mark"></span>국외여행상품 정보제공 표준안 참여여행사</a></li> 
+          <li><a style="cursor:pointer"><span><img src="https://www.eprivacy.or.kr/images/mng/sub/mark1_eprivacy.png" alt="mark"></span>
+          개인정보보호우수사이트</a></li> <li><a href="http://www.kca.go.kr/ccm/certSystemOutlineView.do" target="_blank">
+          <span><img src="https://image.hanatour.com/usr/static/img/pc/com/mark_03.png" alt="mark"></span>CCM</a></li></ul></div></div></div></div> <!----> 
+          <div id="printArea">
+          </div>
 </body>
 
 </html>

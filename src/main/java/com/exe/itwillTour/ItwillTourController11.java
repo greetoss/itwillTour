@@ -30,10 +30,10 @@ public class ItwillTourController11 {
 	public String itwillTour11(HttpSession session, Model model) {
 		
 		//test
-		session.setAttribute("userID", "apple");
+		session.setAttribute("sessionUserId", "apple");
 		//test
 		
-		String id = (String) session.getAttribute("userID");
+		String id = (String) session.getAttribute("sessionUserId");
 		
 		model.addAttribute("userInfo", serv.getUserInfo(id));
 		return "itwillTour10to19/itwillTour11";
@@ -46,6 +46,7 @@ public class ItwillTourController11 {
 		String uploadPath = multi.getSession().getServletContext().getRealPath("/").replace(".metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\", "")+"src\\main\\webapp\\resources\\upload\\";
 		
 		Map<String, String> paramMap = new HashMap<String, String>();
+		paramMap.put("user_id", multi.getParameter("user_id"));
 		paramMap.put("user_name", multi.getParameter("user_name"));
 		paramMap.put("user_tel", multi.getParameter("user_tel"));
 		paramMap.put("user_email", multi.getParameter("user_email"));

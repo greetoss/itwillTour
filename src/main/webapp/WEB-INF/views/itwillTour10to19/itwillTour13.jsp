@@ -134,7 +134,7 @@
 				</div>
 
 				<c:set var="qna2" value="${qna2Info}"/>
-				<c:if test="${qna2 eq null}">
+				<c:if test="${qna2.size() eq 0}">
 					<table id="content_div3_table" width="100%">
 						<tr>
 							<td>

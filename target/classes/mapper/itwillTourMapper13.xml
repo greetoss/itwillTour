@@ -13,7 +13,7 @@
 		from qna2 b
 		join member a
 		on a.username=b.qna2username and (a.usertel=b.qna2usertel or a.useremail=b.qnauseremail)
-		where a.username = #{name} order by qna2created desc
+		where a.userid = #{id} order by qna2created desc
 	</select>
 	
 	<delete id="deleteQna2" parameterType="string">

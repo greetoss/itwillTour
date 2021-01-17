@@ -17,11 +17,11 @@ public class ItwillTourService13 {
 	@Autowired
 	ItwillTourDAO13 dao;
 	
-	public List<Map<String, String>> getQna2Info(String name) {
-		return dao.getQna2Info(name);
+	public List<Map<String, String>> getQna2Info(String id) {
+		return dao.getQna2Info(id);
 	}
 	
-	public String deleteQna2(String qna2no) {
+	public int deleteQna2(String qna2no) {
 		
 		return dao.deleteQna2(qna2no);
 	}

@@ -28,17 +28,19 @@ public class ItwillTourController13 {
 	@Autowired
 	ItwillTourService13 serv;
 	
+	String returnPath = "";
+	
 	@RequestMapping ("/itwillTour13")
 	public String itwillTour13 (HttpSession session, Model model,HttpServletRequest request) {
 		
 		
 		//test
-		session.setAttribute("userName", "유재석");
+		session.setAttribute("sessionUserId", "apple");
 		//test
 		
 		System.out.println("접속");
-		String name = (String) session.getAttribute("userName");
-		model.addAttribute("qna2Info", serv.getQna2Info(name));
+		String id = (String) session.getAttribute("sessionUserId");
+		model.addAttribute("qna2Info", serv.getQna2Info(id));
 		
 		String delete = request.getParameter("delete");
 		System.out.println("딜리트값: "+ delete + " 입니다");
@@ -46,9 +48,12 @@ public class ItwillTourController13 {
 		if(request.getParameter("delete")!=null&&delete.equals("delete")) {
 			String qna2no = request.getParameter("qna2no");
 			serv.deleteQna2(qna2no);
+			returnPath = "redirect:itwillTour13";
+		} else {
+			returnPath = "itwillTour10to19/itwillTour13";
 		}
 		
-		return "/itwillTour10to19/itwillTour13";
+		return returnPath;
 		
 	}
 	

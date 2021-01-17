@@ -80,6 +80,8 @@
 			
 			$banner.css("width", $bannerWidth * $bannerLength + "px");
 			$banner.css("height", $bannerHeight + "px");
+
+
 			$banner.animate({left: - $bannerWidth + "px"}, 200, function() {
 
 				$(this).append("<li>" + $(this).find("li:first").html() + "</li>");

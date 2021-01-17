@@ -32,8 +32,8 @@ public class ItwillTourController12 {
 
 	@Autowired
 	ItwillTourService12 serv;
-	ItwillTourDTO12 itwillTourDTO12;
 	String notice = "notice";
+	ItwillTourDTO12 ItwillTourDTO12;
 
 	@RequestMapping("/itwillTour12")
 	public String itwillTour12 (Model model,

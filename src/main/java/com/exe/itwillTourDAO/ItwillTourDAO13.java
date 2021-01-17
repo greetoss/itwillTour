@@ -9,9 +9,9 @@ import com.zaxxer.hikari.HikariConfig;
 @Repository
 public interface ItwillTourDAO13 {
 	
-	String deleteQna2(String qna2no);
+	int deleteQna2(String qna2no);
 	
-	List<Map<String, String>> getQna2Info(String name);
+	List<Map<String, String>> getQna2Info(String id);
 	
 
 }
