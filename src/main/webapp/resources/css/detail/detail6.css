@@ -1,0 +1,908 @@
+@charset "utf-8";
+/*
+<UPLEAT> UI Dev Team
+{Oh Young Ju}, {An Se Jung}, {Lee Yun Hee}, Hwang Mi Ae, Kim So Young, Cho Han Sol, {Kang Young Sun}
+commnet : pc pkg
+ */
+ /* =Visual_wrap */
+ hr.pkg{height:1px;background-color:#eaeaea;border:0 none}
+.prod_brief .package_info_list .item:before, .meeting_detail .text_wrap .tit:before, .icn_pkg:before, .keypoints>.tabs>li:before,
+.schedule_detail .detail_wrap .tit.mid span:before, .additional_area .tit:before, .option_detail li .text_wrap:before, .exhibition_benefit strong.tit:before, .tab_category li .item:before, .promotion_box .img_tit strong:before, .promotion_box .promo_tit:before, .print_area .keypoints .cont_keypoints .item p.tit:before,
+.trabiz_list .type li:before
+{display:inline-block;content:'';background-repeat:no-repeat;background-image:url('https://image.hanatour.com/usr/static/img/pc/pkg/spr_pkg.png')}
+.hotel_benefit span:before{display:inline-block;content:'';background-repeat:no-repeat;background-image:url('https://image.hanatour.com/usr/static/img/pc/com/spr_htl.png')}
+.icn_pkg{position:relative}
+.icn_pkg.include:before{width:18px;height:18px;position:absolute;top:0;left:0;background-position:-162px 0}
+.icn_pkg.undecided:before{width:23px;height:18px;position:absolute;top:2px;left:0;background-position:-322px 0}
+.icn_pkg.except:before{width:18px;height:18px;position:absolute;top:0;left:0;background-position:-182px 0}
+.icn_pkg.select:before{width:18px;height:18px;position:absolute;top:0;left:0;background-position:-202px 0}
+
+.tbl td > .btn.sml{min-width:86px}
+.tbl td .form_holder + .form_holder.text{margin:0 0 0 8px}
+.tbl td .form_holder + .form_holder.text label{height:42px;margin:0;line-height:30px}
+/*prod_brief*/
+.prod_brief{margin:50px 0 60px}
+.prod_brief .package_info_list{margin-top:23px;padding-left:10px}
+.prod_brief .package_info_list:after{content:'';display:block;clear:both}
+.prod_brief .package_info_list .item{display:inline-block;float:left;padding-top:32px;position:relative}
+.prod_brief .package_info_list .item:before{display:block;content:'';width:25px;height:25px;position:absolute;top:0;left:50%;margin-left:-12.5px}
+.prod_brief .package_info_list .item.item01:before{background-position:0 0}
+.prod_brief .package_info_list .item.item02:before{background-position:-27px 0}
+.prod_brief .package_info_list .item.item02.off:before{background-position:-27px -27px}
+.prod_brief .package_info_list .item.item03:before{background-position:-54px 0}
+.prod_brief .package_info_list .item.item03.off:before{background-position:-54px -27px}
+.prod_brief .package_info_list .item.item04:before{background-position:-81px 0}
+.prod_brief .package_info_list .item.item05:before{background-position:-108px 0}
+.prod_brief .package_info_list .item.item06:before{background-position:-135px 0}
+.prod_brief .package_info_list .item.item07:before{background-position:-359px 0}
+.prod_brief .package_info_list .item .tooltiptext{width:200px}
+.prod_brief .package_info_list .item + .item{margin-left:30px}
+.prod_brief .package_info_list .item .tit{font-size:13px;line-height:20px;color:#333}
+
+.prod_brief + .banner_wrap{margin:60px 0 35px;overflow:hidden}
+.prod_brief + .banner_wrap a{float:left;margin-left:10px}
+.prod_brief + .banner_wrap a:first-child{margin-left:0}
+
+/* prod_brief_thumb img */
+.prod_brief .swiper-slide {/*display:flex*/text-align:center}/*IE스와이프 가운데정렬 flex 주석처리*/
+.prod_brief .swiper-slide img{object-fit:cover}
+
+/* swiper */
+.prod_brief .swiper-container.bar .swiper-pagination{width:auto;height:2px;background-color:rgba(255,255,255,.45);top:auto;bottom:20px;left:40px;right:40px}
+.prod_brief .swiper-container.bar .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{background-color:rgba(255,255,255,1)}
+
+.prod_detail{border-top:2px solid #111;position:relative}
+.prod_detail > .inr{width:895px;padding:40px 24px 0 0;border-right:1px solid #ddd}
+.prod_detail > .inr.right{width:305px;padding:0 0 0 20px;border:none;background-color:#fff}
+
+.prod_detail > .inr.right>.cont_unit{position:relative;width:285px;height:auto;min-height:720px;padding-top:24px;margin:0;background-color:#fff}
+.prod_detail > .inr.right>.text_wrap.big{margin:30px 0 0!important}
+.prod_detail > .inr.right>.cont_unit.js_sticky.fixed{position:fixed;top:0;width:285px;overflow:hidden}
+.prod_detail > .inr.right>.cont_unit.js_sticky.absolute{position:absolute;top:auto;bottom:0}
+/* .prod_detail > .inr.right>.cont_unit.js_sticky .cont_unit{position:absolute;left:0;right:0;bottom:0;margin:0;background-color:#fff} */
+/* .prod_detail > .inr.right>.cont_unit.js_sticky.fixed .cont_unit{} */
+.prod_detail .tooltiptext{min-width:200px}
+.prod_detail .tooltiptext .txt.billiard{display:block}
+.prod_detail > .inr.right .member_count .tooltiptext{min-width:180px;margin-left:17px}
+.mileage_save a.txt{display:block;font-size:15px;font-weight:600;color:#111;line-height:24px}
+.total_money .mileage_save a.txt{font-size:13px;font-weight:400}
+.total_money .mileage_save .icn.mileage{top:-12px}
+.mileage_save a.txt.arrow_r:after{top:6px}
+.mileage_save .icn.mileage{top:-12px;margin-left:2px}
+.mileage_save p:not(.txt){font-size:15px;color:#111;line-height:24px}
+.mileage_save p .icn.mileage{margin-left:2px;margin-right:5px}
+.mileage_save p.txt{font-size:13px;color:#888;line-height:32px}
+.counsel_wrap{position:relative;margin-top:15px;padding:15px;background:#f7f7f7;text-align:right}
+.counsel_wrap .tit{position:absolute;display:block;top:15px;left:15px;color:#111;text-align:left;line-height:18px;width:120px;height:40px;word-break:break-all}
+.counsel_wrap strong{display:inline-block;width:170px;color:#111;font-size:20px;font-weight:600;line-height:18px}
+.counsel_wrap .num{display:block;font-size:17px;color:#111;line-height:24px}
+.counsel_wrap p{margin-top:25px;padding-left:20px;font-size:13px;text-align:left;line-height:19px}
+.counsel_wrap .num + p{margin-top:10px}
+.counsel_wrap p .icn.watch{position:absolute;left:0}
+.benefit_link{margin:15px 0;text-align:center;line-height:24px}
+.benefit_link a{margin:0 5px;font-weight:600;color:#111}
+
+.total_money{text-align:right;position:relative;padding:0 0 15px}
+.total_money .tit{font-size:15px;color:#111;font-weight:600;position:absolute;top:1px;left:0}
+.total_money a.txt{line-height:22px}
+.total_money .price{font-size:32px;color:#ec2471;font-weight:600;margin:8px 0 3px;line-height:32px}
+.total_money .price span{font-size:20px}
+.total_money .txt.s{color:#888}
+
+.price_info{border:1px solid #e3e3e3;padding:9px 10px 8px;text-align:center}
+.price_info > a{display:inline-block;margin:0 auto;font-size:13px;color:#111}
+.price_info > a:after{width:20px;height:20px;margin:-3px 0 0 8px;background-position:-382px -52px;vertical-align:top}
+.price_info > a.on:after{background-position:-360px -52px}
+.price_info .list_bul{text-align:left;margin-top:10px;display:none}
+.price_info .list_bul.on{display:block}
+.price_info .list_bul li:not(:first-child){margin-top:4px}
+
+.partner_info .list_bul.type2{display:inline-block;width:210px}
+.partner_info .list_bul.type2+.list_bul.type2{padding-left:40px;border-left:1px #ddd solid}
+
+/* 패키지공통정리 */
+.prod_detail .cont_unit .js_tabs{margin-top:30px;border-bottom:none}
+.prod_detail .panels .text_wrap:first-child{margin-top:0}
+.prod_detail .panels .text_wrap .tit.exclam{margin-bottom:8px;line-height:22px}
+.prod_notice:not(:first-child){margin-top:30px}
+.prod_notice .list_bul li{line-height:25px}
+.prod_notice .list_bul.billiard>li{font-size:14px;color:#666}
+.prod_notice .list_bul.nostyle > li{font-size:14px;color:#666}
+.prod_notice .list_bul.nostyle > li strong.tit{display:block;margin-top:25px;font-size:15px;font-weight:600}
+.prod_notice .list_bul.nostyle > li:first-child strong.tit{margin-top:0}
+.prod_notice .list_bul.nostyle > li .list_bul > li{font-size:15px}
+.prod_notice .list_bul.billiard + .list_bul{margin-top:20px}
+.prod_detail > .inr .sch_md_banner01{margin-bottom:30px}
+.prod_detail > .inr .cont_unit{margin-top:0;margin-bottom:40px}
+.prod_detail .cont_unit > .text_wrap.big{margin:40px 0 24px}
+.prod_detail .cont_unit > .text_wrap.big strong.tit{line-height:32px}
+.prod_detail .cont_unit > .text_wrap.big:first-child{margin-top:0}
+.prod_detail .cont_unit .text_wrap .list_bul.disc>li{color:#666}
+.prod_detail #visit01 , .prod_detail #visit02,
+.prod_detail #shopping01 , .prod_detail #shopping02 , .prod_detail #shopping03 {height:350px;overflow-y:auto} 
+
+.prod_detail #visit02{white-space:pre-line}
+/* 여행일정 */
+.cont_unit.summary dt{display:inline-block;width:110px;margin-top:20px;font-size:15px;font-weight:600;color:#111;line-height:26px;vertical-align:top}
+.cont_unit.summary dd{display:inline-block;width:660px;margin-top:20px;vertical-align:top;line-height:26px}
+.cont_unit.summary dd .txt.exclam{margin:9px 0 7px;font-size:13px;line-height:20px}
+.cont_unit.summary dd .txt.exclam:before{top:3px}
+.cont_unit.summary dd .night_days, .cont_unit.summary dd .air_name,
+.cont_unit.summary dd .air_info{font-size:15px;line-height:26px}
+.cont_unit.summary dd .air_info .info{font-size:13px}
+.cont_unit.summary dd .air_info .info .flight{display:inline-block;margin-right:10px;color:#5e9acd}
+.cont_unit.summary dd .air_info .air_time em{color:#111}
+.cont_unit.summary dd .txt.arrow_r{margin-left:10px;color:#888;text-decoration:underline}
+.cont_unit.summary dd .txt.arrow_r:after{background-position:-53px 0}
+.cont_unit.summary dd.state .info{display:inline-block;margin-right:15px}
+.cont_unit.summary dd.state .tooltiptext{width:360px}
+.cont_unit.summary dt:first-child, .cont_unit.summary dt:first-child + dd{margin-top:0}
+.cont_unit.price table th:last-child .tooltiptext{left:-150px;width:300px}
+.cont_unit.price table .price{font-size:20px;font-weight:600;line-height:26px}
+.cont_unit.price table .price span{font-size:18px}
+.cont_unit.price table .price.pre{display:block;font-size:12px;font-weight:400;color:#666;text-align:center;line-height:18px;text-decoration:line-through}
+.cont_unit.price table tfoot td{border-top:1px solid #ddd;font-size:17px;font-weight:600;color:#111}
+
+/* 인원선택 pkg-0200 */
+.prod_detail > .inr.right .btn_wrap{margin-top:0;text-align:left}
+.prod_detail > .inr.right .btn_wrap .btn+.btn{margin-left:0;float:right}
+.prod_detail > .inr.right .btn_wrap .btn:first-child{width:221px}
+.prod_detail > .inr.right .btn_wrap .btn:last-child{width:54px;;min-width:54px;padding:0}
+.prod_detail > .inr.right .btn_wrap .btn .icn.cart{top:10px;vertical-align:top}
+.prod_detail > .inr.right .btn_wrap .btn.blue{border:1px solid #5e99cb;background:#5e99cb;color:#fff}
+
+.prod_detail > .inr.right .cont_unit.foot .btn_wrap{display:table;width:100%}
+.prod_detail > .inr.right .cont_unit.foot .btn_wrap .btn{display:table-cell;line-height:25px;vertical-align:middle}
+.prod_detail > .inr.right .cont_unit.foot .btn_wrap .btn:first-child{width:221px}
+.prod_detail > .inr.right .cont_unit.foot .btn_wrap .btn:last-child{width:56px}
+.prod_detail > .inr.right .cont_unit.foot .btn_wrap .btn.blue span{display:block;font-size:14px;line-height:20px}
+.prod_detail > .inr.right .cont_unit.foot .btn_wrap span.btn .icn.cart:before{background-position:-316px -27px}
+
+/* 핵심포인트 */
+.js_tabs.keypoints{margin:32px 0 0}
+.js_tabs.keypoints>.tabs{float:left;width:140px}
+.js_tabs.keypoints>.tabs:after{left:138px}
+.js_tabs.keypoints>.tabs>li{height:74px;margin-top:0;padding-top:14px}
+.js_tabs.keypoints>.tabs>li:first-child{padding-top:0;height:60px}
+.js_tabs.keypoints>.tabs>li:before{width:60px;height:60px;content:'';display:block;position:absolute;top:14px;left:0;border-radius:10px 0 10px 10px}
+.js_tabs.keypoints>.tabs>li.selected:before{background-color:#e5236d}
+.js_tabs.keypoints>.tabs>li:after{top:14px;height:60px}
+.js_tabs.keypoints>.tabs>li.selected:after{right:0;width:4px;background-color:#e5236d}
+.js_tabs.keypoints>.tabs>li a{padding-left:77px;font-size:17px;line-height:58px}
+.js_tabs.keypoints>.tabs>li.tour:before{background-position:0 -140px}
+.js_tabs.keypoints>.tabs>li.tour.selected:before{background-position:0 -78px}
+.js_tabs.keypoints>.tabs>li.meal:before{background-position:-62px -140px}
+.js_tabs.keypoints>.tabs>li.meal.selected:before{background-position:-62px -78px}
+.js_tabs.keypoints>.tabs>li.hotel:before{background-position:-124px -140px}
+.js_tabs.keypoints>.tabs>li.hotel.selected:before{background-position:-124px -78px}
+.js_tabs.keypoints>.tabs>li.insurance:before{background-position:-186px -140px}
+.js_tabs.keypoints>.tabs>li.insurance.selected:before{background-position:-186px -78px}
+.js_tabs.keypoints>.tabs>li.transfer:before{background-position:-310px -140px}
+.js_tabs.keypoints>.tabs>li.transfer.selected:before{background-position:-310px -78px}
+.js_tabs.keypoints>.tabs>li.leader:before{background-position:-434px -140px}
+.js_tabs.keypoints>.tabs>li.leader.selected:before{background-position:-434px -78px}
+.js_tabs.keypoints>.tabs>li.guide:before{background-position:0 -264px}
+.js_tabs.keypoints>.tabs>li.guide.selected:before{background-position:0 -202px}
+.js_tabs.keypoints>.tabs>li.golf:before{background-position:-372px -140px}
+.js_tabs.keypoints>.tabs>li.golf.selected:before{background-position:-372px -78px}
+.js_tabs.keypoints>.tabs>li.bene:before{background-position:-248px -140px}
+.js_tabs.keypoints>.tabs>li.bene.selected:before{background-position:-248px -78px}
+.js_tabs.keypoints>.tabs>li.safetyjoy:before{background-position:-496px -140px}
+.js_tabs.keypoints>.tabs>li.safetyjoy.selected:before{background-position:-496px -78px}
+.js_tabs.keypoints>.tabs>li.safetyjoy a {padding-top:7px;line-height:20px;}
+.keypoints>.panels{float:left;width:730px;margin-left:-2px;padding-left:30px;border-left:1px solid #e7e7e7}
+.keypoints .cont_keypoints .text_wrap{margin:30px 0 0}
+.keypoints .cont_keypoints .text_wrap:first-child{margin-top:0}
+.keypoints .cont_keypoints .text_wrap .tit{margin-bottom:10px;font-weight:600;line-height:1}
+.keypoints .list_bul>li{font-size:14px;color:#666}
+.keypoints .cont_keypoints > div:not(:first-child){margin-top:30px;padding-top:25px;border-top:1px dashed #d2d2d2}
+.keypoints .cont_keypoints .list_point{position:relative;min-height:110px;padding-left:180px}
+.keypoints .cont_keypoints .list_point .img_box{position:absolute;left:0;top:0;width:160px;height:110px}
+.keypoints .cont_keypoints .list_point .img_box.qrcode{border:1px solid #ddd;text-align:center;height:112px;overflow:hidden}
+.keypoints .cont_keypoints .list_point .img_box.qrcode img{width:110px;height:110px;vertical-align:middle}
+.keypoints .cont_keypoints .list_point .text_wrap{margin:0}
+.js_tabs.keypoints.fixed > .tabs{width:140px;position:fixed;top:0;z-index:1}
+.js_tabs.keypoints.fixed > .panels{float:none;padding-left:170px;width:870px}
+
+.prod_expense{margin-top:30px}
+.prod_expense:after{content:'';display:block;clear:both}
+.prod_expense dt{float:left;margin-top:22px}
+.prod_expense dt:first-child, .prod_expense dt:first-child + dd{margin-top:0}
+.prod_expense dt{display:table-cell;width:170px;font-size:17px;color:#111;position:relative}
+.prod_expense dt .icn_pkg{padding-left:28px}
+.prod_expense dt .icn_pkg:before{top:5px}
+.prod_expense dd{padding-left:170px;margin-top:22px}
+.prod_expense dd strong{display:block;font-size:15px;line-height:24px;color:#111;font-weight:600; color:333}
+.prod_expense dd p + strong{margin-top:15px}
+.prod_expense dd p{margin-top:5px;font-weight:400;color:#666;line-height:22px}
+
+.prod_terms > p{line-height:24px}
+.prod_terms dl{margin:10px 0 35px}
+.prod_terms dt{font-size:15px;line-height:25px;color:#111;font-weight:600;margin-top:10px}
+.prod_terms dd{color:#333;line-height:26px}
+
+.prod_meetinginfo{margin-top:30px}
+.prod_meetinginfo > dl{overflow:hidden}
+.prod_meetinginfo > dl dt{float:left;width:110px;margin-top:15px;font-size:15px;font-weight:600;color:#111}
+.prod_meetinginfo > dl dd{margin-top:15px;color:#333}
+.prod_meetinginfo dt:first-child, .prod_meetinginfo dt:first-child + dd{margin-top:0}
+.meeting_detail{border:1px solid #e5236d;padding:25px;margin-top:30px}
+.meeting_detail .text_wrap{margin:0 0 15px 0}
+.meeting_detail .text_wrap .tit{display:inline-block;margin-top:8px;color:#111;font-size:17px;font-weight:400}
+.meeting_detail .text_wrap .tit:before{width:14px;height:16px;margin:-4px 8px 0 0;background-position:-22px -55px;vertical-align:middle}
+.meeting_detail dl{font-size:15px;font-weight:600;color:#333}
+.meeting_detail dt{float:left;margin:1px 10px 0 0;line-height:24px}
+.meeting_detail dd{margin-top:1px;padding-left:45px;line-height:24px}
+.meeting_detail dd span{font-size:14px;font-weight:400;color:#333}
+.meeting_detail .list_bul{margin-top:13px}
+.meeting_detail .list_bul li{margin-top:3px}
+.prod_meetinginfo dd:after, .meeting_detail dd:after{content:'';display:block;clear:both}
+
+.prod_info_wrap{padding:0}
+.prod_info_wrap > .js_tabs{margin-bottom:0;border-bottom:1px solid #111}
+.prod_info_wrap > .js_tabs .tabs>li{height:56px;border-bottom:none}
+.prod_info_wrap > .js_tabs .tabs>li:after{display:none}
+.prod_info_wrap > .js_tabs .tabs>li>a{font-size:17px;line-height:54px}
+
+.cont_unit.schedule{margin-top:0 !important}
+.cont_unit.schedule .js_tabs_wrap{position:relative;margin-bottom:30px;border-bottom:1px solid #dedede;background-color:#fff}
+.js_tabs.js_sticky.fixed .panel.selected .cont_unit.schedule .js_tabs_wrap{position:fixed;width:870px;top:59px;z-index:10}
+.cont_unit.schedule .js_tabs_wrap a.btn{position:absolute;right:0;top:7px;height:32px;font-size:13px;color:#333;line-height:30px}
+.cont_unit.schedule .js_tabs.type2{height:47px;padding:0;margin:0 100px 0 0}
+.cont_unit.schedule .js_tabs.type2.overflow{padding:0 36px}
+.cont_unit.schedule .js_tabs.type2>a{height:47px;display:none}
+.cont_unit.schedule .js_tabs.type2.overflow>a{display:block}
+.cont_unit.schedule .js_tabs.type2 .tabs li>a{height:46px;font-size:15px;line-height:44px}
+.cont_unit.schedule .js_tabs.type2 .tabs>li + li{margin-left:30px}
+.cont_unit.schedule .js_tabs.type2.swiper-container-horizontal .tabs>li + li{margin:0}
+.cont_unit.schedule .js_tabs.type2 .tabs li>a:after{display:none}
+.cont_unit.schedule .js_tabs.type2 .tabs li>a span{display:inline-block;line-height:47px;padding:0 2px}
+.cont_unit.schedule .js_tabs.type2 .tabs li {height:47px}
+.cont_unit.schedule .js_tabs.type2 .tabs li a {line-height:47px}
+.cont_unit.schedule .js_tabs.swiper-container.type2>a.prev:before{background-position:-234px -52px}
+.cont_unit.schedule .js_tabs.swiper-container.type2>a.next:before{background-position:-243px -52px}
+
+.cont_unit.schedule > .text_wrap{margin-top:0;-webkit-transition:margin-top .3s ease-out;-moz-transition:margin-top .3s ease-out;transition:margin-top .3s ease-out}
+.js_sticky.fixed .cont_unit.schedule > .text_wrap{padding-top:40px}
+.js_sticky.fixed .cont_unit.schedule > .text_wrap .tit.exclam{position:relative}
+.cont_unit.schedule .text_wrap p.tit{font-size:15px}
+.cont_unit.schedule .text_wrap p{margin-top:0;color:#888}
+
+.cont_unit.schedule .js_acc{margin-top:30px;border-top:none}
+.cont_unit.schedule .js_acc .inr{float:none;width:100%}
+.cont_unit.schedule .daylist{position:relative;height:77px;padding-left:170px;border-top:1px solid #dfdfdf;border-bottom:1px solid #dfdfdf;background:#f2f4f7;color:#888}
+.cont_unit.schedule .js_acc .inr:not(:last-child) .daylist{margin-bottom:30px}
+.cont_unit.schedule .daylist:after{top:33px;width:14px;height:10px;background-position:-162px -41px}
+.cont_unit.schedule .daylist.active{border-top-color:#5b6070}
+.cont_unit.schedule .daylist.active:after{background-position:-162px -30px}
+.cont_unit.schedule .daylist strong{display:block;font-size:15px;color:#111;font-weight:600}
+.cont_unit.schedule .daylist p{margin-top:5px}
+.cont_unit.schedule .daylist .tit_left{position:absolute;left:0;top:-1px;width:148px;height:77px;padding-left:25px;background:#5b6070;font-weight:600;color:#fff}
+.cont_unit.schedule .daylist .tit_left strong{padding:15px 0 10px;font-size:20px;color:#fff}
+.cont_unit.schedule .js_acc .view{padding:0;border-bottom:none}
+.cont_unit.schedule .route_wrap{padding-bottom:20px;border-bottom:1px solid #eaeaea;margin-bottom:15px}
+.cont_unit.schedule .route_wrap .add_day{top:10px;right:5px}
+.cont_unit.schedule .meeting_detail:first-child{position:relative;margin-bottom:40px}
+.cont_unit.schedule .meeting_detail:first-child:after{content:'';position:absolute;left:0;right:0;bottom:-23px;height:1px;background:#ddd}
+.schedule_detail .detail_wrap{position:relative}
+.schedule_detail .detail_wrap:before{content:'';position:absolute;left:16px;top:0;bottom:0;width:1px;background:#eaeaea}
+.schedule_detail .detail_wrap .detail{position:relative}
+.schedule_detail .detail_wrap .tit{display:block;position:relative;margin-top:20px;padding-left:51px;font-size:17px;font-weight:600;color:#111}
+.schedule_detail .detail_wrap .tit:before{content:'';position:absolute;left:13px;top:9px;width:7px;height:7px;border-radius:50%;background-color:#c2c2c2}
+.schedule_detail .detail_wrap .tit.mid{display:block;position:relative;margin-top:25px;padding-left:0;font-size:20px;line-height:34px}
+.schedule_detail .detail_wrap .tit.mid:before{content:'';display:inline-block;position:absolute;left:0;top:0;width:34px;height:34px;border-radius:50%;box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.1);background-color:#ffffff}
+.schedule_detail .detail_wrap .tit.mid span{display:block;position:relative;padding-left:51px}
+.schedule_detail .detail_wrap .tit.mid span:before{position:absolute;top:7px;left:7px;width:20px;height:20px;background-position:0 -55px}
+.schedule_detail .detail_wrap .route{position:relative;margin-top:20px;padding-left:51px;color:#333;line-height:24px;text-align:left}
+.schedule_detail .detail_wrap .route:before{content:'';position:absolute;left:13px;top:9px;width:7px;height:7px;border-radius:50%;background:#c2c2c2}
+.schedule_detail .detail_wrap .detail_area{margin-top:10px;padding-left:51px}
+.schedule_detail .detail_wrap .detail_area p.txt{color:#666;line-height:22px}
+.schedule_detail .detail_wrap .detail .text_wrap{margin-top:0}
+.schedule_detail .detail_wrap .detail .btn.gray{position:absolute;right:0;top:-6px}
+.schedule_detail .detail_wrap .detail > p{padding-left:51px}
+/* .schedule_detail .detail_wrap .detail:last-child:after{content:'';position:absolute;left:16px;top:16px;bottom:0;width:1px;background:#fff}
+.schedule_detail .detail_wrap .detail.type:last-child:after{top:110px} */
+.additional_area{position:relative;padding:26px 0 25px 117px;border-top:1px solid #eaeaea}
+.additional_area span.tit{position:absolute;left:0;padding-left:50px;font-size:17px;font-weight:600;color:#111}
+.additional_area span.tit:before{display:block;position:absolute;left:16px;top:-2px;width:30px;height:30px;border-radius:0;background-color:transparent}
+.additional_area span.tit.hotel:before{background-position:-62px -202px}
+.additional_area span.tit.food:before{background-position:-94px -202px}
+.additional_area span.tit.golf:before{background-position:-126px -202px}
+.additional_area .header{border:none;font-size:15px}
+.additional_area .header{padding:0 0 0 0}
+.additional_area .header:after{top:50%;margin-top:-10px}
+.additional_area .header .tit{position:absolute;left:-119px}
+.additional_area .header strong{font-weight:600}
+.additional_area .additional_list{margin-bottom:7px}
+.additional_area .additional_list .link_list{display:block;position:relative;margin-top:18px;padding-left:57px}
+.additional_area .additional_list .link_list:first-child{margin-top:0}
+.additional_area .additional_list .link_list:before{content:'';position:absolute;left:0;top:3px;width:40px;height:40px;font-size:12px;color:#fff;text-align:center;line-height:40px}
+.additional_area .additional_list .link_list .tit{display:inline-block;font-weight:600;color:#333}
+.additional_area .additional_list .link_list .wrap_star{display:inline-block;margin-top:-3px}
+.additional_area .additional_list .link_list p a.txt.line{margin-left:10px;font-size:14px;color:#111}
+.additional_area .additional_list .link_list p.stxt{margin-top:5px}
+.additional_area .additional_list .link_list.ing:before{content:'예정';background-color:#aaa}
+.additional_area .additional_list .link_list.set:before{content:'확정';background-color:#e5236d}
+.additional_area .additional_list .link_list .right_cont{position:absolute;right:0;top:0}
+.additional_area .additional_list .link_list .right_cont .tit{font-weight:600;color:#e5236d}
+.additional_area .list_txt > span{margin-left:24px;font-size:15px}
+.additional_area .list_txt > span:first-child{margin-left:0}
+.additional_area .list_txt > span:before{left:-14px}
+.cont_unit.schedule .detail_area > .additional_area:first-child{margin-top:30px}
+.cont_unit.schedule .detail_area .js_acc:not(:first-child){margin-top:0}
+.cont_unit.schedule .view > .additional_list{padding-top:18px}
+
+.cont_unit.shopping .text_wrap .txt{margin-top:1px;font-size:14px;color:#666}
+.cont_unit.shopping .text_wrap .exclam{margin-top:17px;font-size:15px;font-weight:600;color:#333}
+.cont_unit.shopping .list_bul > li{font-size:14px;color:#333;line-height:25px}
+.cont_unit.shopping .list_bul > li > p{color:#666}
+.cont_unit.shopping .list_bul > li .list_bul.dash > li{color:#666}
+.cont_unit.shopping .banner_wrap:first-child{margin:0 0 30px}
+.cont_unit.shopping .tbl td strong{font-weight:600}
+
+.cont_unit.visit td .plug{display:inline-block;width:60%;text-align:left;vertical-align:middle;float:left}
+.cont_unit.visit td .img_box{display:inline-block;width:40%;height:57px;margin-top:0;float:left}
+
+.cont_unit.visit td .time{display:inline-block;margin-right:10px;font-size:17px;font-weight:600;color:#333}
+.cont_unit.visit .img_box{margin-top:30px}
+.cont_unit.visit .movie_list{margin:-20px 0 0 -20px}
+.cont_unit.visit .movie_list:after{content:'';display:block;clear:both}
+.cont_unit.visit .movie_list li{position:relative;float:left;width:425px;height:297px;margin:20px 0 0 20px;background-color:#f7f7f7}
+.cont_unit.visit .movie_list li img{height:100%}
+.cont_unit.visit .movie_list li a{display:block;position:absolute;left:0;top:0;right:0;bottom:0}
+.cont_unit.visit .movie_list li a:before{content:'';position:absolute;left:0;top:0;right:0;bottom:0;background-color:#111;opacity:.4}
+.cont_unit.visit .movie_list li a:after{content:'';position:absolute;left:50%;top:50%;width:70px;height:70px;margin:-35px 0 0 -35px;background:url(https://image.hanatour.com/usr/static/img/pc/pkg/btn_play.png) no-repeat}
+.cont_unit.visit .movie_list li .data_no{height:297px}
+.cont_unit.visit .movie_list li .data_no .cont strong:before{top:0;width:50px;height:50px;background:url('https://image.hanatour.com/usr/static/img/pc/pkg/img_noplay.png') no-repeat}
+.cont_unit.visit .panel .prod_notice .list_bul.nostyle > li{color:#333}
+.cont_unit.visit .panel .prod_notice .list_bul.nostyle > li .tit{color:#111}
+
+.cont_unit.tour .js_tabs.hotel > .tabs > li{width:33.3333% !important;height:auto;margin-bottom:8px;border:none;text-align:left;line-height:1}
+.cont_unit.tour .js_tabs.hotel li:after{display:none}
+.cont_unit.tour .js_tabs.hotel li.selected>a,
+.cont_unit.tour .js_tabs.hotel li a{margin-left:8px;padding:15px 10px 15px 18px;border:1px solid #ddd;border-radius:4px;font-size:14px;font-weight:400;color:#333;line-height:1}
+.cont_unit.tour .js_tabs.hotel li .city,
+.hotel_detail_wrap .hotel_info .info .tit .city,
+.golf_detail_wrap .golf_info .info .tit .city{display:block;position:relative;padding-left:41px;color:#666;line-height:23px}
+.hotel_detail_wrap .hotel_info .info .tit .city,
+.golf_detail_wrap .golf_info .info .tit .city{display:inline-block;margin-left:5px}
+.cont_unit.tour .js_tabs.hotel li .city:before,
+.hotel_detail_wrap .hotel_info .info .tit .city:before,
+.golf_detail_wrap .golf_info .info .tit .city:before{content:'';position:absolute;left:0;top:3px;width:33px;height:17px;background-color:#aaa;font-size:12px;color:#fff;text-align:center;line-height:17px}
+.cont_unit.tour .js_tabs.hotel li .city.ing:before,
+.hotel_detail_wrap .hotel_info .info .tit .city.ing:before,
+.golf_detail_wrap .golf_info .info .tit .city.ing:before{content:'예정'}
+.cont_unit.tour .js_tabs.hotel li .city.set:before,
+.hotel_detail_wrap .hotel_info .info .tit .city.set:before,
+.golf_detail_wrap .golf_info .info .tit .city.set:before{content:'확정';background-color:#e5236d}
+.cont_unit.tour .js_tabs.hotel li strong{display:block;overflow:hidden;height:20px;margin-top:4px;font-weight:400;color:#333;line-height:18px}
+.cont_unit.tour .js_tabs.hotel li.selected a{border-color:#e5236d}
+.cont_unit.tour .js_tabs.hotel .tabs{margin-left:-8px}
+.cont_unit.tour .js_tabs.hotel .tabs>li + li.selected{margin-left:0}
+.cont_unit.tour .js_tabs.hotel .service_list li strong{margin-bottom:15px;font-weight:600}
+
+.hotel_detail_wrap .hotel_info:after{content:'';display:block;clear:both}
+.hotel_detail_wrap .hotel_info .img_box{float:left;width:380px;height:215px}
+.hotel_detail_wrap .hotel_info .img_box .swiper-slide img{width:380px;height:260px}
+.hotel_detail_wrap .hotel_info .info{float:left;width:460px;margin-left:30px;color:#333}
+.hotel_detail_wrap .hotel_info .info .text_wrap{margin-bottom:12px}
+.hotel_detail_wrap .hotel_info .info .tag_group + .text_wrap, .hotel_detail_wrap .hotel_info .info .linemap + .text_wrap{margin-top:5px}
+.hotel_detail_wrap .hotel_info .info .tit{display:block;font-size:20px;font-weight:600;color:#111;line-height:27px}
+.hotel_detail_wrap .hotel_info .info span:not(.state){font-size:13px;color:#666;line-height:23px}
+.hotel_detail_wrap .hotel_info .info .txt{font-size:14px;color:#333;white-space:pre-line;}
+.hotel_detail_wrap .hotel_info .img_box.pager .total{bottom:9px;right:10px;font-size:12px;letter-spacing:0}
+.hotel_detail_wrap .hotel_benefit{display:block;margin-top:30px}
+.hotel_detail_wrap .hotel_benefit span{display:inline-block;position:relative;width:80px;padding-top:50px;font-size:13px;color:#666;text-align:center;line-height:19px;vertical-align:top;letter-spacing:-1px}
+.hotel_detail_wrap .hotel_benefit span:before{display:inline-block;position:absolute;top:0;left:50%;width:40px;height:40px;margin-left:-20px}
+.hotel_detail_wrap .hotel_benefit span.wifi:before{background-position:0 0}
+.hotel_detail_wrap .hotel_benefit span.swimming:before{background-position:-42px 0}
+.hotel_detail_wrap .hotel_benefit span.spa:before{background-position:-84px 0}
+.hotel_detail_wrap .hotel_benefit span.shuttle:before{background-position:-126px 0}
+.hotel_detail_wrap .hotel_benefit span.fitness:before{background-position:-168px 0}
+.hotel_detail_wrap .hotel_benefit span.kids:before{background-position:-212px 0}
+.hotel_detail_wrap .hotel_benefit span.child:before{background-position:-254px 0}
+.hotel_detail_wrap .hotel_benefit span.beach:before{background-position:-296px 0}
+.hotel_detail_wrap .hotel_benefit span.desk:before{background-position:-338px 0}
+.hotel_detail_wrap .hotel_benefit span.clean:before{background-position:-382px 0}
+.hotel_detail_wrap .tbl{margin-top:31px}
+
+.golf_detail_wrap .golf_info:after{content:'';display:block;width:100%;clear:both}
+.golf_detail_wrap .golf_info .img_box{float:left;width:380px;height:255px}
+.golf_detail_wrap .golf_info .info{float:right;width:460px;color:#333}
+.golf_detail_wrap .golf_info .info .text_wrap{margin-bottom:12px}
+.golf_detail_wrap .golf_info .info .tit{display:block;font-size:20px;font-weight:600;color:#111;line-height:27px}
+.golf_detail_wrap .golf_info .info .tag_group + .text_wrap, .golf_detail_wrap .golf_info .info .linemap + .text_wrap{margin-top:5px}
+.golf_detail_wrap .golf_info .info span:not(.state){font-size:13px;color:#666;line-height:23px}
+.golf_detail_wrap .golf_info .info .txt{font-size:14px;color:#333}
+.golf_detail_wrap .golf_info .img_box.pager .total{bottom:9px;right:10px;font-size:12px;letter-spacing:0}
+.golf_detail_wrap .tbl{margin-top:30px}
+.golf_detail_wrap .text_wrap .item_title{font-size:20px}
+.golf_detail_wrap .js_tabs.type1{margin-top:40px}
+.golf_detail_wrap .js_tabs.type1 .panel .text_wrap:first-child{margin-top:0}
+.golf_detail_wrap .room_photo_view .room_name{display:inline-block;background:rgba(0,0,0,.5);font-size:13px;color:#fff;padding:3px 5px;position:absolute;left:10px;top:10px}
+.golf_detail_wrap .room_photo_view .gallery-thumbs{width:100%;height:100px;margin-top:0;margin-bottom:0;display:block} /* height:55px;margin-top은 없었고 margin-bottom:40px이였음 200115*/ /* 갤러리 스와이프 정리하며 overflow-x:scroll 삭제 200318*/
+.golf_detail_wrap .room_photo_view .gallery-thumbs .swiper-slide{width:75px !important;height:70px;margin-right:5px}/*골프일정표-인쇄미리보기-골프장정보gallery 간격*/
+.golf_detail_wrap .room_photo_view .gallery-thumbs .swiper-slide-thumb-active{border:1px solid #e5236d}
+
+.lypop_container .lypop_body .hotel_detail_wrap .hotel_info .img_box{width:314px;height:215px}
+.lypop_container .lypop_body .hotel_detail_wrap .hotel_info .info{width:359px}
+.lypop_container .lypop_body .golf_detail_wrap .golf_info .img_box{width:314px;height:215px}
+.lypop_container .lypop_body .golf_detail_wrap .golf_info .img_box .swiper-slide img{width:314px;height:215px}
+.lypop_container .lypop_body .golf_detail_wrap .golf_info .info{width:372px}
+
+.spot_detail_wrap .spot_area:not(:first-child){margin-top:30px}
+.spot_detail_wrap .spot_area > .text_wrap{margin-bottom:-10px}
+.spot_detail_wrap .spot_area > .text_wrap .tit{font-size:17px;font-weight:600;color:#111}
+.spot_detail_wrap .spot_area > .text_wrap .txt{display:inline-block;margin-left:12px;font-size:15px;color:#666}
+.spot_detail_wrap .spot_info{margin-top:20px}
+.spot_detail_wrap .spot_info:after{content:'';display:block;clear:both}
+.spot_detail_wrap .spot_info .img_box{float:left;width:380px}
+.spot_detail_wrap .spot_info .info{float:left;width:460px;margin-left:30px;color:#333}
+.spot_detail_wrap .spot_info .info .text_wrap{margin-bottom:0}
+.spot_detail_wrap .spot_info .info strong.tit{display:block;margin-bottom:12px;font-size:20px;font-weight:600;color:#111;line-height:27px}
+.spot_detail_wrap .spot_info .info strong.tit.sml{margin-bottom:0;font-size:15px;color:#333}
+.spot_detail_wrap .spot_info .info span{font-size:13px;line-height:23px}
+.spot_detail_wrap .spot_info .info p.txt{font-size:14px;color:#333;white-space:pre-line;}
+.spot_detail_wrap .spot_info .info a.txt.em{margin-top:20px;text-align:left}
+
+.cont_unit.optional{}
+.cont_unit.optional .panels{overflow:visible;padding:0}
+.cont_unit.optional .panels .panel .btn_wrap{margin:-48px 0 30px;text-align:right}
+.cont_unit.optional .area_wrap{margin-top:-1px}
+.cont_unit.optional .area_wrap .item_text .icn.pos{display:block;padding:12px 0 12px 38px;border-top:1px solid #dfdfdf;background:#f2f4f7;font-size:17px;color:#111}
+.cont_unit.optional .area_wrap .item_text .icn.pos:before{left:16px;top:17px}
+.cont_unit.optional .area_wrap .item_text .icn.pos span:not(:first-child){display:inline-block;position:relative;padding-left:24px}
+.cont_unit.optional .area_wrap .item_text .icn.pos span:not(:first-child):before{content:'';position:absolute;left:10px;top:10px;width:4px;height:4px;border-radius:100%;background-color:#dcdcdc}
+.cont_unit.optional .area_wrap .js_acc > .inr{float:none;width:100%;border-bottom:1px solid #eaeaea}
+.cont_unit.optional .area_wrap .js_acc .header{padding:10px 0 10px 14px;border-bottom:none;font-size:15px;color:#111;line-height:27px}
+.cont_unit.optional .area_wrap .js_acc .header:after{top:50%;margin-top:-10px}
+.cont_unit.optional .area_wrap .js_acc .header .tag_group{display:inline-block;margin-right:6px}
+.cont_unit.optional .area_wrap .js_acc .header .icn.pos{padding:0 0 0 18px;background:none;border-top:none;font-size:13px;color:#666}
+.cont_unit.optional .area_wrap .js_acc .header .icn.pos span:before{top:9px}
+.cont_unit.optional .area_wrap .js_acc .header .icn.pos:before{left:0;top:4px;width:12px;height:14px;background-position:-116px -18px}
+.cont_unit.optional .area_wrap .js_acc .inr:first-child .header{border-top:none}
+.cont_unit.optional .area_wrap .js_acc .inr .img_box, .cont_unit.optional .area_wrap .js_acc .inr .img_box img{width:172px;height:116px}
+.cont_unit.optional .area_wrap .js_acc .view{overflow:hidden;border:none;padding:0 30px 20px 17px}
+.cont_unit.optional .area_wrap .js_acc .view .inr{width:607px}
+.cont_unit.optional .area_wrap .js_acc .view .inr:first-child{width:172px;margin-right:15px}
+.cont_unit.optional .area_wrap .js_acc .inr .txt{min-height:48px;font-size:14px;color:#333;line-height:20px}
+.cont_unit.optional .area_wrap .js_acc .list_bul{margin-top:20px}
+.cont_unit.optional .area_wrap .js_acc .list_bul>li{display:inline-block;min-width:49%;color:#666}
+.cont_unit.optional .area_wrap .js_acc .list_bul>li:before{width:2px;height:2px}
+.cont_unit.optional .area_wrap .js_acc .list_bul>li em{padding-left:10px}
+.cont_unit.optional .area_wrap .js_acc .list_bul>li + li + li{width:100%}
+.cont_unit.optional .panel.best .area_wrap .js_acc .header .tit{font-size:17px}
+.cont_unit.notice .prod_notice .list_bul.nostyle > li{color:#333}
+.cont_unit.notice .prod_notice .list_bul.nostyle > li strong.tit{color:#111}
+.cont_unit.notice .prod_notice .list_bul.dash + .tit{margin-top:30px}
+.cont_unit.notice > .text_wrap.mid{margin-top:30px}
+.cont_unit.notice .text_wrap + .prod_notice{margin-top:10px}
+.cont_unit.notice .tbl .text_wrap{margin-bottom:10px}
+.cont_unit.notice .tbl .tag_group{display:inline-block;margin-right:4px;vertical-align:text-bottom}
+.cont_unit.notice .tbl .tag_group .state{height:22px;border-radius:0;line-height:20px}
+.cont_unit.notice .tbl .billiard{margin-top:10px}
+.cont_unit.notice .prod_notice>div{line-height:1.5}
+.cont_unit.notice .prod_notice h3.tit{display:block;font-size:15px;font-weight:600;color:#111;margin:0 0 10px;line-height:1}
+.cont_unit.review{padding-top:30px}
+.cont_unit.host .text_wrap .txt{margin-top:15px;font-size:15px;color:#333}
+.cont_unit.host .text_wrap .txt img{width:69px;margin-top:-4px;vertical-align:middle}
+
+.cont_unit.js_sticky .member_count .tooltip.right .tooltiptext{top:-20px}
+.cont_unit.js_sticky .add_member{margin-top:28px}
+.cont_unit.js_sticky .add_member .tooltip{margin-left:4px}
+.cont_unit.js_sticky .add_member .inr{float:none;width:100%}
+.cont_unit.js_sticky .add_member .header{padding:20px 0 0 0;border:none;font-size:15px;font-weight:600}
+.cont_unit.js_sticky .add_member .header:after{top:17px}
+.cont_unit.js_sticky .add_member .header .tooltiptext{font-weight:400}
+.cont_unit.js_sticky .add_member .view{padding:20px 0 0;border-bottom:none}
+.cont_unit.js_sticky .mileage_save p:not(.txt){margin-top:3px}
+.cont_unit.js_sticky .mileage_save p.txt{margin-top:0;line-height:19px}
+.cont_unit.js_sticky .txt.icon.bg{margin-top:15px;font-size:13px;letter-spacing:-1px}
+.cont_unit.js_sticky .txt.icon.bg em{font-weight:600}
+/* .cont_unit.fixed .add_member .member_count{overflow:visible;min-height:auto;height:auto !important} */
+
+/* 배너 */
+.prod_detail .cont_unit .banner_wrap{margin-top:40px}
+
+/* 프로모션 */
+.promotion_box{display:table;position:relative;width:100%;margin-top:40px;padding:22px 25px;border:1px solid #e5236d}
+.promotion_box .text_wrap{display:table-cell;padding-left:30px;margin:0;vertical-align:middle}
+.promotion_box .text_wrap:first-child{display:block;padding-left:0}
+.promotion_box .text_wrap .tit{font-weight:600}
+.promotion_box .text_wrap .tit .gr{display:inline-block;margin:-7px 0 0 20px;font-size:14px;font-weight:400;color:#333;vertical-align:middle}
+.promotion_box .text_wrap span.img{width:200px;height:100px}
+.promotion_box .img_tit{display:table-cell;position:relative;width:125px;height:69px;line-height:18px;vertical-align:middle}
+.promotion_box .img_tit:after{content:'';position:absolute;right:0;top:-5px;bottom:-5px;width:1px;background:#ddd}
+.promotion_box .img_tit strong{display:inline-block;position:relative;width:100px;font-size:15px;font-weight:400;color:#e5236d;text-align:center}
+.promotion_box .img_tit strong:before{display:block;width:50px;height:50px;margin:0 auto 5px;background-position:-222px 0}
+.promotion_box.exhibition .img_tit strong:before{background-position:-692px 0}
+.promotion_box .img_box{position:absolute;right:0;top:50%;margin-top:-22px}
+.promotion_box .promo_tit:before{width:26px;height:26px;margin-right:8px;background-position:-273px 0;vertical-align:bottom}
+.promotion_box .list_bul{width:100%}
+.promotion_box .info_area{width:250px}
+.promotion_box .list_bul.nostyle li{font-weight:600;color:#333}
+.promotion_box .text_wrap>.txt{margin-top:0;color:#333;line-height:22px}
+.promotion_box .text_wrap a.txt.line{margin-top:10px;font-size:14px;color:#888}
+.promotion_box .text_wrap .tit + p.txt{margin:7px 0 0;font-size:14px}
+.promotion_box.type:before{content:'';position:absolute;top:0;bottom:0;right:0;width:300px;background:#f7f7f7}
+.msie .promotion_box.type:before, .firefox .promotion_box.type:before, .msEdge .promotion_box.type:before{content:'';position:absolute;top:1px;bottom:1px;right:1px;width:300px;background:#f7f7f7}
+.promotion_box.type .text_wrap{width:443px;padding-right:50px}
+.promotion_box.type .info_area{display:table-cell;width:250px;vertical-align:middle}
+.promotion_box .prod_end{border:1px solid #ddd}
+.promotion_box .prod_end:before{background:rgba(255,255,255,.6)}
+.promotion_box .prod_end.deadline span{width:100px;height:72px;background:url(https://image.hanatour.com/usr/static/img/pc/com/ico_deadline2.png) right}
+
+.cont_unit:after{content:'';display:block;clear:both}
+.banner_wrap:after{content:'';display:block;clear:both}
+.banner_wrap .banner.inr{display:inline-block;width:auto;margin-top:0}
+.banner_wrap .banner.inr.right img{text-align:right}
+.cont_unit + .banner_wrap{margin-bottom:40px}
+.banner_wrap .banner.inr + .banner.inr{margin-top:0}
+.banner_wrap + .banner_wrap{margin:40px 0}
+.help_message + .term_area.type{margin-top:30px}
+.prod_detail .banner_wrap > .banner + .banner{margin-top:40px}
+/*.inr .banner_wrap{width:100% !important}*/
+
+ /* 지도보기 */
+
+.other_departure_date{padding:20px;background-color:#f2f4f7;border-top:1px solid #eaeaea;border-bottom:1px solid #eaeaea}
+.other_departure_date .inr{width:330px}
+.other_departure_date .inr.right{width:730px;margin-left:20px}
+
+/* 게시판타이틀 */
+.visual_wrap.advice{background:url('https://image.hanatour.com/usr/static/img/pc/pkg/visual_advice.png') no-repeat 50% 0}
+.visual_wrap.exhibition{background:url('https://image.hanatour.com/usr/static/img/pc/pkg/pkg_visual_exhibition.png') no-repeat center #dfe3e1}
+.visual_wrap.overseas{background:url('https://image.hanatour.com/usr/static/img/pc/pkg/pkg_visual_overseas.png') no-repeat center}
+.visual_wrap.zworld{height:350px;margin-bottom:70px;padding-top:74px;background:url('https://image.hanatour.com/usr/static/img/pc/pkg/visual_zeus.png') no-repeat 50% 0}
+.visual_wrap.zeus{background:url('https://image.hanatour.com/usr/static/img/pc/pkg/pkg_visual_zeus.png') no-repeat 50% 0}
+.visual_wrap.advicecenter{height:350px;padding-top:163px;background:url('https://image.hanatour.com/usr/static/img/pc/pkg/pkg_visual_advice.png') no-repeat 50% 0}
+
+/* 해외전시 */
+.box_group.bg input[readonly]{width:282px;margin-left:0;background:#fff;cursor:pointer}
+.box_group.bg input[type="text"], .box_group.bg .btn.line, .box_group.bg .search_field .select_item,
+.box_group.bg .selectbox.items li>.item{height:36px;line-height:34px}
+.box_group.bg .selectbox .display, .box_group.bg .selectbox .display .text{height:36px;line-height:34px;background:#fff}
+.box_group.bg .selectbox .display .arrow_btn{top:15px}
+.text_wrap.big .item_title{font-size:26px}
+.text_wrap.big .prod_code{position:absolute;right:0;bottom:-18px}
+.text_wrap.big .prod_code{display:inline-block;margin-right:10px;font-size:13px;font-weight:400;color:#666;line-height:26px}
+.text_wrap.big .prod_code strong{font-size:13px;font-weight:600;line-height:26px;display:inline-block;margin-left:10px}
+
+.tab_category{margin-bottom:20px}
+.tab_category li .item:before{content:'';display:inline-block;margin-right:10px;width:20px;height:20px;vertical-align:sub}
+.tab_category li .item01:before{background-position:-62px -234px}
+.tab_category li .TR100F1001:before{background-position:-84px -234px}
+.tab_category li .TR100F1002:before{background-position:-106px -234px}
+.tab_category li .TR100F1003:before{background-position:-128px -234px}
+.tab_category li .TR100F1004:before{background-position:-150px -234px}
+.tab_category li .TR100F1005:before{background-position:-172px -234px}
+.tab_category li .TR100F1006:before{background-position:-194px -234px}
+.tab_category li .TR100F1007:before{background-position:-216px -234px}
+.tab_category li .TR100F1008:before{background-position:-238px -234px}
+.tab_category li .TR100F1009:before{background-position:-260px -234px}
+.tab_category li .TR100F1010:before{background-position:-282px -234px}
+.tab_category li.selected .item01:before{background-position:-62px -256px}
+.tab_category li.selected .TR100F1001:before{background-position:-84px -256px}
+.tab_category li.selected .TR100F1002:before{background-position:-106px -256px}
+.tab_category li.selected .TR100F1003:before{background-position:-128px -256px}
+.tab_category li.selected .TR100F1004:before{background-position:-150px -256px}
+.tab_category li.selected .TR100F1005:before{background-position:-172px -256px}
+.tab_category li.selected .TR100F1006:before{background-position:-194px -256px}
+.tab_category li.selected .TR100F1007:before{background-position:-216px -256px}
+.tab_category li.selected .TR100F1008:before{background-position:-238px -256px}
+.tab_category li.selected .TR100F1009:before{background-position:-260px -256px}
+.tab_category li.selected .TR100F1010:before{background-position:-282px -256px}
+.tab_category li .TR100F2001:before{background-position:-62px -278px}
+.tab_category li .TR100F2002:before{background-position:-84px -278px}
+.tab_category li .TR100F2003:before{background-position:-106px -278px}
+.tab_category li .TR100F2004:before{background-position:-128px -278px}
+.tab_category li .TR100F2005:before{background-position:-150px -278px}
+.tab_category li.selected .TR100F2001:before{background-position:-62px -300px}
+.tab_category li.selected .TR100F2002:before{background-position:-84px -300px}
+.tab_category li.selected .TR100F2003:before{background-position:-106px -300px}
+.tab_category li.selected .TR100F2004:before{background-position:-128px -300px}
+.tab_category li.selected .TR100F2005:before{background-position:-150px -300px}
+
+.exhibition_info{display:table;position:relative;width:100%;padding:30px;border-top:1px solid #111;border-bottom:1px solid #dddddd;background:#f4f4f4}
+.exhibition_info .inr{display:table-cell;width:240px;vertical-align:middle}
+.exhibition_info .inr .img_box{width:220px;height:136px}
+.exhibition_info .inr .img_box img{width:100%;height:100%}
+.exhibition_info .inr.right{width:900px}
+.exhibition_info .list_bul li{font-size:14px;color:#111;line-height:24px}
+.exhibition_info .list_bul li .tit{display:inline-block;width:85px;color:#666}
+.exhibition_info .btn_wrap{position:absolute;bottom:30px;right:30px}
+
+.option_detail{margin-bottom:10px;border:1px solid #ddd}
+.option_detail:after{content:'';display:block;clear:both}
+.option_detail li{position:relative;float:left;width:364px;font-size:15px}
+.option_detail li:last-child{width:460px}
+.option_detail li:not(:first-child):before{content:'';display:inline-block;position:absolute;left:0;top:50%;width:1px;height:81px;margin-top:-40px;background:#ddd}
+.option_detail li .text_wrap{display:block;position:relative;margin-top:0;padding:30px 10px 30px 144px}
+.option_detail li .text_wrap:before{display:inline-block;position:absolute;left:30px;top:23px;width:97px;height:81px}
+.option_detail li.item01 .text_wrap:before{background-position:-744px 0}
+.option_detail li.item02 .text_wrap:before{background-position:-744px -83px}
+.option_detail li.item03 .text_wrap:before{background-position:-744px -166px}
+.option_detail li p{margin:5px 0}
+.option_detail li .tit{font-size:17px}
+
+.exhibition_benefit{display:table;position:relative;width:100%;min-height:120px;margin-top:40px;padding:0 30px 0 190px;border:1px solid #e5236d}
+.exhibition_benefit:before{content:'';position:absolute;left:0;top:0;bottom:0;width:160px;background:#e5236d}
+.exhibition_benefit strong.tit{position:absolute;left:40px;top:50%;width:80px;margin-top:-33px;font-size:15px;color:#fff;text-align:center}
+.exhibition_benefit strong.tit:before{display:block;width:36px;height:36px;margin:0 auto 15px;background-position:-706px 0}
+.exhibition_benefit .info{display:table-cell;padding:15px 0;font-size:15px;line-height:24px;vertical-align:middle}
+.exhibition_detail{padding:30px;border:1px solid #ddd;border-top:1px solid #111}
+.exhibition_detail .text_wrap:first-child{margin-top:0}
+.exhibition_detail .text_wrap .tit{font-size:17px}
+.exhibition_detail p{margin:20px 0;font-size:15px}
+.exhibition_detail p:last-child{margin-bottom:0}
+.exhibition_tip_list{overflow:hidden}
+.exhibition_tip_list li{position:relative;float:left;width:220px;height:200px;margin-left:24px}
+.exhibition_tip_list li:first-child{margin-left:0}
+.exhibition_tip_list li.item01{background:url(https://image.hanatour.com/usr/static/img/pc/pkg/img_exhibition_tip01.png)}
+.exhibition_tip_list li.item02{background:url(https://image.hanatour.com/usr/static/img/pc/pkg/img_exhibition_tip02.png)}
+.exhibition_tip_list li.item03{background:url(https://image.hanatour.com/usr/static/img/pc/pkg/img_exhibition_tip03.png)}
+.exhibition_tip_list li.item04{background:url(https://image.hanatour.com/usr/static/img/pc/pkg/img_exhibition_tip04.png)}
+.exhibition_tip_list li.item05{background:url(https://image.hanatour.com/usr/static/img/pc/pkg/img_exhibition_tip05.png)}
+.exhibition_tip_list li .tit{position:absolute;left:20px;bottom:15px;color:#fff;font-size:15px;font-weight:600;line-height:24px}
+.exhibition_tip_list li .tit:before{content:'';display:inline-block;position:absolute;left:0;top:-15px;width:20px;height:1px;background:#fff}
+
+.list_linktext{display:table;table-layout:fixed;width:100%;border:1px solid #ddd}
+.list_linktext li{display:table-cell;border-left:1px solid #ddd}
+.list_linktext li:first-child{border-left:none}
+.list_linktext li a{display:block;position:relative;min-height:126px;padding:30px 60px 30px 30px}
+.list_linktext li a:after{position:absolute;right:30px;top:50%;width:10px;height:14px;margin-top:-7px;background-position:-180px -52px}
+.list_linktext li a .area{display:block;margin-bottom:10px}
+.list_linktext li a p{display:block;word-break:keep-all}
+.list_linktext li a p.tit{font-size:15px;font-weight:600;color:#111}
+
+/* 파트너 */
+.partner_brief{position:relative;padding:25px;background:#f7f7f7}
+.partner_brief a.btn{margin-right:4px}
+.partner_brief a.btn.line_bl{border-color:#5e99cb;color:#5e99cb}
+.partner_brief .divider_line{margin-right:4px}
+.partner_brief .txt.star{margin-top:14px;font-size:14px;color:#111}
+.partner_brief .right_cont{float:none;position:absolute;right:25px;top:25px}
+.decide_info .item.type2{background:#5e9acd;color:#fff}
+.decide_info.partner{margin:40px 0 30px}
+.prod_detail.partner > .inr{width:100%;padding-right:0;border-right:none}
+.prod_detail.partner .cont_unit.price .option_wrap .txt.star{margin-bottom:10px;font-size:15px;color:#111}
+.prod_detail.partner .cont_unit.price .option_wrap .list_bul li{line-height:23px}
+.prod_detail.partner .cont_unit.summary p.txt{margin:0 0 13px;font-size:15px;color:#111}
+.partner_list:after{content:'';display:block;clear:both}
+.partner_list .tit{font-size:15px;color:#111;line-height:24px}
+.partner_list .right_cont{position:absolute;right:25px;top:50%;margin-top:-16px} /*0200-2 수정*/
+.partner_list .right_cont a.btn{min-width:auto;padding:0 15px;height:32px;margin-left:6px;line-height:30px}
+
+.partner_list > li{position:relative;float:left;width:590px;margin-left:20px;padding:25px;border:1px solid #c2c2c2}
+.partner_list > li:first-child{margin-left:0}
+.partner_list > li .img_box{float:left;width:85px;height:110px;margin:0 50px 0 0;background:url('https://image.hanatour.com/usr/static/img/pc/com/ico_noimg_guide.png') no-repeat}
+.partner_list > li .img_box img{border-radius:100%}
+.partner_list > li .txt_box{position:absolute;top:25px;left:25px;width:100px;margin:0;font-weight:600;font-size:15px}
+.partner_list > li .partner_info{position:relative;padding-left:100px}
+.partner_list > li .partner_info+.partner_info{padding-top:10px}
+.partner_list > li .partner_info .right_cont{position:absolute;top:50%;right:25px;margin-top:-16px}
+.partner_list_wrap{overflow:hidden}
+.partner_list_wrap>li{width:590px;float:left;margin-left:20px}
+.partner_list_wrap>li:first-child{margin-left:0}
+.partner_list_wrap>li>.partner_list>li{float:none;margin-left:0;margin-top:10px}
+.partner_list_wrap>li>.partner_list>li .partner_info .list_bul.type2{vertical-align:top}
+.schedule_iframe .prod_detail > .inr{width:100%;padding-right:0;border-right:none}
+.schedule_iframe .js_sticky.fixed>.tabs{position:fixed;width:1200px;background-color:#fff;top:0;z-index:5000;left:50%;margin-left:-600px}
+.schedule_iframe .js_tabs.js_sticky.fixed .panel.selected .cont_unit.schedule .js_tabs_wrap{width:1200px}
+.schedule_iframe .cont_unit.summary dd{width:1080px}
+.schedule_iframe .js_tabs.keypoints>.panels{width:1060px}
+.schedule_iframe .promotion_box, .schedule_iframe .banner_wrap, .schedule_iframe .card_theme{width:870px}
+
+/* 필터 제우스검색결과 */
+.filter_sticky.fixed > .inr{position:relative}
+.filter_sticky.fixed > .inr > .right_cont{float:none;position:absolute;right:0;top:-8px}
+.filter_sticky.fixed > .inr .right_cont .select_item{vertical-align:top}
+.filter_sticky.fixed > .inr .right_cont .btn{min-width:110px;padding:0 20px}
+.filter_sticky.fixed > .inr .right_cont .lypop_calendar.on .option_wrap .btn{height:36px;line-height:34px;font-size:13px}
+.filter_sticky.fixed > .inr .right_cont .lypop_calendar.on .option_wrap strong.tit{display:inline-block}
+
+.prod_list_wrap .type .inr .item_text .eps{width:100%}
+
+/* 프린트미리보기 */
+.winpop_wrap .lypop_container .lypop_body.print_wrap{max-height:677px}
+.print_wrap .print_area{width:870px}
+.print_wrap .print_setting{position:fixed;left:940px;top:113px;width:220px;background:#fff}
+.print_wrap .cont_unit.notice > .text_wrap.mid:first-child{margin-top:0}
+.print_area .prod_brief .inr{width:420px;padding-right:0}
+.print_area .prod_brief .inr.right{width:420px}
+.print_area .prod_brief{margin-top:0}
+.print_area .prod_brief .swiper-container{width:420px;height:282px}
+.print_area .prod_brief .swiper-container .swiper-slide img{width:420px;height:282px}
+.print_area .prod_brief .option_wrap{margin-top:0}
+.print_area .prod_brief .tag_group{margin-top:0}
+.print_area .prod_brief .tag_group .grade{padding-right:8px}
+.print_area .prod_brief .prod_code{margin-top:10px}
+.print_area .prod_brief .item_title{margin-top:10px;font-size:20px;line-height:30px}
+.print_area .prod_brief .text_wrap + .option_wrap{margin-top:10px;padding:12px 0}
+.print_area .prod_brief .package_info_list .item + .item{margin-left:19px}
+.print_area .prod_brief .package_info_list{margin-top:19px}
+.print_area .prod_brief .decide_info{margin:15px 0}
+.print_area .prod_brief .decide_info .item{width:79px}
+.print_area .prod_brief .price_group{margin-top:35px}
+.print_area .prod_brief .price_group .price{font-size:22px;color:#e5236d}
+.print_area .prod_brief .price_group .price span{font-size:17px;color:#e5236d}
+.print_area .prod_brief .price_group .price.pre{font-size:14px;color:#666}
+.print_area .prod_brief .txt.icon.bg{position:absolute;left:-450px;bottom:-17px;padding:15px 10px 15px 42px}
+.print_area .prod_brief .txt.icon.bg .icn{top:19px}
+.print_area .prod_detail > .inr{float:none;width:870px;padding-right:0;border:none}
+.print_area .prod_detail > .inr .cont_unit:not(:first-child){padding-top:40px;border-top:1px solid #eaeaea}
+.print_area .prod_detail > .inr .cont_unit .text_wrap:first-child{margin-top:0}
+.print_area .cont_unit dl.summary dt{width:150px}
+.print_area .cont_unit dl.summary dd{position:relative;width:715px}
+.print_area .cont_unit dl.summary dd p{margin-bottom:5px}
+.print_area .cont_unit dl.summary dd p.txt{margin-bottom:0;line-height:23px}
+.print_area .cont_unit dl.summary dd p.qr{position:absolute;right:0;top:0}
+.cont_unit dl.summary dt{display:inline-block;width:110px;margin-top:20px;font-size:15px;font-weight:600;color:#111;line-height:26px;vertical-align:top}
+.cont_unit dl.summary dd{display:inline-block;width:660px;margin-top:20px;vertical-align:top;line-height:26px}
+
+.print_area .js_tabs.type3>.panels{overflow:visible;float:none;width:870px;max-height:none;padding-left:112px}
+.print_area .js_tabs.type3>.panels p.tit{position:absolute;left:0;width:102px;height:25px;border-right:4px solid #e5236d;font-size:15px;font-weight:600;color:#e5236d}
+.print_area .panels .panel{display:block;margin-top:30px}
+.print_area .panels .panel:first-child{margin-top:0}
+.print_area .keypoints .cont_keypoints{padding-left:0 !important}
+.print_area .js_tabs.type3.keypoints>.panels p.tit{top:-14px;width:178px;padding-left:80px;border-right:none;font-size:17px;color:#333;line-height:52px}
+.print_area .keypoints .panels p.tit:before{content:'';display:block;position:absolute;left:0;width:52px;height:52px;border-radius:10px 0 10px 10px;background-color:#e5236d}
+.print_area .keypoints .cont_keypoints .item{position:relative;min-height:40px;padding-left:178px}
+.print_area .keypoints .cont_keypoints > div:not(:first-child){margin-top:0;padding-top:0;border-top:none}
+.print_area .keypoints .cont_keypoints .item p.tour:before{background-position:-4px -84px}
+.print_area .keypoints .cont_keypoints .item p.meal:before{background-position:-66px -82px}
+.print_area .keypoints .cont_keypoints .item p.hotel:before{background-position:-128px -82px}
+.print_area .keypoints .cont_keypoints .item p.insurance:before{background-position:-190px -82px}
+.print_area .keypoints .cont_keypoints .item p.transfer:before{background-position:-314px -82px}
+.print_area .keypoints .cont_keypoints .item p.leader:before{background-position:-438px -82px}
+.print_area .keypoints .cont_keypoints .item p.guide:before{background-position:-4px -207px}
+.print_area .keypoints .cont_keypoints .item p.golf:before{background-position:-376px -82px}
+.print_area .keypoints .cont_keypoints .item p.bene:before{background-position:-252px -82px}
+.print_area .keypoints .tit + .list_point{margin-top:30px}
+.print_area .keypoints .tit + .list_point + .list_point{margin-top:20px}
+.print_area .prod_info_wrap p.title{height:57px;border:1px solid #ddd;box-shadow:3px 3px 4px 1px rgba(102, 102, 102, 0.1);font-size:22px;color:#111;text-align:center;line-height:55px}
+.print_area .cont_unit .text_wrap .tit.exclam.em{line-height:23px}
+.print_area .cont_unit.schedule{margin-top:30px !important}
+.print_area .cont_unit.schedule .view{display:block}
+.print_area .route_wrap{background:#fff}
+.print_area .cont_unit.schedule .daylist:after, .print_area .additional_area .header:after{display:none}
+.print_area .prod_notice{margin-top:0 !important}
+.print_area .prod_notice .banner_wrap, .print_area .coupon{margin-top:20px}
+.print_area .prod_info_wrap .info .text_wrap{margin-top:0}
+.print_area .cont_unit.hotel .hotel_detail_wrap{margin-top:30px}
+.print_area .cont_unit.hotel .hotel_detail_wrap .hotel_info .img_box{width:380px;height:260px}
+.print_area .cont_unit.hotel .hotel_detail_wrap .hotel_info .info{width:460px}
+.print_area .spot_detail_wrap .spot_area > .text_wrap, .print_area .spot_detail_wrap .spot_area > .text_wrap > .txt{margin-top:0}
+.print_area .cont_unit.optional .area_wrap .js_acc > .inr{border-top:1px solid #eaeaea;border-bottom:none}
+.print_area .cont_unit.optional .area_wrap .js_acc > .inr:first-child{border-top:none}
+.print_area .cont_unit.optional .text_wrap{margin-bottom:40px}
+.print_area .cont_unit.optional .text_wrap.big{margin-bottom:24px}
+.print_area .cont_unit.optional .view{display:block}
+.print_area .cont_unit.optional .area_wrap .js_acc .header:after{display:none}
+.print_area .cont_unit.optional .area_wrap .js_acc .header .tit{display:inline-block;vertical-align:middle}
+.print_setting{border:1px solid #ddd;border-bottom:none }
+.print_setting .form_holder.check input[type='checkbox']:checked+label{color:#e52c6f}
+.print_setting .text_wrap.sml{margin:0;padding:10px 13px;border-bottom:1px solid #ddd}
+.print_setting .text_wrap.sml .tit{line-height:26px}
+.print_setting .text_wrap .btn_wrap{height:26px;margin-top:0;border:1px solid #ddd;border-radius:4px;font-size:12px}
+.print_setting .text_wrap .btn_wrap a{float:left;width:27px;height:24px;border-left:1px solid #ddd;text-align:center;vertical-align:top;line-height:24px}
+.print_setting .text_wrap .btn_wrap a:first-child{border-left:none}
+.print_setting .text_wrap .btn_wrap a.refresh{background:url('https://image.hanatour.com/usr/static/img/pc/pkg/btn_refresh.png') no-repeat center}
+.print_setting .text_wrap .form_wrap{display:block;width:100%;padding-top:7px;clear:both}
+.print_setting .text_wrap .form_wrap span.form_holder{margin-right:18px}
+.print_setting .text_wrap .form_wrap span.form_holder:last-child{margin-right:0}
+.print_setting .setting_area{margin:15px 13px 10px;border-top:1px solid #ddd}
+.print_setting .setting_area .text_wrap{margin-top:10px;padding:0;border-bottom:none}
+.print_setting .setting_area .form_holder{display:block;margin:5px 0 0 0}
+.print_setting .setting_area .form_holder label{font-size:13px}
+.print_setting > .btn_wrap{margin:0 -1px}
+.print_setting > .btn_wrap a.btn{float:left;padding:0;width:110px;min-width:auto;border-radius:0}
+.print_setting > .btn_wrap a.btn + .btn{margin:0}
+.print_setting .text_wrap + .setting_area{margin-top:10px;border-top:none}
+
+.trabiz_list ul{overflow:hidden}
+.trabiz_list li{float:left;width:384px;margin-left:24px}
+.trabiz_list li:first-child{margin-left:0}
+.trabiz_list li .text_wrap{margin-top:145px}
+.trabiz_list li .text_wrap .tit{position:relative;margin-left:20px;color:#fff}
+.trabiz_list li .text_wrap .tit:before{content:'';position:absolute;left:1px;top:-15px;width:26px;height:1px;background:#fff}
+.trabiz_list li .text_wrap .txt{margin-top:35px}
+.trabiz_list li.item1{background:url('https://image.hanatour.com/usr/static/img/pc/pkg/img_trabiz1.png') no-repeat}
+.trabiz_list li.item2{background:url('https://image.hanatour.com/usr/static/img/pc/pkg/img_trabiz2.png') no-repeat}
+.trabiz_list li.item3{background:url('https://image.hanatour.com/usr/static/img/pc/pkg/img_trabiz3.png') no-repeat}
+
+/* =제우스 */
+.visual_wrap.zworld .inr .tit{color:#fff;line-height:34px}
+.visual_wrap.zworld .inr .tit .thin{display:block}
+.visual_wrap.zworld .inr .img_box{margin-top:25px}
+.zworld_info .box_group{border:0;margin:0 0 70px -15px;padding:0}
+.zworld_info .box_group li{float:left;width:20%;height:390px;padding-left:15px}
+.zworld_info .box_group .txt_group{height:241px;padding:25px 20px;border:1px solid #ddd;border-top:0}
+.zworld_info .box_group .txt_group .tit{display:block;margin-bottom:9px;font-size:15px;color:#111;line-height:24px}
+.zworld_mv{height:557px;padding:70px 0;background:#f7f7f7}
+.zworld_mv .movie_area{height:417px}
+.zworld_mv .inr{width:410px}
+.zworld_mv .inr:first-child{width:790px}
+.zworld_mv .tit{display:block;margin:13px 0 35px;font-size:22px;color:#111;line-height:30px}
+.zworld_mv p{margin-top:13px;font-size:15px;color:#333;line-height:24px}
+
+.js_tabs.fix{overflow:visible}
+.js_tabs.fix .tabs{position:absolute;overflow:visible;top:-124px;left:50%;margin-left:-423px}
+.js_tabs.fix .tabs li{width:150px;height:134px;border:0;background:#fff;box-shadow: 7.2px 6.9px 13px 0 rgba(0, 0, 0, 0.2)}
+.js_tabs.fix .tabs li + li{margin-left:24px}
+.js_tabs.fix .tabs li a{width:150px;height:134px;padding:20px;background:#fff}
+.js_tabs.fix .tabs li.selected a{background:#111}
+.js_tabs.fix .tabs li a .city{display:block;padding:29px 0 30px;font-size:15px;text-align:left;line-height:1;letter-spacing:-0.15px}
+.js_tabs.fix .tabs li a .place{font-size:15px;font-weight:400;text-align:left;line-height:1}
+.js_tabs.fix .panels{padding-top:90px}
+
+.inr.w588{width:588px;margin-right:48px}
+.inr.w588>.img_box{width:588px;height:397px}
+.inr.w588>.img_box img{width:100%;height:100%}
+.inr.w564{width:564px}
+
+.center_info{padding-bottom:20px;border-bottom:2px solid #111}
+.center_info .tit{font-size:20px;color:#111;font-weight:600}
+.center_info .tit .stxt2{padding-left:13px;font-weight:400}
+.center_info .tel_info{margin-top:28px;font-size:20px;font-weight:600}
+.center_info .addr{margin-top:4px;font-size:15px;color:#333}
+
+.traffic{padding-top:40px}
+.traffic .subway,
+.traffic .bus{position:relative}
+.traffic .type{position:absolute;top:2px;left:0;font-size:15px;color:#333}
+.traffic .way{padding-left:71px}
+.traffic .label{display:inline-block;position:relative;top:-2px;width:18px;height:18px;margin-right:5px;padding-top:1px;border-radius:50%;font-size:11px;color:#fff;font-weight:400;text-align:center}
+.traffic .blue{background:#26459f}
+.traffic .green{background:#2fbb36}
+.traffic .yellow{background:#ffba00}
+.traffic .purple {background:#8343d7}
+.traffic .direction{font-size:15px;color:#333}
+.traffic .direction_dec{margin-top:7px;font-size:14px;color:#666}
+.traffic .subway + .bus{margin-top:25px}
+.traffic .way + .way{margin-top:20px}
+.map_bg{margin-top:90px;background:#f6f6f6}
+.lypop_body .img_box.txc img{max-width:100%}
+.direct_wrap{margin-left:10px}
+
+@media print{
+    .lypop_header .tit{display:none}
+	.print_wrap .print_area{width:100%;border-top:2px solid #111;padding-top:10px;margin-top:10px}
+	.print_area .prod_detail > .inr{width:100%}
+	.cont_unit.summary dt{float:left}
+	.cont_unit.summary dd{display:block;padding-left:110px;width:auto}
+}
+
+/* 상품평 */
+.review_area .review_cont .con {max-height:60px}
+
+/* 패키지 FND 우리끼리 여행 */
+.private_tour {background:url(https://image.hanatour.com/usr/static/img/pc/pkg/private_tour_bg.jpg) no-repeat 50% 50%}
+.tour_hotel {background:url(https://image.hanatour.com/usr/static/img/pc/pkg/tour_hotel_bg.jpg) no-repeat 50% 50%}
+.tour_activities {background:url(https://image.hanatour.com/usr/static/img/pc/pkg/tour_activities_bg.jpg) no-repeat 50% 50%}
+.submain .visual_wrap.type.private_tour .text_wrap,
+.submain .visual_wrap.type.tour_hotel .text_wrap,
+.submain .visual_wrap.type.tour_activities .text_wrap{text-align:center;padding: 120px 0 0 0;}
+.submain .visual_wrap.type.private_tour .text_wrap .tit,
+.submain .visual_wrap.type.tour_hotel .text_wrap .tit,
+.submain .visual_wrap.type.tour_activities .text_wrap .tit{font-size:60px}
+.submain .visual_wrap.type.private_tour .text_wrap .tit.mid,
+.submain .visual_wrap.type.tour_hotel .text_wrap .tit.mid,
+.submain .visual_wrap.type.tour_activities .text_wrap .tit.mid{font-size:36px;margin: 35px 0 22px;}
+.submain .visual_wrap.type.private_tour .text_wrap .txt,
+.submain .visual_wrap.type.tour_hotel .text_wrap .txt,
+.submain .visual_wrap.type.tour_activities .text_wrap .txt{font-size:15px}
+.submain .prod_list_wrap a.more {display:block;height:42px;line-height:40px;margin-top:30px;background-color:#f3f5f7;color:#666;text-align:center}
+.estimate_wrap {position: relative;overflow: hidden;margin:80px 0 -80px;padding-bottom: 80px}
+.estimate_wrap:after {content: "";width: 100%;height: 490px;background-color: #f7f7f7;position: absolute;left: 0;top: 140px;}
+.estimate_wrap .inr {width:1200px;margin:0 auto;position: relative;z-index: 9;}
+.estimate_wrap .inr .estimate_list {background-color: #fff;}
+.estimate_wrap .inr .estimate_list ul {position:relative;height:210px}
+.estimate_wrap .inr .estimate_list ul:after{content: "";width: 1px;height: 150px;position: absolute;background-color: #eaeaea;right: 50%;top: 30px;}
+.estimate_wrap .inr .estimate_list ul li {float:left;width:50%}
+.estimate_wrap .inr .estimate_list ul li img {float:left;margin:43px 30px 0 60px}
+.estimate_wrap .inr .estimate_list ul li p {margin:53px 0 10px 0}
+.estimate_wrap .inr .estimate_list ul li a{width: 98px;height: 34px;padding: 0 0 0 17px;border: 1px solid #c2c2c2;line-height: 32px;border-radius: 2px;}
+.estimate_wrap .inr .estimate_list ul li a:after {top:10px;right:18px}
+.submain > .inr.banner {margin-top:80px}
+.submain > .inr.banner a + a{display:block;margin-top:40px}
