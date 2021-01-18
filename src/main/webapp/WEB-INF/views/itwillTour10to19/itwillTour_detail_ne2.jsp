@@ -110,7 +110,7 @@
                               	  		<ul class="brand_info">
                               	  			<li>
                               	  				<strong class="nenara">${dto.title }</strong>
-                              	  					<p >하나투어가 지향하는 프리미엄 국내여행 브랜드입니다.&nbsp;</p>
+                              	  					<p >프리미엄 가치를 더한 상위 10% 고품격 패키지 브랜드.&nbsp;</p>
                               	  			</li>
                               	  		</ul>
                               	  	</span>
@@ -118,11 +118,11 @@
                               	</span>
                             </div>
                             <div>
-                            	<p style="font-size: 26px;">러시아+북유럽(노르웨이,덴마크,스웨덴,핀란드) 12일 #실야라인 디럭스 씨사이드 #중간항공1회 #브릭스달빙하</p><!-- 쳌 상품명-->
+                            	<p style="font-size: 26px;">러시아+북유럽(노르웨이,덴마크,스웨덴,핀란드) 5일 #실야라인 디럭스 씨사이드 #중간항공1회 #브릭스달빙하</p><!-- 쳌 상품명-->
                             </div>
                             <div class="text_wrap">
                             	<strong class="item_title">${dto.subject }</strong>
-                            	<p class="txt exclam">한국 여행의 새로운 기준 프리미엄 내나라여행! 남해의 풍류를 따라 순천,여수,남해,통영,거제,부산까지 대표관광지를 한번에 돌아볼 수 있습니다.</p>
+                            	<p class="txt exclam">북유럽 4개국과 러시아의 메인 도시인 상트페테르부르와 모스크바를 품격있게 관광하는 북유럽+러시아 대표상품입니다.</p>
                             </div>
                             <div class="option_wrap">
                             	<span class="hash_group">
@@ -131,7 +131,7 @@
                             </div>
                             <div class="package_info_list"><!-- 쳌 정보1-->
                             	<span class="item item01">
-                            		<span class="tit">10박 12일</span>
+                            		<span class="tit">4박 5일</span>
                             	</span>
                             	<span class="item item02 off">
                             		<span class="tit">국적가</span>
@@ -172,13 +172,13 @@
 								<dl>
 									<dt>일정</dt>
 										<dd>
-											<p class="item_text"><span class="night_days">10박 12일</span></p>
+											<p class="item_text"><span class="night_days">4박 5일</span></p>
 											<p class="item_text air_info"><span>출발 : 2021.06.07(월) 13:35 → 2021.06.07(월) 16:50 / KE0923 / 총 09시간 15분 소요</span></p>
-											<p class="item_text air_info"><span>도착 : 2021.06.17(목) 21:20 → 2021.06.18(금) 15:05 / KE0926 / 총 10시간 45분 소요</span></p>
+											<p class="item_text air_info"><span>도착 : 2021.06.12(토) 21:20 → 2021.06.12(토) 15:05 / KE0926 / 총 10시간 45분 소요</span></p>
 										</dd>
 									<dt>여행도시</dt>
 										<dd>
-											<span>인천-모스크바-상트페테르부르크-헬싱키-스톡홀름-오슬로-게이랑에르-브릭스달-플롬-베르겐-코펜하겐-인천</span>
+											<span>인천-모스크바-상트페테르부르크-헬싱키-스톡홀름-베르겐-코펜하겐-인천</span>
 										</dd>
 									<dt>예약현황</dt>
 										<dd class="state">
@@ -578,6 +578,10 @@
 														<li class="nojq swiper-slide" style="width: 77px;">
 															<a href="#acc_con3"><span>4일차</span></a>
 														</li>
+														<li class="nojq swiper-slide" style="width: 77px;">
+															<a href="#acc_con3"><span>5일차</span></a>
+														</li>
+														
 													</ul>
 													<a href="#none" class="prev swiper-button-disabled" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"><span class="blind">이전일차</span></a>
 													<a href="#none" class="next swiper-button-disabled" tabindex="0" role="button" aria-label="Next slide" aria-disabled="true"><span class="blind">다음일차</span></a>
@@ -663,290 +667,121 @@
                                                       	</div>
                                                     </div>
                                                 </div>
+                                                
                                                 <!-- 여행 2일차 펼친 후-->
-                                                <div class="inr">
-                                                	<!-- 여행 2일차 펼치기 -->
-                                                	<a href="#acc_con1" class="nojq header daylist">
-                                                		<span class="tit_left"><strong>2일차</strong>01/19(화)</span>
-                                                		<strong>여수시, 남해군, 사천시, 거제시</strong>
-                                                		<p>여수 해양레일바이크, 오동도, 원예예술촌, 독일마을, 창선-삼천포대교, 사천 바다 케이블카, 호텔 사우나</p>
-                                                	</a>
-                                                	<div id="acc_con1" class="view active" style="display: none;">
-                                                		<div class="schedule_detail">
-                                                			<div class="detail_wrap">
-                                                				<div class="detail">
-                                                					<p class="route">조식 (호텔식)</p>
-                                                				</div>
-                                                				<div class="detail type">
-                                                					<div class="detail_area">
-                                                						<div class="card_mngr">
-    																		<div class="card_unit type3">
-        																		<div class="_tit title">
-        																			<strong class="eps">여수 해양레일바이크</strong>
-        																			
-        																		</div>
-        																		<div class="_tit_comt sub"><p class="eps">국내 최초 해양 레일바이크</p></div>
-        																		<div class="_info_section cont_box">
-            																		<div class="_thumb thumb">
-            																			<div class="img_list">
-            																				<img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/02/21/10000/6be279d4-b8f8-49b6-b57d-76db9286a994.png" alt="여수레일바이크 (출처:홍익여행)">
-            																				<img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/02/21/10000/cf908e5f-a9bc-4b21-a0b0-cb163e0badda.png" alt="여수레일바이크 (출처:홍익여행)">
-            																				<img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/02/21/10000/55e96fa1-c722-4d4f-8759-4443df5085c5.png" alt="여수레일바이크 (출처:홍익여행)">
-            																			</div>
-            																		</div>
-            																		<div class="_txt_cont txt_conts">
-            																			<div>국내 최초 '해변을 따라 운행'하는 레일바이크로 탁 트인 여수 바다를 조망하며 3.5km 철길을 따라 달릴 수 있습니다.
-            																				 한려해상국립공원의 비경을 즐길 수 있으며 터널 구간의  LED 조명으로 볼거리를 갖춘 여수의 대표적인 이색 레저입니다.
-            																				 남녀노소 누구나 즐길 수 있으며 시원한 바닷바람을 맞으며 열심히 페달을 밟다보면 아름다운 낭만의 도시 여수를 만끽할 수 있습니다.
-																						</div>
-																					</div>
-            																		<div class="_local_info txt_box disc"></div>          
-            																		<div class="custom_tag_a">
-            																			<div class="lead_time">
-            																				<div class="time"></div>
-            																				<div class="tour"></div>
-            																			</div>
-            																		</div>
-        																		</div>
-        																		<hr class="line_white">
-        																		<div class="custom_tag_b">
-        																			<div class="card_notice"> 
-  																						<div class=""><!--custTitle--></div> 
-  																						<div class="notice_cont"><!--custMemo--></div> 
-																					</div>
-																				</div>
-    																		</div>
-																		</div>
-																	</div>
+												<div class="inr">
+													<!-- 클릭시 2일차 펼침 -->
+													<a href="#acc_con1" class="nojq header daylist">
+														<span class="tit_left"><strong>2일차</strong>06/08(화)</span>
+														<strong>모스크바</strong>
+														<p>성 바실리 사원, 붉은 광장, 굼 백화점</p>
+													</a>
+													<div id="acc_con1" class="view active" style="display: none;">
+														<div class="schedule_detail">
+															<div class="detail_wrap">
+																<div class="detail">
+																	<p class="route"><b>인천</b></p>
 																</div>
 																<div class="detail">
-																	<strong class="tit">&lt;여수해양레일바이크&gt;※천재지변으로 인한 불가피한 상황 또는 풍속 20m/sec이상일 경우 안전을 위하여 운행이 정지될 경우 대체일정으로 진행되니 참고 부탁드립니다.</strong>
+																	<p class="route"><b>모스크바</b><br>
+																	조식(호텔식)<br>
+																	</p><br>
 																</div>
+																
 																<div class="detail type">
 																	<div class="detail_area">
 																		<div class="card_mngr">
     																		<div class="card_unit type3">
         																		<div class="_tit title">
-        																			<strong class="eps">오동도</strong>
-        																			
+        																			<strong class="eps">모스크바 관광</strong>
         																		</div>
-        																		<div class="_tit_comt sub"><p class="eps">한국의 아름다운 길 100선</p></div>
+        																		
+        																		<div class="_tit_comt sub"><p class="eps"><b>성 바실리 사원</b><br>불균형이 가져다주는 묘한 아름다움, 성 바실리 사원</p></div>
         																		<div class="_info_section cont_box">
             																		<div class="_thumb thumb">
             																			<div class="img_list">
-            																				<img src="https://image.hanatour.com/usr/cms/resize/400_0/2016/11/04/10000/7a2e3b6b-ebea-4bd3-be16-184140688fd6.jpg" alt="오동도(출처: pixabay)">
-            																				<img src="https://image.hanatour.com/usr/cms/resize/400_0/2017/02/27/10000/47656b01-45c3-4c03-aa8b-8a0b7ed846e4.jpg" alt="오동도 (출처:홍익여행사)">
-            																				<img src="https://image.hanatour.com/usr/cms/resize/400_0/2012/11/21/10000/4289da62-985e-4a54-acaa-bf7e43d55414.jpg" alt="여수 오동도 (출처 코레일관광개발)">
-            																			</div>
-            																		</div>
-            																		<div class="_txt_cont txt_conts">
-            																			<div>한려해상국립공원에 속한 오동도에는 과거 오동나무가 많이 심겨있었습니다. 멀리서 보면 섬 자체가 '오동나무 잎'을 닮았다고 하여 오동도라는 이름을 얻었습니다.
-            																			 	 이제는 오동나무 대신 '여수의 꽃'인 동백나무 3천여그루가 빼곡히 심겨있습니다.
-            																			 	 오동도 방파제 길은 한국의 아름다운 길 100선에 선정되었으며 입구에는 임진왜란때 이순신 장군이 만들었다는 거북선과 판옥선의 모형이 서 있습니다.
-            																			</div>
-            																		</div>
-            																		<div class="_local_info txt_box disc"></div>           
-            																		<div class="custom_tag_a">
-            																			<div class="lead_time">
-            																				<div class="time"></div>
-            																				<div class="tour"></div>
-            																			</div>
-            																		</div>
-        																		</div>
-        																		<hr class="line_white">
-        																		<div class="custom_tag_b">
-        																			<div class="card_notice"> 
-  																						<div class=""><!--custTitle--></div> 
-  																						<div class="notice_cont"><!--custMemo--></div> 
-																					</div>
-																				</div>
-    																		</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="detail type">
-																	<p class="route">중식 (한식,  서대회무침)</p>
-																	<div class="detail_area">
-																		<div class="card_mngr">
-    																		<div class="card_unit type3">
-        																		<div class="_tit title">
-        																			<strong class="eps">서대회무침</strong>
-        																			
-        																		</div>
-        																		<div class="_tit_comt sub"><p class="eps">여수를 대표하는 별미 서대회무침</p></div>
-        																		<div class="_info_section cont_box">
-            																		<div class="_thumb thumb">
-            																			<div class="img_list">
-            																				<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/07/08/10000/662b6b30-c935-4832-952e-31a290b64102.jpg" alt="서대회무침">
-            																				<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/07/08/10000/18ad5eda-c894-4edb-ac60-8d009a9c2c01.jpg" alt="서대회무침">
-            																				<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/07/08/10000/68d6d7be-929c-4cde-85b8-981fa3b29883.jpg" alt="서대회무침">
-            																			</div>
-            																		</div>
-            																		<div class="_txt_cont txt_conts">
-            																			<div>가자미와 비슷하게 생긴 서대는 모래가 섞인 갯벌에 서식합니다. 여수를 비롯한 남해안의 대표 어종으로 여수를 대표하는 별미입니다.
-            																				 여수에서는 손님에게 꼭 대접하며 임금님 수라상에도 올랐을 만큼 귀한 음식으로 새콤달콤한 서대회무침이 진미입니다.
-            																			</div>
-            																		</div>
-            																		<div class="_local_info txt_box disc"></div>            
-            																		<div class="custom_tag_a"></div>
-        																		</div>
-        																		<hr class="line_white">
-        																		<div class="custom_tag_b">
-        																			<div class="card_notice"> 
-  																						<div class=""><!--custTitle--></div> 
-  																						<div class="notice_cont"><!--custMemo--></div> 
-																					</div>
-																				</div>
-    																		</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="detail"><p class="route">여수시-남해군으로 이동</p></div>
-																<div class="detail type">
-																	<div class="detail_area">
-																		<div class="card_mngr">
-    																		<div class="card_unit type3">
-        																		<div class="_tit title">
-        																			<strong class="eps">원예예술촌</strong>
-        																			
-        																		</div>
-        																		<div class="_tit_comt sub"><p class="eps">원예 전문가들의 작품, 집과 정원</p></div>
-        																		<div class="_info_section cont_box">
-            																		<div class="_thumb thumb">
-            																			<div class="img_list">
-            																				<img src="https://image.hanatour.com/usr/cms/resize/400_0/2014/06/13/10000/578adcd9-c7dc-47c3-bfd0-df571b16108d.jpg" alt="남해 원예예술촌4-(출처:테마캠프)">
-            																				<img src="https://image.hanatour.com/usr/cms/resize/400_0/2012/08/07/10000/886c2c4f-bb37-4dc6-94f2-7a0e8e7d3f48.jpg" alt="남해 원예예술촌 (출처 테마캠프)">
-            																				<img src="https://image.hanatour.com/usr/cms/resize/400_0/2014/06/13/10000/c447bd73-6ec6-40f8-88c8-8b9f2d9be1ae.jpg" alt="남해 원예예술촌2-(출처:테마캠프)">
-            																			</div>
-            																		</div>
-            																		<div class="_txt_cont txt_conts">
-            																			<div>원예 전문가들이 모여 집과 정원을 개인별 작품으로 조성한 마을로 각 나라의 특징적인 정원의 형태와 토피어리, 풍차, 풀꽃 지붕, 채소정원 등이 조화를 이루고 있습니다.
-            																				 배우 "박원숙"의 카페가 있어 더욱 유명해졌습니다. 정원, 산책, 포토존, 영상실, 옥외공연장 등 아름다움과 다양한 문화체험이 가능한 장소입니다.
-            																			</div>
-            																		</div>
-            																		<div class="_local_info txt_box disc"></div>           
-            																		<div class="custom_tag_a">
-            																			<div class="lead_time">
-            																				<div class="time"></div>
-            																				<div class="tour"></div>
-            																			</div>
-            																		</div>
-        																		</div>
-        																		<hr class="line_white">
-        																		<div class="custom_tag_b">
-        																			<div class="card_notice"> 
-  																						<div class=""><!--custTitle--></div> 
-  																						<div class="notice_cont"><!--custMemo--></div> 
-																					</div>
-																				</div>
-    																		</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="detail type">
-																	<div class="detail_area">
-																		<div class="card_mngr">
-    																		<div class="card_unit type3">
-        																		<div class="_tit title">
-        																			<strong class="eps">독일마을</strong>
-        																			
-        																		</div>
-																		        <div class="_tit_comt sub"></div>
-																		        <div class="_info_section cont_box">
-            																		<div class="_thumb thumb">
-            																			<div class="img_list">
-            																				<img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/09/06/10000/57893558-50d6-415a-b579-d8b814d9e4d7.jpg" alt="독일마을 (출처:홍익여행)">
-            																				<img src="https://image.hanatour.com/usr/cms/resize/400_0/2015/07/03/10000/2fc8bea9-8c55-4b8e-8a2a-c59173d31000.jpg" alt="남해 독일마을">
-            																				<img src="https://image.hanatour.com/usr/cms/resize/400_0/2012/08/07/10000/1f0499b6-be19-4caa-a3d5-8f4d7e7c5814.jpg" alt="남해 독일마을 (출처 테마캠프)">
-            																			</div>
-            																		</div>
-            																		<div class="_txt_cont txt_conts">
-            																			<div>독일마을의 주택건축은 독일교포들이 직접 독일의 재료를 수입하여 전통 독일식 주택을 신축하고 있는데 지금은 29동 정도가 완공되어
-            																				 독일 교포들이 생활하고 있으며 관광객을 위한 민박을 운영하고 있기도 합니다.
-																							 독일교포 정착마을은 남해군에서도 가장 아름답고 자연경관이 뛰어난 삼동면 동천마을 문화예술촌 안에 조성되었으며,
-																							 남해에서도 산과 바다를 함께 조망할 수 있는 몇 안되는 곳입니다. 바로 앞으로 펼쳐진 방조어부림의 시원한 바다와
-																							 남해안에서 가장 아름다운 해안 드라이브코스인 물미 해안도로와 더불어 2005년 독일월드컵과 함께 남해 보물섬의 새로운 관광지로 부상하고 있습니다.
-																							 정착촌 바로 옆에는 산림욕장, 나비생태공원 등 자...
-																						</div>
-																					</div>
-            																		<div class="_local_info txt_box disc"></div>            
-            																			<div class="custom_tag_a">
-            																				<div class="lead_time">
-            																					<div class="time"></div>
-            																					<div class="tour"></div>
+            																				<img src="<%=cp %>/resources/image/list/detail/ne2/ne_6_hh.jpg">
             																				</div>
-            																			</div>
-        																			</div>
-       																				<hr class="line_white">
-        																			<div class="custom_tag_b">
-        																				<div class="card_notice"> 
-  																							<div class=""><!--custTitle--></div> 
-  																							<div class="notice_cont"><!--custMemo--></div> 
-																						</div>
-																					</div>
-    																		</div>
-																		</div>
-																	</div>
-																</div>
-																<div class="detail type">
-																	<div class="detail_area">
-																		<div class="card_mngr">
-    																		<div class="card_unit type2">
-        																		<div class="_tit title">
-        																			<strong class="eps">창선-삼천포대교</strong>
-        																			
-        																		</div>
-        																		<div class="_tit_comt sub"><p class="eps">삼천포와 창선도 사이 섬을 잇는 5개의 교량</p></div>
-        																		<div class="_info_section cont_box">
-            																		<div class="_thumb thumb">
-            																			<div class="swiper-container img_tit prevNext pager v-swiper2 swiper-container-initialized swiper-container-horizontal">
-            																				<div class="swiper-wrapper" style="transform: translate3d(-248px, 0px, 0px); transition-duration: 0ms;">
-            																					<div class="swiper-slide movie_box swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2" style="width: 248px; cursor: pointer;">
-            																						<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/07/07/10000/1af66bfe-f76b-4721-a622-6edfbfb40bb8.jpg" alt="삼천포대교">
-            																					</div>
-            																					<div class="swiper-slide movie_box swiper-slide-active" data-swiper-slide-index="0" style="width: 248px; cursor: pointer;">
-            																						<img src="https://image.hanatour.com/usr/cms/resize/400_0/2008/09/09/10000/68333cc9-2ea9-4818-a22f-ee7b1425fd5b.jpg" alt="창선-삼천포대교">
-            																					</div>
-            																					<div class="swiper-slide movie_box swiper-slide-next" data-swiper-slide-index="1" style="width: 248px; cursor: pointer;">
-            																						<img src="https://image.hanatour.com/usr/cms/resize/400_0/2008/09/09/10000/772f2d74-014c-4e15-9994-34faa2b5c6d5.jpg" alt="창선-삼천포대교">
-            																					</div>
-            																					<div class="swiper-slide movie_box swiper-slide-duplicate-prev" data-swiper-slide-index="2" style="width: 248px; cursor: pointer;">
-            																						<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/07/07/10000/1af66bfe-f76b-4721-a622-6edfbfb40bb8.jpg" alt="삼천포대교">
-            																					</div>
-            																					<div class="swiper-slide movie_box swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 248px; cursor: pointer;">
-            																						<img src="https://image.hanatour.com/usr/cms/resize/400_0/2008/09/09/10000/68333cc9-2ea9-4818-a22f-ee7b1425fd5b.jpg" alt="창선-삼천포대교">
-            																					</div>
-            																					</div>
-            																				<div class="controller">
-            																					<span class="total swiper-pagination-fraction" style="visibility: visible;">
-            																						<span>1</span>/<span>3</span>
-            																					</span>
-            																					<a href="#none" class="prev" tabindex="0" role="button" aria-label="Previous slide"><span class="blind">이전</span></a>
-            																					<a href="#none" class="next" tabindex="0" role="button" aria-label="Next slide"><span class="blind">다음</span></a>
-            																				</div>
-            																				<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-            																			</div>
             																		</div>
-            																		<div class="cont_box2">
-                																		<div class="_txt_cont txt_conts">
-                																			<div>남해의 새로운 관문으로 2003년 개통한 창선-삼천포 대교는 남해 관광자원 개발과 한려수도 관광 활성화 및
-                																				 이동시간 단축으로 인한 지역경제 활성화 등 큰 기대를 받고있는 의미있는 다리이다.  총 길이 3.4km의 연륙교로 엉개교,
-                																				 단항대교, 늑도교, 초양교, 삼천포대교라는 다섯 개의 교량이 각기 다른 형식으로 천혜의 자연과 어우러져 특히 야경이 장관이다.
-																								 우리나라 최초로 섬과 섬을 연결한 다리이다.
+            																		<div class="_txt_cont txt_conts">
+            																			<div>붉은 광장 진입로로 들어서는 모든 관광객들의 시선을 한눈에 사로잡아 버리는<br>
+            																				아름다우면서도 묘한 느낌을 주는 성바실리 성당이다.<br>
+																							200여년간 러시아를 점령하고 있던 몽골의 카잔 한(汗)을 항복시킨 것을<br>
+																							기념하기 위해 이반 대제의 명령으로 지어진 건축물로, 사원의 이름은<br>
+																							이반 대제에게 많은 영향을 끼친 수도사 바실리에서 유래되었다고 한다.<br>
+																							1555년에 착공해 1561년에 이르러서야 완성되자 이반 대제는 그 아름다움에 탄복,<br>
+																							더 이상 이와 같은 성당을 짓지 못하라는 뜻으로 설계자인 포스토닉과 바르마의<br>
+																							두 눈을 뽑아버렸다는 이야기가 전해지고 있다.<br>
 																							</div>
-																						</div>
-                																		<div class="_local_info txt_box disc"></div>               
-                																		<div class="custom_tag_a">
-                																			<div class="lead_time">
-                																				<div class="time"></div>
-                																				<div class="tour"></div>
-                																			</div>
-                																		</div>
+																					</div>
+            																		<div class="_local_info txt_box disc"></div>           
+            																		<div class="custom_tag_a">
+            																			<div class="lead_time">
+            																				<div class="time"></div>
+            																				<div class="tour"></div>
+            																			</div>
             																		</div>
         																		</div>
-																		        <hr class="line_white">
-																		        <div class="custom_tag_b">
-																		        	<div class="card_notice"> 
+        																		
+        																		<div class="_tit_comt sub"><p class="eps"><b>붉은 광장</b><br>검지만 아름다운 붉은광장</p></div>
+        																		<div class="_info_section cont_box">
+            																		<div class="_thumb thumb">
+            																			<div class="img_list">
+            																				<img src="<%=cp %>/resources/image/list/detail/ne2/ne_7_hh.jpg">
+            																				</div>
+            																		</div>
+            																		<div class="_txt_cont txt_conts">
+            																			<div>붉은 광장은 국립 역사 박물관과 굼 백화점 및 양파머리 모양의 바실리 사원에<br>
+            																				 둘러싸여 있는데 전에는 시내 중심부에 있던 시장이었다. 끄라스나야 쁠로샤지,<br>
+            																				 즉 현재는 "붉은"으로 해석되는 이 광장의 명칭은 고대 러시아어로는<br>
+            																				 "아름다운, 예쁜"이라는 뜻이었기 때문에 본 의미는 "아름다운 광장"이었으나<br>
+            																				 많은 이들은 메이데이와 혁명 기념일에 붉은색의 현수막이 국립 역사 박물관과<br>
+            																				 굼 백화점의 벽에 걸리고, 사람들도 붉은 깃발을 손에 들고 있어서 광장이 온통<br>
+            																				 붉은색이 되었다는 데서 그 명칭의 유래를 찾기도 한다.<br>
+            																				 붉은 광장 주변에는 아직도 살았을 때의 모습 그대로 누워있는 레닌의 묘,<br>
+            																				 불균형 속에 조화를 이루고 있는 성 바실리 사원, 국립 역사 박물관,<br>
+            																				 모스크바 최대의 백화점인 굼 등이 있다.<br>
+																							</div>
+																					</div>
+            																		<div class="_local_info txt_box disc"></div>           
+            																		<div class="custom_tag_a">
+            																			<div class="lead_time">
+            																				<div class="time"></div>
+            																				<div class="tour"></div>
+            																			</div>
+            																		</div>
+        																		</div>
+        																		
+        																		<div class="_tit_comt sub"><p class="eps"><b>굼 백화점</b><br>러시아 최대의 굼 백화점</p></div>
+        																		<div class="_info_section cont_box">
+            																		<div class="_thumb thumb">
+            																			<div class="img_list">
+            																				<img src="<%=cp %>/resources/image/list/detail/ne2/ne_8_hh.jpg">
+            																				</div>
+            																		</div>
+            																		<div class="_txt_cont txt_conts">
+            																			<div>붉은 광장 내 레닌 묘 맞은 편에 길게 세워져 있는 베이지 색의 건물이 러시아 최대의<br>
+            																				국영백화점인 굼(Gum)이다. 이 백화점은 러시아의 최대 백화점인 동시에 가장 오래된<br>
+            																				백화점이다. 오랜 역사를 자랑하듯 건물을 밖에서 볼 때는 낡은 건물이지만 1950년대에<br>
+            																				대폭적인 내부 수리가 이루어져 오늘날까지도 러시아에서 최고급 백화점으로 손꼽히고 있다.<br>
+            																				3층 높이의 이 건물의 1, 2층에는 200여점에 이르는 최고급 외제산 상점들이 위치하여<br>
+            																				손님들을 맞이하고 있다. 블라디보스톡에도 체인을 두고 있을 만큼 큰 규모와 양질을<br>
+            																				자랑하는 곳이다. 특히나 모스크바는 세계적인 대부호들이 많이 사는 도시로<br>
+            																				명품들의 명품을 구경할 수 있다.<br>
+																							</div>
+																					</div>
+            																		<div class="_local_info txt_box disc"></div>           
+            																		<div class="custom_tag_a">
+            																			<div class="lead_time">
+            																				<div class="time"></div>
+            																				<div class="tour"></div>
+            																			</div>
+            																		</div>
+        																		</div>
+        																		
+        																		<hr class="line_white">
+        																		<div class="custom_tag_b">
+        																			<div class="card_notice"> 
   																						<div class=""><!--custTitle--></div> 
   																						<div class="notice_cont"><!--custMemo--></div> 
 																					</div>
@@ -955,625 +790,566 @@
 																		</div>
 																	</div>
 																</div>
-																<div class="detail"><p class="route">남해군-사천시로 이동</p></div>
-																<div class="detail type">
-																	<div class="detail_area">
-																		<div class="card_mngr">
-    																		<div class="card_unit type3">
-        																		<div class="_tit title">
-        																			<strong class="eps">사천 바다 케이블카</strong>
-        																			
-        																		</div>
-        																		<div class="_tit_comt sub"><p class="eps">산-바다-섬을 잇는 케이블카</p></div>
-        																		<div class="_info_section cont_box">
-            																	<div class="_thumb thumb">
-            																		<div class="img_list">
-	            																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/09/17/20000/4f8825c8-b5aa-4b6c-ab9d-eb3fad580397.jpg" alt="사천바다케이블카">
-	            																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/09/17/20000/77da6521-5ad4-45f1-8803-553d389b71ce.jpg" alt="사천바다케이블카">
-	            																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/09/17/20000/f0045e25-873f-4e5b-a2a3-bc5b74223696.jpg" alt="사천바다케이블카">
-            																		</div>
-            																	</div>
-            																	<div class="_txt_cont txt_conts">
-            																		<div>'산-바다-섬'을 잇는 형식의 국내 최초 케이블카로 2.43km(약 20분)의 길이입니다. 섬(초양도), 바다,
-            																			 산(각산)을 이으며 3개 정류장의 승하차 시스템으로 다양한 볼거리를 즐길 수 있습니다.
-																							* 기상악화로 케이블카 운행이 불가할 경우 대체 일정으로 진행됩니다. 대체 관광으로 진행될 경우 관광지 입장료 차액 환불은 불가합니다.
-																					</div>
-																				</div>
-            																	<div class="_local_info txt_box disc"></div>           
-            																	<div class="custom_tag_a">
-            																		<div class="lead_time">
-            																			<div class="time"></div>
-            																			<div class="tour"></div>
-            																		</div>
-            																	</div>
-        																	</div>
-        																	<hr class="line_white">
-       																		<div class="custom_tag_b">
-       																			<div class="card_notice"> 
-  																					<div class=""><!--custTitle--></div> 
-  																					<div class="notice_cont"><!--custMemo--></div> 
-																				</div>
-																			</div>
-    																	</div>
-																	</div>
+																
+																
+
+																<div class="detail">
+																<p class="route">석식 (현지식)</p>
 																</div>
-															</div>
-															<div class="detail">
-																<strong class="tit">&lt;사천바다 케이블카&gt;</strong>
-																	<p>※기상관계로 케이블카 운행이 어려울시 대체관광 일정으로 진행되니 참고 부탁드립니다.※</p>
-															</div>
-															<div class="detail">
-																<p class="route">사천시-거제시로 이동</p>
-															</div>
-															<div class="detail type">
-																<p class="route">석식 (회정식)</p>
-																<div class="detail_area">
-																	<div class="card_mngr">
-    																	<div class="card_unit type2">
-        																	<div class="_tit title">
-        																		<strong class="eps">회정식</strong>
-        																		
-        																	</div>
-        																	<div class="_tit_comt sub"></div>
-        																	<div class="_info_section cont_box">
-           																		<div class="_thumb thumb">
-           																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/07/08/10000/75acaf63-1d5c-4a3a-846e-980f7a1f298f.JPG" alt="회정식">
-           																		</div>
-            																	<div class="cont_box2">
-                																	<div class="_txt_cont txt_conts">
-                																		<div>삼면이 바다로 둘러싸인 우리나라는 바닷가 어디라도 신선하고 맛있는 횟감이 풍부합니다.
-                																			 멍게, 소라와 같은 해산물과 신선한 횟감이 바다의 향기를 전해줍니다. 
-																							 * 생선회를 못 드시는 분은 구이로 제공됩니다.
-																						</div>
-																					</div>
-	               																	<div class="_local_info txt_box disc"></div>                
-                																	<div class="custom_tag_a"></div>
-            																	</div>
-        																	</div>
-        																	<hr class="line_white">
-        																	<div class="custom_tag_b">
-        																		<div class="card_notice"> 
-  																					<div class=""><!--custTitle--></div> 
-  																					<div class="notice_cont"><!--custMemo--></div> 
-																				</div>
-																			</div>
-    																	</div>
-																	</div>
+																
+																<div class="detail">
+																<p class="route">호텔로 이동합니다.</p>
 																</div>
-															</div>
-															<div class="detail type">
-																<div class="detail_area">
-																	<div class="card_mngr">
-    																	<div class="card_unit type3">
-        																	<div class="_tit title">
-        																		<strong class="eps">호텔 사우나</strong>
-        																	
-        																	</div>
-        																	<div class="_tit_comt sub">
-        																		<p class="eps">호텔 사우나에서 즐기는 여유로운 시간</p>
-        																	</div>
-        																	<div class="_info_section cont_box">
-            																	<div class="_thumb thumb">
-            																		<div class="img_list">
-            																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/09/15/10000/f721d95f-1307-4166-b211-3861e2fe920f.jpg" alt="여수히든베이호텔">
-            																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2008/02/29/10000/9bf39d4a-6c83-4c4a-9e7b-4e795982d76a.jpg" alt="거제삼성호텔-사우나">
-            																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/04/08/460000/e1781f54-035d-40e3-8273-9d5fa5ac9c99.jpg" alt="홀리데이 인 광주-수영장">
-            																		</div>
-            																	</div>
-            																	<div class="_txt_cont txt_conts">
-            																		<div>호텔 사우나에서 여행 중에 쌓인 피로감과 일상의 스트레스를 말끔히 풀어내는 여유로운 시간을 가질 수 있습니다.
-            																			 사우나는 찜질이나 온천욕에 비해 수분을 방출하는 효과가 뛰어나 부종예방에 좋습니다.
-            																			 또한 피로회복, 혈액순환 촉진, 노폐물 제거, 원기 충전에 효과적입니다.
-            																		</div>
-            																	</div>
-           																	 	<div class="_local_info txt_box disc"></div>          
-            																	<div class="custom_tag_a">
-            																		<div class="lead_time">
-            																			<div class="time"></div>
-            																			<div class="tour"></div>
-            																		</div>
-            																	</div>
-        																	</div>
-																	        <hr class="line_white">
-																	        <div class="custom_tag_b">
-																	        	<div class="card_notice"> 
- 																					<div class=""><!--custTitle--></div> 
-  																					<div class="notice_cont"><!--custMemo--></div> 
-																				</div>
-																			</div>
-    																	</div>
-																	</div>
-																</div>
-															</div>
-															<div class="detail type">
-																<div class="detail_area">
-																	<div class="card_mngr">
-    																	<div class="card_unit type7">
-        																	<div class="_tit title">
-        																		<strong class="eps">SAMSUNG HOTEL GEOJE</strong>
-        																	</div>
-        																	<div class="_tit_comt sub"><p class="eps">삼성 호텔 거제</p></div>
-        																	<div class="_info_section cont_box">
-            																	<div class="_thumb thumb">
-            																		<div class="img_list">
-            																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2008/02/29/10000/b833d9e6-15e2-4c36-8eec-c9202142423a.jpg" alt="거제삼성호텔-외관">
-																						<img src="https://image.hanatour.com/usr/cms/resize/400_0/2008/02/29/10000/70239ca0-1f4f-4529-9a1f-b61d2aecc54e.jpg" alt="거제삼성호텔-객실">
-																						<img src="https://image.hanatour.com/usr/cms/resize/400_0/2008/02/29/10000/944895a8-abe1-4d10-b43d-c7bfa65ee48a.jpg" alt="거제삼성호텔-레스토랑">
-																					</div>
-																				</div>
-            																	<div class="_txt_cont txt_conts"></div>
-            																	<div class="_local_info txt_box"></div>
-            																	<div class="_additional_tit cont_tit">
-																					<strong>호텔소개</strong>
-																				</div>
-																				<div class="_additional_content cont_txt">
-																					<div>한려수도의 중심 거제의 고현에 있는 거제 삼성 호텔은 한국을 대표하는 세계적인 기업 삼성이
-																						 운영하는 신라호텔 계열의 특1급 호텔로 모던하면서도 품의가 넘치는 호텔입니다.
-																						 가족의 따뜻함이 느껴지는 166개의 객실을 보유하고 있으며, 피트니스 클럽, 실내수영장, 남여사우나,
-																						 비즈니스센터, 기념품점 등의 부대시설이 있습니다. 관광객과 관공서, 학교, 기업체 등의 워크숍이 진행되는 호텔입니다.
-																					</div>
-																				</div>
-            																	<div class="custom_tag_a"></div>
-        																	</div>
-        																	<hr class="line_white">
-        																	<div class="custom_tag_b">
-																				<div class="card_notice">
-																					<div class=""><!--custTitle--></div>
-																					<div class="notice_cont"><!--custMemo--></div>
-																				</div>
-																			</div>
-    																	</div>
-																	</div>
-																</div>
+
 															</div>
 														</div>
-													</div>
-													<div class="detail_area">
-														<div class="js_acc">
-															<div class="inr additional_area">
-																<a href="#add_hotel_1" class="header">
-																	<span class="tit hotel">호텔</span>
-																	<strong>총 <em>1개</em>의 <em>예정 호텔</em>이 있습니다.</strong>
-																	출발 3일전까지 홈페이지를 통해 알려드리겠습니다.
-                                                                    <p class="stxt3">출발 1일전 발송되는 알림톡에서도 확인가능 합니다.</p>
-                                                                </a>
-                                                                <div id="add_hotel_1" class="view">
-                                                                	<div class="additional_list">
-                                                                		<div class="link_list ing">
-                                                                			<strong class="tit">삼성 호텔 거제</strong>
-                                                                			<p class="wrap_star"><span class="star_value" style="width: 90%;"></span></p>
-                                                                			
-                                                                		</div>
-                                                                	</div>
-                                                                </div>
-                                                             </div>
-                                                        </div>
-                                                        <div class="js_acc mt0"></div>
-                                                        <div class="additional_area"><span class="tit food">식사</span>
-                                                        <div class="list_txt">
-                                                        	<span>[조식] <span>호텔식</span></span>
-                                                        	<span>[중식] <span>한식 서대회무침</span></span>
-                                                        	<span>[석식] <span>회정식</span></span>
-                                                        </div>
-                                                   		</div>
-                                                   	</div>
-                                                </div>
-                                            </div>
-                                            	<!-- 여행 3일차 펼친 후 -->
-                                            <div class="inr">
-                                            	<!-- 여행 3일차 펼치기 -->
-                                            	<a href="#acc_con2" class="nojq header daylist">
-                                            		<span class="tit_left"><strong>3일차</strong>01/20(수)</span> 
-                                            		<strong>거제시, 부산</strong><p>바람의 언덕(신선대), 거제 맹종죽 테마파크, 거가 대교, 오륙도 스카이워크</p>
-                                            	</a>
-                                            	<div id="acc_con2" class="view active" style="display: none;">
-                                            		<div class="schedule_detail">
-                                            			<div class="detail_wrap">
-                                            				<div class="detail">
-                                            					<p class="route">조식 (호텔식)</p>
-                                            				</div>
-                                            				<div class="detail type">
-																<div class="detail_area">
-																	<div class="card_mngr">
-    																	<div class="card_unit type3">
-        																	<div class="_tit title">
-        																		<strong class="eps">바람의 언덕(신선대)</strong>
-        																		
-        																	</div>
-        																	<div class="_tit_comt sub"><p class="eps">남해안 경관 명소</p></div>
-        																	<div class="_info_section cont_box">
-            																	<div class="_thumb thumb">
-            																		<div class="img_list">
-            																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/08/10/10000/3e55a6bb-0d20-40a9-8edc-54ed7f1284aa.jpg" alt="바람의 언덕">
-            																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/08/10/10000/54a199ee-ac4e-4b93-8b9f-e6070e528a21.jpg" alt="바람의 언덕">
-            																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/08/07/10000/31dd033b-27b7-4b5a-92a7-ec15e6d74112.JPG" alt="바람의 언덕 (신선대)">
-            																		</div>
-            																	</div>
-            																	<div class="_txt_cont txt_conts">
-            																		<div>바람의 언덕의 옛 이름은 '띠밭늘'로, 바닷바람이 세게 분다고 하여 이름이 변경되었습니다.
-            																			 언덕에서 한려수도 바다를 바라보며 시원한 바람이 상쾌함을 선사합니다. 언덕에 풍차가 있어
-            																			 이국적이면서도 아름다운 바람의 언덕은 남해안 경관 명소 20곳에 선정되기도 했습니다.
-            																			 남쪽으로는 거친 해식애 지형인 신선대가 있어 천천히 걸으며 구경할 수 있습니다.
-            																		</div>
-            																	</div>
-            																	<div class="_local_info txt_box disc"></div>            
-            																	<div class="custom_tag_a">
-            																		<div class="lead_time">
-            																			<div class="time"></div>
-            																			<div class="tour"></div>
-            																		</div>
-            																	</div>
-        																	</div>
-																	        <hr class="line_white">
-																	        <div class="custom_tag_b">
-																	        	<div class="card_notice"> 
-  																					<div class=""><!--custTitle--></div> 
-  																						<div class="notice_cont"><!--custMemo--></div> 
-																				</div>
-																			</div>
-    																	</div>
-																	</div>
-																</div>
-															</div>
-															<div class="detail"><p class="route">중식 (한식,  전복 해물뚝배기)</p></div>
-															<div class="detail type">
-																<div class="detail_area">
-																	<div class="card_mngr">
-   														 				<div class="card_unit type3">
-        																	<div class="_tit title"><strong class="eps">거제 맹종죽 테마파크</strong></div>
-        																	<div class="_tit_comt sub"><p class="eps">맹종죽을 이용한 죽림 테라피</p></div>
-        																	<div class="_info_section cont_box">
-            																	<div class="_thumb thumb">
-            																		<div class="img_list">
-            																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/09/17/20000/0264da7b-bf6b-4095-817d-349bf438e18d.jpg" alt="맹종죽테마파크">
-            																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/01/31/10000/1fdf3520-da78-4e64-96cb-f8a793b6eebe.png" alt="거제맹종죽테마파크 (출처:홍익여행)">
-            																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/01/31/10000/8ea96bb7-701e-4d12-8100-026acba40fac.png" alt="거제맹종죽테마파크 (출처:홍익여행)">
-            																		</div>
-            																	</div>
-            																	<div class="_txt_cont txt_conts">
-            																		<div>바다가 보이는 맹종죽 죽림욕장은 "효"의 상징으로 일컫는 맹종죽의 풍부한 음이온을 이용한 자연치유를 목적으로 조성되었습니다.
-            																			 맹종죽을 이용한 다양한 놀이와 체험이 가능하며 이를 통해 심신의 균형을 잡고 스트레스를 없애는 데 큰 도움이 됩니다.
-            																		</div>
-            																	</div>
-            																	<div class="_local_info txt_box disc"></div>           
-            																	<div class="custom_tag_a"></div>
-        																	</div>
-        																	<hr class="line_white">
-        																	<div class="custom_tag_b">
-        																		<div class="card_notice"> 
-  																					<div class=""><!--custTitle--></div> 
-  																					<div class="notice_cont"><!--custMemo--></div> 
-																				</div>
-																			</div>
-    																	</div>
-																	</div>
-																</div>
-															</div>
-															<div class="detail type">
-																<div class="detail_area">
-																	<div class="card_mngr">
-    																	<div class="card_unit type3">
-        																	<div class="_tit title">
-        																		<strong class="eps">거가 대교</strong>
-        																		
-        																	</div>
-        																	<div class="_tit_comt sub"><p class="eps">해저 침매터널</p></div>
-        																	<div class="_info_section cont_box">
-            																	<div class="_thumb thumb">
-            																		<div class="img_list">
-            																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/05/04/10000/fa58d88b-08d3-44c9-93af-afcaa0acbc3a.png" alt="거가대교 (출처:홍익여행)">
-            																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/08/11/10000/f913d9b6-4823-4cd1-8f22-a6b57b784c1d.jpg" alt="거가대교전망대">
-            																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2010/12/15/10000/eb96853b-0d43-444a-9640-8a7d81900dac.jpg" alt="거가대교">
-            																		</div>
-            																	</div>
-            																	<div class="_txt_cont txt_conts">
-            																		<div>부산 가덕도와 거제 유호리를 연결하는 다리로 가덕도-대죽도-중죽도-저도-유호리를 통과합니다.
-            																			 길이 8.2km, 왕복 4차선 도로로 가덕도-대죽도(3.7km)의 구간을 해저 침매터널로 만들었습니다.
-            																			 해저 침매터널 구간을 한국에서 최초로 내해(內海)가 아닌 파도와 바람, 조류가 심한 외해(外海)에서 건설되었다는 것에 역사적 의미가 있습니다.
-            																		</div>
-            																	</div>
-            																	<div class="_local_info txt_box disc"></div>           
-            																	<div class="custom_tag_a">
-            																		<div class="lead_time">
-            																			<div class="time"></div>
-            																			<div class="tour"></div>
-            																		</div>
-            																	</div>
-        																	</div>
-																	        <hr class="line_white">
-																	        <div class="custom_tag_b">
-																	        	<div class="card_notice"> 
-  																					<div class=""><!--custTitle--></div> 
-  																					<div class="notice_cont"><!--custMemo--></div> 
-																				</div>
-																			</div>
-    																	</div>
-																	</div>
-																</div>
-															</div>
-															<div class="detail"><p class="route">거제시-부산으로 이동</p></div>
-															<div class="detail type">
-																<div class="detail_area">
-																	<div class="card_mngr type1">
-   																		<div class="card_unit">
-        																	<div class="_tit title">
-        																		<strong class="eps">오륙도 스카이워크</strong>
-        																		
-        																	</div>
-        																	<div class="_tit_comt sub"><p class="eps">드넓은 바다가 한눈에 보이는 유리 다리</p></div>
-        																	<div class="_info_section cont_box">
-            																	<div class="_txt_cont txt_conts">
-            																		<div>동해와 남해의 경계지점의 말의 안장처럼 생긴 승두말에 위치한 오륙도 스카이워크는 2013년도에 개장하였습니다.
-            																			 35m 해안절벽 위에 놓인 15m 길이의 유리 다리 위에서 파도가 절벽을 치는 모습을 보며 걷는 아찔한 경험을 해볼 수 있고,
-            																			 날씨가 맑으면 대마도까지도 볼 수 있습니다.
-            																		</div>
-            																	</div>
-            																	<div class="_local_info txt_box disc"></div>
-            																	<div class="custom_tag_a">
-            																		<div class="lead_time">
-            																			<div class="time"></div>
-            																			<div class="tour"></div>
-            																		</div>
-            																	</div>           
-        																	</div>
-        																	<hr class="line_white">
-        																	<div class="custom_tag_b">
-        																		<div class="card_notice"> 
-  																					<div class=""><!--custTitle--></div> 
-  																					<div class="notice_cont"><!--custMemo--></div> 
-																				</div>
-																			</div>
-    																	</div>
-																	</div>
-																</div>
-															</div>
-															<div class="detail"><p class="route">석식 (한식,  복국정식)</p></div>
-															<div class="detail type">
-																<div class="detail_area">
-																	<div class="card_mngr">
-    																	<div class="card_unit type7">
-        																	<div class="_tit title"><strong class="eps">WESTIN CHOSUN BUSAN</strong></div>
-        																	<div class="_tit_comt sub"><p class="eps">부산 웨스틴조선호텔</p></div>
-        																	<div class="_info_section cont_box">
-            																	<div class="_thumb thumb">
-            																		<div class="img_list">
-            																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2005/06/14/30000/5de9ee57-1e95-4545-8454-077e29fa1bb6.jpg" alt="부산웨스틴조선주변1">
-            																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2008/01/29/10000/13bdaae6-0cec-4df8-9bb4-9a33d7c0ed40.jpg" alt="부산웨스틴조선-이그제큐티브 트윈">
-            																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2008/01/29/10000/cdf41380-b9c4-41ea-9090-efbcf1a9f0fa.jpg" alt="부산웨스틴조선-로비전경">
-            																		</div>
-            																	</div>
-            																	<div class="_txt_cont txt_conts"></div>
-            																	<div class="_local_info txt_box"></div>
-            																	<div class="_additional_tit cont_tit"><strong>호텔소개</strong></div>
-            																	<div class="_additional_content cont_txt">
-            																		<div>부산의 웨스틴 조선호텔은 부산지역 최초의 특급호텔로 1978년에 개관하였습니다.
-            																			 부산의 관광명소인 동백섬 입구에 있고 해운대 해수욕장과 연결된 호텔로, 부산의 대표 호텔로서 자리매김하고 있습니다.
-            																			 290개의 객실과 체련장, 사우나, 수영장, 플라워 부띠끄 등 다양한 부대시설을 통해 호텔을 즐길 수 있습니다.
-            																			  2005년 APEC 정상 회의 때 미국 부시 대통령이 묵었던 곳으로 유명한 웨스틴 조선호텔 부산은 각종 국제 행사가 개최된 곳이기도 합니다.
-            																		</div>
-            																	</div>
-            																	<div class="custom_tag_a"></div>
-        																	</div>
-        																	<hr class="line_white">
-        																	<div class="custom_tag_b">
-        																		<div class="card_notice">
-        																			<div class=""><!--custTitle--></div>
-        																			<div class="notice_cont"><!--custMemo--></div>
-        																		</div>
-        																	</div>
-    																	</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="detail_area">
-														<div class="js_acc">
-															<div class="inr additional_area">
-																<a href="#add_hotel_2" class="header">
-																	<span class="tit hotel">호텔</span>
-																	<strong>총 <em>1개</em>의 <em>예정 호텔</em>이 있습니다.</strong>출발 3일전까지 홈페이지를 통해 알려드리겠습니다.
-                                                                    <p class="stxt3">출발 1일전 발송되는 알림톡에서도 확인가능 합니다.</p>
-                                                                </a>
-                                                                <div id="add_hotel_2" class="view">
-                                                                	<div class="additional_list">
-                                                                		<div class="link_list ing">
-                                                                			<strong class="tit">부산 웨스틴조선호텔</strong>
-                                                                			<p class="wrap_star"><span class="star_value" style="width: 100%;"></span></p>
-                                                                		
-                                                                		</div>
-                                                                	</div>
+														<div class="detail_area">
+															<div class="js_acc">
+																<div class="inr additional_area">
+																	<a href="#add_hotel_0" class="header">
+																		<span class="tit hotel">호텔</span>
+																		<strong>총 <em>1개</em>의 <em>예정 호텔</em>이 있습니다.</strong>
+																			출발 3일전까지 홈페이지를 통해 알려드리겠습니다.
+                                                                   			<p class="stxt3">출발 1일전 발송되는 알림톡에서도 확인가능 합니다.</p>
+                                                                   	</a>
+                                                                   	<div id="add_hotel_0" class="view">
+                                                                   		<div class="additional_list">
+                                                                   			<div class="link_list ing">
+                                                                   				<strong class="tit">히든 베이 호텔</strong>
+                                                                   				<p class="wrap_star">
+                                                                   					<span class="star_value" style="width: 80%;"></span>
+                                                                   				</p>
+                                                                   				
+                                                                   			</div>
+                                                                   		</div>
+                                                                   	</div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="js_acc mt0"><!----></div>
-                                                        <div class="additional_area">
-                                                        	<span class="tit food">식사</span>
-                                                        	<div class="list_txt">
-                                                        		<span>[조식] <span>호텔식</span></span>
-                                                        		<span>[중식] <span>한식 전복 해물뚝배기</span></span>
-                                                        		<span>[석식] <span>한식 복국정식</span></span>
-                                                        	</div>
-                                                        </div>
+                                                            <div class="js_acc mt0"><!----></div>
+                                                            <div class="additional_area"><span class="tit food">식사</span>
+                                                            	<div class="list_txt">
+                                                            		<span>[조식] <span></span></span>
+                                                            		<span>[중식] <span></span></span>
+                                                            		<span>[석식] <span>현지식</span></span>
+                                                            	</div>
+                                                            </div>
+                                                      	</div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                           		<!-- 여행 4일차 펼친 후 -->
-                                            <div class="inr">
-                                            	<!-- 여행 4일차 펼치기 -->
-                                            	<a href="#acc_con3" class="nojq header daylist">
-	                                            	<span class="tit_left"><strong>4일차</strong>01/21(목)</span>
-	                                            	<strong>부산, 양산시, 서울</strong> <p>해운대 동백섬, 통도사</p>
-	                                            </a>
-	                                            <div id="acc_con3" class="view active" style="display: none;">
-	                                            	<div class="schedule_detail"><div class="detail_wrap">
-	                                            		<div class="detail"><p class="route">조식 (호텔식)</p></div>
-	                                            		<div class="detail type">
-	                                            			<div class="detail_area">
-	                                            				<div class="card_mngr">
-    																<div class="card_unit type3">
-        																<div class="_tit title">
-        																	<strong class="eps">해운대 동백섬</strong>
-        																
-        																</div>
-        																<div class="_tit_comt sub"><p class="eps">아름다운 해운대 산책코스</p></div>
-        																<div class="_info_section cont_box">
-            																<div class="_thumb thumb">
-            																	<div class="img_list">
-            																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2016/11/09/10000/ad951bf6-d6bc-4f50-a78e-32bdddf62494.jpg" alt="동백섬">
-            																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2016/11/09/10000/b021d787-27d3-45f4-8bb0-4fef1212fdd0.jpg" alt="동백섬">
-            																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2016/11/09/10000/7de7821d-3210-445d-b200-c5f481b38143.jpg" alt="동백섬">
-            																	</div>
-            																</div>
-            																<div class="_txt_cont txt_conts">
-            																	<div>가수 '조용필'의 노랫가락에도 소개되는 해운대의 동백섬은 원래는 독립된 섬이었으나 현재는 육지가 되었습니다.
-            																		 동백섬 안에는 세계의 정상들이 모여 회의를 하던 누리마루APEC하우스가 있습니다.
-            																		  소나무와 동백숲으로 울창하여 사시사철 늘 푸르고 광안대교와 오륙도를 조망 할 수 있습니다.
-            																	</div>
-            																</div>
-            																<div class="_local_info txt_box disc"></div>            
-            																<div class="custom_tag_a">
-            																	<div class="lead_time">
-            																		<div class="time"></div>
-            																		<div class="tour"></div>
-            																	</div>
-            																</div>
-        																</div>
-        																<hr class="line_white">
-        																<div class="custom_tag_b">
-        																	<div class="card_notice"> 
-  																				<div class=""><!--custTitle--></div> 
-  																				<div class="notice_cont"><!--custMemo--></div> 
-																			</div>
-																		</div>
-    																</div>
+                                                
+                                                 <!-- 여행 3일차 펼친 후-->
+												<div class="inr">
+													<!-- 클릭시 3일차 펼침 -->
+													<a href="#acc_con2" class="nojq header daylist">
+														<span class="tit_left"><strong>2일차</strong>06/08(화)</span>
+														<strong>헬싱키</strong>
+														<p>알레그로 탑승</p>
+													</a>
+													<div id="acc_con2" class="view active" style="display: none;">
+														<div class="schedule_detail">
+															<div class="detail_wrap">
+																<div class="detail">
+																	<p class="route"><b>인천</b></p>
 																</div>
-															</div>
-														</div>
-														<div class="detail"><p class="route">부산-양산시로 이동</p></div>
-														<div class="detail type">
-															<div class="detail_area">
-																<div class="card_mngr">
-    																<div class="card_unit type3">
-        																<div class="_tit title">
-        																	<strong class="eps">통도사</strong>
-        																	
-        																</div>
-        																<div class="_tit_comt sub"><p class="eps">한국 3대 사찰의 하나</p></div>
-        																<div class="_info_section cont_box">
-            																<div class="_thumb thumb">
-            																	<div class="img_list">
-            																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/09/17/20000/11a7afa7-7c15-4852-a8df-e22f6842a1ad.jpg" alt="통도사">
-            																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/09/17/20000/53433fd3-df80-4b3a-bf79-caf6ea85d724.jpg" alt="통도사">
-            																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/09/17/20000/02ef7a2c-1cf7-4b81-b153-699a595ac7cb.jpg" alt="통도사">
-            																	</div>
-            																</div>
-            																<div class="_txt_cont txt_conts">
-            																	<div>양산의 영축산에 자리한 한국의 3대 사찰 중 하나로 부처의 진신사리를 모시고 있는 '불보사찰'로 불립니다.
-            																	 	 신라 선덕여왕 때 자장이 창건해 1,500년에 이르는 역사를 지닌 국보급 사찰입니다. 신라의 승단(僧團)을 체계화하는 중심지가 되었습니다.
-            																	  	 창건의 정신적 근거이며 중심인 금강계단은 부처의 진신사리를 안치하여 오늘날까지 잘 보존되고 있습니다.
-            																	</div>
-            																</div>
-            																<div class="_local_info txt_box disc"></div>            
-            																<div class="custom_tag_a">
-            																	<div class="lead_time">
-            																		<div class="time"></div>
-            																		<div class="tour"></div>
-            																	</div>
-            																</div>
-        																</div>
-        																<hr class="line_white">
-        																<div class="custom_tag_b">
-        																	<div class="card_notice"> 
-  																				<div class=""></div> 
-  																				<div class="notice_cont"><!--custMemo--></div> 
-																			</div>
-																		</div>
-    																</div>
+																<div class="detail">
+																	<p class="route"><b>모스크바</b><br>
+																	조식(호텔식)<br>
+																	</p><br>
 																</div>
-															</div>
-														</div>
-														<div class="detail type">
-															<p class="route">중식 (한식)</p>
-															<div class="detail_area">
-																<div class="card_mngr">
-    																<div class="card_unit type2">
-        																<div class="_tit title">
-        																	<strong class="eps">언양 한우 떡갈비</strong>
-        																	
-        																</div>
-        																<div class="_tit_comt sub"><p class="eps">달콤하고 부드러운 한우 떡갈비</p></div>
-        																<div class="_info_section cont_box">
-            																<div class="_thumb thumb">
-            																	<div class="swiper-container img_tit prevNext pager v-swiper2 swiper-container-initialized swiper-container-horizontal">
-            																		<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-248px, 0px, 0px);">
-            																			<div class="swiper-slide movie_box swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2" style="width: 248px;">
-            																				<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/07/08/10000/32b1ca03-9f34-4ea5-82bd-6824161986b6.JPG" alt="언양 한우떡갈비">
-            																			</div>
-            																			<div class="swiper-slide movie_box swiper-slide-active" data-swiper-slide-index="0" style="width: 248px;">
-            																				<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/07/08/10000/e720943f-8e13-4851-964a-196d73242d0c.jpg" alt="언양 한우떡갈비">
-            																			</div>
-            																			<div class="swiper-slide movie_box swiper-slide-next" data-swiper-slide-index="1" style="width: 248px;">
-            																				<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/07/08/10000/af2a479b-2084-47dc-b960-671a10f49053.jpg" alt="언양 한우떡갈비">
-            																			</div>
-            																			<div class="swiper-slide movie_box swiper-slide-duplicate-prev" data-swiper-slide-index="2" style="width: 248px;">
-            																				<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/07/08/10000/32b1ca03-9f34-4ea5-82bd-6824161986b6.JPG" alt="언양 한우떡갈비">
-            																			</div>
-            																			<div class="swiper-slide movie_box swiper-slide-duplicate" data-swiper-slide-index="0" style="width: 248px;">
-            																				<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/07/08/10000/e720943f-8e13-4851-964a-196d73242d0c.jpg" alt="언양 한우떡갈비">
+																
+																<div class="detail type">
+																	<div class="detail_area">
+																		<div class="card_mngr">
+    																		<div class="card_unit type3">
+        																		<div class="_tit title">
+        																			<strong class="eps">모스크바 관광</strong>
+        																		</div>
+        																		
+        																		<div class="_tit_comt sub"><p class="eps"><b>성 바실리 사원</b><br>불균형이 가져다주는 묘한 아름다움, 성 바실리 사원</p></div>
+        																		<div class="_info_section cont_box">
+            																		<div class="_thumb thumb">
+            																			<div class="img_list">
+            																				<img src="<%=cp %>/resources/image/list/detail/ne2/ne_1_hh.jpg">
+            																				</div>
+            																		</div>
+            																		<div class="_txt_cont txt_conts">
+            																			<div>붉은 광장 진입로로 들어서는 모든 관광객들의 시선을 한눈에 사로잡아 버리는<br>
+            																				아름다우면서도 묘한 느낌을 주는 성바실리 성당이다.<br>
+																							200여년간 러시아를 점령하고 있던 몽골의 카잔 한(汗)을 항복시킨 것을<br>
+																							기념하기 위해 이반 대제의 명령으로 지어진 건축물로, 사원의 이름은<br>
+																							이반 대제에게 많은 영향을 끼친 수도사 바실리에서 유래되었다고 한다.<br>
+																							1555년에 착공해 1561년에 이르러서야 완성되자 이반 대제는 그 아름다움에 탄복,<br>
+																							더 이상 이와 같은 성당을 짓지 못하라는 뜻으로 설계자인 포스토닉과 바르마의<br>
+																							두 눈을 뽑아버렸다는 이야기가 전해지고 있다.<br>
+																							</div>
+																					</div>
+            																		<div class="_local_info txt_box disc"></div>           
+            																		<div class="custom_tag_a">
+            																			<div class="lead_time">
+            																				<div class="time"></div>
+            																				<div class="tour"></div>
             																			</div>
             																		</div>
-            																		<div class="controller">
-            																			<span class="total swiper-pagination-fraction" style="visibility: visible;"><span>1</span>/<span>3</span></span>
-            																			<a href="#none" class="prev" tabindex="0" role="button" aria-label="Previous slide"><span class="blind">이전</span></a>
-            																			<a href="#none" class="next" tabindex="0" role="button" aria-label="Next slide"><span class="blind">다음</span></a>
+        																		</div>
+        																		
+        																		<div class="_tit_comt sub"><p class="eps"><b>붉은 광장</b><br>검지만 아름다운 붉은광장</p></div>
+        																		<div class="_info_section cont_box">
+            																		<div class="_thumb thumb">
+            																			<div class="img_list">
+            																				<img src="<%=cp %>/resources/image/list/detail/ne2/ne_2_hh.jpg">
+            																				</div>
             																		</div>
-            																		<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-            																	</div>
-            																</div>
-            																<div class="cont_box2">
-	                															<div class="_txt_cont txt_conts">
-	                																<div>울산 언양읍의 향토 음식으로 소고기를 간장 양념에 재웠다가 먹는 양념식 너비아니-떡갈비입니다.
-	                																 	 언양 지역에서 자란 한우를 도축하여 좋은 재료를 사용하므로 고기의 맛이 다른 지역의 너비아니와는 다른 독특한 맛입니다.
-	                																</div>
-	                															</div>
-	                															<div class="_local_info txt_box disc"></div>             
-	                															<div class="custom_tag_a"></div>
-            																</div>
-        																</div>
-        																<hr class="line_white">
-       	 																<div class="custom_tag_b">
-       	 																	<div class="card_notice"> 
-  																				<div class=""><!--custTitle--></div> 
-  																				<div class="notice_cont"><!--custMemo--></div> 
-																			</div>
+            																		<div class="_txt_cont txt_conts">
+            																			<div>붉은 광장은 국립 역사 박물관과 굼 백화점 및 양파머리 모양의 바실리 사원에<br>
+            																				 둘러싸여 있는데 전에는 시내 중심부에 있던 시장이었다. 끄라스나야 쁠로샤지,<br>
+            																				 즉 현재는 "붉은"으로 해석되는 이 광장의 명칭은 고대 러시아어로는<br>
+            																				 "아름다운, 예쁜"이라는 뜻이었기 때문에 본 의미는 "아름다운 광장"이었으나<br>
+            																				 많은 이들은 메이데이와 혁명 기념일에 붉은색의 현수막이 국립 역사 박물관과<br>
+            																				 굼 백화점의 벽에 걸리고, 사람들도 붉은 깃발을 손에 들고 있어서 광장이 온통<br>
+            																				 붉은색이 되었다는 데서 그 명칭의 유래를 찾기도 한다.<br>
+            																				 붉은 광장 주변에는 아직도 살았을 때의 모습 그대로 누워있는 레닌의 묘,<br>
+            																				 불균형 속에 조화를 이루고 있는 성 바실리 사원, 국립 역사 박물관,<br>
+            																				 모스크바 최대의 백화점인 굼 등이 있다.<br>
+																							</div>
+																					</div>
+            																		<div class="_local_info txt_box disc"></div>           
+            																		<div class="custom_tag_a">
+            																			<div class="lead_time">
+            																				<div class="time"></div>
+            																				<div class="tour"></div>
+            																			</div>
+            																		</div>
+        																		</div>
+        																		
+        																		<div class="_tit_comt sub"><p class="eps"><b>굼 백화점</b><br>러시아 최대의 굼 백화점</p></div>
+        																		<div class="_info_section cont_box">
+            																		<div class="_thumb thumb">
+            																			<div class="img_list">
+            																				<img src="<%=cp %>/resources/image/list/detail/ne2/ne_3_hh.jpg">
+            																				</div>
+            																		</div>
+            																		<div class="_txt_cont txt_conts">
+            																			<div>붉은 광장 내 레닌 묘 맞은 편에 길게 세워져 있는 베이지 색의 건물이 러시아 최대의<br>
+            																				국영백화점인 굼(Gum)이다. 이 백화점은 러시아의 최대 백화점인 동시에 가장 오래된<br>
+            																				백화점이다. 오랜 역사를 자랑하듯 건물을 밖에서 볼 때는 낡은 건물이지만 1950년대에<br>
+            																				대폭적인 내부 수리가 이루어져 오늘날까지도 러시아에서 최고급 백화점으로 손꼽히고 있다.<br>
+            																				3층 높이의 이 건물의 1, 2층에는 200여점에 이르는 최고급 외제산 상점들이 위치하여<br>
+            																				손님들을 맞이하고 있다. 블라디보스톡에도 체인을 두고 있을 만큼 큰 규모와 양질을<br>
+            																				자랑하는 곳이다. 특히나 모스크바는 세계적인 대부호들이 많이 사는 도시로<br>
+            																				명품들의 명품을 구경할 수 있다.<br>
+																							</div>
+																					</div>
+            																		<div class="_local_info txt_box disc"></div>           
+            																		<div class="custom_tag_a">
+            																			<div class="lead_time">
+            																				<div class="time"></div>
+            																				<div class="tour"></div>
+            																			</div>
+            																		</div>
+        																		</div>
+        																		
+        																		
+        																		
+        																		<hr class="line_white">
+        																		<div class="custom_tag_b">
+        																			<div class="card_notice"> 
+  																						<div class=""><!--custTitle--></div> 
+  																						<div class="notice_cont"><!--custMemo--></div> 
+																					</div>
+																				</div>
+    																		</div>
 																		</div>
-    																</div>
+																	</div>
 																</div>
+																
+																
+
+																<div class="detail">
+																<p class="route">석식 (현지식)</p>
+																</div>
+																
+																<div class="detail">
+																<p class="route">호텔로 이동합니다.</p>
+																</div>
+
 															</div>
 														</div>
-														<div class="detail"><p class="route">양산시-서울로 이동</p></div>
-													</div>
-												</div>
-												<div class="detail_area">
-													<div class="js_acc">
-														<div class="additional_area">
-															<span class="tit hotel">호텔</span>
-															<div class="list_txt"><span>숙박 없음</span></div>
+														<div class="detail_area">
+															<div class="js_acc">
+																<div class="inr additional_area">
+																	<a href="#add_hotel_0" class="header">
+																		<span class="tit hotel">호텔</span>
+																		<strong>총 <em>1개</em>의 <em>예정 호텔</em>이 있습니다.</strong>
+																			출발 3일전까지 홈페이지를 통해 알려드리겠습니다.
+                                                                   			<p class="stxt3">출발 1일전 발송되는 알림톡에서도 확인가능 합니다.</p>
+                                                                   	</a>
+                                                                   	<div id="add_hotel_0" class="view">
+                                                                   		<div class="additional_list">
+                                                                   			<div class="link_list ing">
+                                                                   				<strong class="tit">히든 베이 호텔</strong>
+                                                                   				<p class="wrap_star">
+                                                                   					<span class="star_value" style="width: 80%;"></span>
+                                                                   				</p>
+                                                                   				
+                                                                   			</div>
+                                                                   		</div>
+                                                                   	</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="js_acc mt0"><!----></div>
+                                                            <div class="additional_area"><span class="tit food">식사</span>
+                                                            	<div class="list_txt">
+                                                            		<span>[조식] <span></span></span>
+                                                            		<span>[중식] <span></span></span>
+                                                            		<span>[석식] <span>현지식</span></span>
+                                                            	</div>
+                                                            </div>
+                                                      	</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                 <!-- 여행 4일차 펼친 후-->
+												<div class="inr">
+													<!-- 클릭시 4일차 펼침 -->
+													<a href="#acc_con3" class="nojq header daylist">
+														<span class="tit_left"><strong>2일차</strong>06/08(화)</span>
+														<strong>스톡홀름</strong>
+														<p>시청사, 바사 박물관</p>
+													</a>
+													<div id="acc_con3" class="view active" style="display: none;">
+														<div class="schedule_detail">
+															<div class="detail_wrap">
+																<div class="detail">
+																	<p class="route"><b>인천</b></p>
+																</div>
+																<div class="detail">
+																	<p class="route"><b>모스크바</b><br>
+																	조식(호텔식)<br>
+																	</p><br>
+																</div>
+																
+																<div class="detail type">
+																	<div class="detail_area">
+																		<div class="card_mngr">
+    																		<div class="card_unit type3">
+        																		<div class="_tit title">
+        																			<strong class="eps">모스크바 관광</strong>
+        																		</div>
+        																		
+        																		<div class="_tit_comt sub"><p class="eps"><b>성 바실리 사원</b><br>불균형이 가져다주는 묘한 아름다움, 성 바실리 사원</p></div>
+        																		<div class="_info_section cont_box">
+            																		<div class="_thumb thumb">
+            																			<div class="img_list">
+            																				<img src="<%=cp %>/resources/image/list/detail/ne2/ne_4_hh.jpg">
+            																				</div>
+            																		</div>
+            																		<div class="_txt_cont txt_conts">
+            																			<div>붉은 광장 진입로로 들어서는 모든 관광객들의 시선을 한눈에 사로잡아 버리는<br>
+            																				아름다우면서도 묘한 느낌을 주는 성바실리 성당이다.<br>
+																							200여년간 러시아를 점령하고 있던 몽골의 카잔 한(汗)을 항복시킨 것을<br>
+																							기념하기 위해 이반 대제의 명령으로 지어진 건축물로, 사원의 이름은<br>
+																							이반 대제에게 많은 영향을 끼친 수도사 바실리에서 유래되었다고 한다.<br>
+																							1555년에 착공해 1561년에 이르러서야 완성되자 이반 대제는 그 아름다움에 탄복,<br>
+																							더 이상 이와 같은 성당을 짓지 못하라는 뜻으로 설계자인 포스토닉과 바르마의<br>
+																							두 눈을 뽑아버렸다는 이야기가 전해지고 있다.<br>
+																							</div>
+																					</div>
+            																		<div class="_local_info txt_box disc"></div>           
+            																		<div class="custom_tag_a">
+            																			<div class="lead_time">
+            																				<div class="time"></div>
+            																				<div class="tour"></div>
+            																			</div>
+            																		</div>
+        																		</div>
+        																		
+        																		<div class="_tit_comt sub"><p class="eps"><b>붉은 광장</b><br>검지만 아름다운 붉은광장</p></div>
+        																		<div class="_info_section cont_box">
+            																		<div class="_thumb thumb">
+            																			<div class="img_list">
+            																				<img src="<%=cp %>/resources/image/list/detail/ne2/ne_5_hh.jpg">
+            																				</div>
+            																		</div>
+            																		<div class="_txt_cont txt_conts">
+            																			<div>붉은 광장은 국립 역사 박물관과 굼 백화점 및 양파머리 모양의 바실리 사원에<br>
+            																				 둘러싸여 있는데 전에는 시내 중심부에 있던 시장이었다. 끄라스나야 쁠로샤지,<br>
+            																				 즉 현재는 "붉은"으로 해석되는 이 광장의 명칭은 고대 러시아어로는<br>
+            																				 "아름다운, 예쁜"이라는 뜻이었기 때문에 본 의미는 "아름다운 광장"이었으나<br>
+            																				 많은 이들은 메이데이와 혁명 기념일에 붉은색의 현수막이 국립 역사 박물관과<br>
+            																				 굼 백화점의 벽에 걸리고, 사람들도 붉은 깃발을 손에 들고 있어서 광장이 온통<br>
+            																				 붉은색이 되었다는 데서 그 명칭의 유래를 찾기도 한다.<br>
+            																				 붉은 광장 주변에는 아직도 살았을 때의 모습 그대로 누워있는 레닌의 묘,<br>
+            																				 불균형 속에 조화를 이루고 있는 성 바실리 사원, 국립 역사 박물관,<br>
+            																				 모스크바 최대의 백화점인 굼 등이 있다.<br>
+																							</div>
+																					</div>
+            																		<div class="_local_info txt_box disc"></div>           
+            																		<div class="custom_tag_a">
+            																			<div class="lead_time">
+            																				<div class="time"></div>
+            																				<div class="tour"></div>
+            																			</div>
+            																		</div>
+        																		</div>
+        																		
+        																		<div class="_tit_comt sub"><p class="eps"><b>굼 백화점</b><br>러시아 최대의 굼 백화점</p></div>
+        																		<div class="_info_section cont_box">
+            																		<div class="_thumb thumb">
+            																			<div class="img_list">
+            																				<img src="<%=cp %>/resources/image/list/detail/ne2/ne_6_hh.jpg">
+            																				</div>
+            																		</div>
+            																		<div class="_txt_cont txt_conts">
+            																			<div>붉은 광장 내 레닌 묘 맞은 편에 길게 세워져 있는 베이지 색의 건물이 러시아 최대의<br>
+            																				국영백화점인 굼(Gum)이다. 이 백화점은 러시아의 최대 백화점인 동시에 가장 오래된<br>
+            																				백화점이다. 오랜 역사를 자랑하듯 건물을 밖에서 볼 때는 낡은 건물이지만 1950년대에<br>
+            																				대폭적인 내부 수리가 이루어져 오늘날까지도 러시아에서 최고급 백화점으로 손꼽히고 있다.<br>
+            																				3층 높이의 이 건물의 1, 2층에는 200여점에 이르는 최고급 외제산 상점들이 위치하여<br>
+            																				손님들을 맞이하고 있다. 블라디보스톡에도 체인을 두고 있을 만큼 큰 규모와 양질을<br>
+            																				자랑하는 곳이다. 특히나 모스크바는 세계적인 대부호들이 많이 사는 도시로<br>
+            																				명품들의 명품을 구경할 수 있다.<br>
+																							</div>
+																					</div>
+            																		<div class="_local_info txt_box disc"></div>           
+            																		<div class="custom_tag_a">
+            																			<div class="lead_time">
+            																				<div class="time"></div>
+            																				<div class="tour"></div>
+            																			</div>
+            																		</div>
+        																		</div>
+        																		
+        																		
+        																		
+        																		<hr class="line_white">
+        																		<div class="custom_tag_b">
+        																			<div class="card_notice"> 
+  																						<div class=""><!--custTitle--></div> 
+  																						<div class="notice_cont"><!--custMemo--></div> 
+																					</div>
+																				</div>
+    																		</div>
+																		</div>
+																	</div>
+																</div>
+																
+																
+
+																<div class="detail">
+																<p class="route">석식 (현지식)</p>
+																</div>
+																
+																<div class="detail">
+																<p class="route">호텔로 이동합니다.</p>
+																</div>
+
+															</div>
 														</div>
-													</div>
-													<div class="js_acc mt0"></div>
-													<div class="additional_area">
-														<span class="tit food">식사</span>
-														<div class="list_txt">
-															<span>[조식]<span>호텔식</span></span>
-															<span>[중식] <span>한식</span></span>
-															<span>[석식] <span></span></span>
+														<div class="detail_area">
+															<div class="js_acc">
+																<div class="inr additional_area">
+																	<a href="#add_hotel_0" class="header">
+																		<span class="tit hotel">호텔</span>
+																		<strong>총 <em>1개</em>의 <em>예정 호텔</em>이 있습니다.</strong>
+																			출발 3일전까지 홈페이지를 통해 알려드리겠습니다.
+                                                                   			<p class="stxt3">출발 1일전 발송되는 알림톡에서도 확인가능 합니다.</p>
+                                                                   	</a>
+                                                                   	<div id="add_hotel_0" class="view">
+                                                                   		<div class="additional_list">
+                                                                   			<div class="link_list ing">
+                                                                   				<strong class="tit">히든 베이 호텔</strong>
+                                                                   				<p class="wrap_star">
+                                                                   					<span class="star_value" style="width: 80%;"></span>
+                                                                   				</p>
+                                                                   				
+                                                                   			</div>
+                                                                   		</div>
+                                                                   	</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="js_acc mt0"><!----></div>
+                                                            <div class="additional_area"><span class="tit food">식사</span>
+                                                            	<div class="list_txt">
+                                                            		<span>[조식] <span></span></span>
+                                                            		<span>[중식] <span></span></span>
+                                                            		<span>[석식] <span>현지식</span></span>
+                                                            	</div>
+                                                            </div>
+                                                      	</div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- 여행 5일차 펼친 후-->
+												<div class="inr">
+													<!-- 클릭시 5일차 펼침 -->
+													<a href="#acc_con4" class="nojq header daylist">
+														<span class="tit_left"><strong>2일차</strong>06/08(화)</span>
+														<strong>베르겐,인천</strong>
+														<p>프레데릭스보르 성</p>
+													</a>
+													<div id="acc_con4" class="view active" style="display: none;">
+														<div class="schedule_detail">
+															<div class="detail_wrap">
+																<div class="detail">
+																	<p class="route"><b>인천</b></p>
+																</div>
+																<div class="detail">
+																	<p class="route"><b>모스크바</b><br>
+																	조식(호텔식)<br>
+																	</p><br>
+																</div>
+																
+																<div class="detail type">
+																	<div class="detail_area">
+																		<div class="card_mngr">
+    																		<div class="card_unit type3">
+        																		<div class="_tit title">
+        																			<strong class="eps">모스크바 관광</strong>
+        																		</div>
+        																		
+        																		<div class="_tit_comt sub"><p class="eps"><b>성 바실리 사원</b><br>불균형이 가져다주는 묘한 아름다움, 성 바실리 사원</p></div>
+        																		<div class="_info_section cont_box">
+            																		<div class="_thumb thumb">
+            																			<div class="img_list">
+            																				<img src="<%=cp %>/resources/image/list/detail/ne2/ne_4_hh.jpg">
+            																				</div>
+            																		</div>
+            																		<div class="_txt_cont txt_conts">
+            																			<div>붉은 광장 진입로로 들어서는 모든 관광객들의 시선을 한눈에 사로잡아 버리는<br>
+            																				아름다우면서도 묘한 느낌을 주는 성바실리 성당이다.<br>
+																							200여년간 러시아를 점령하고 있던 몽골의 카잔 한(汗)을 항복시킨 것을<br>
+																							기념하기 위해 이반 대제의 명령으로 지어진 건축물로, 사원의 이름은<br>
+																							이반 대제에게 많은 영향을 끼친 수도사 바실리에서 유래되었다고 한다.<br>
+																							1555년에 착공해 1561년에 이르러서야 완성되자 이반 대제는 그 아름다움에 탄복,<br>
+																							더 이상 이와 같은 성당을 짓지 못하라는 뜻으로 설계자인 포스토닉과 바르마의<br>
+																							두 눈을 뽑아버렸다는 이야기가 전해지고 있다.<br>
+																							</div>
+																					</div>
+            																		<div class="_local_info txt_box disc"></div>           
+            																		<div class="custom_tag_a">
+            																			<div class="lead_time">
+            																				<div class="time"></div>
+            																				<div class="tour"></div>
+            																			</div>
+            																		</div>
+        																		</div>
+        																		
+        																		<div class="_tit_comt sub"><p class="eps"><b>붉은 광장</b><br>검지만 아름다운 붉은광장</p></div>
+        																		<div class="_info_section cont_box">
+            																		<div class="_thumb thumb">
+            																			<div class="img_list">
+            																				<img src="<%=cp %>/resources/image/list/detail/ne2/ne_2_hh.jpg">
+            																				</div>
+            																		</div>
+            																		<div class="_txt_cont txt_conts">
+            																			<div>붉은 광장은 국립 역사 박물관과 굼 백화점 및 양파머리 모양의 바실리 사원에<br>
+            																				 둘러싸여 있는데 전에는 시내 중심부에 있던 시장이었다. 끄라스나야 쁠로샤지,<br>
+            																				 즉 현재는 "붉은"으로 해석되는 이 광장의 명칭은 고대 러시아어로는<br>
+            																				 "아름다운, 예쁜"이라는 뜻이었기 때문에 본 의미는 "아름다운 광장"이었으나<br>
+            																				 많은 이들은 메이데이와 혁명 기념일에 붉은색의 현수막이 국립 역사 박물관과<br>
+            																				 굼 백화점의 벽에 걸리고, 사람들도 붉은 깃발을 손에 들고 있어서 광장이 온통<br>
+            																				 붉은색이 되었다는 데서 그 명칭의 유래를 찾기도 한다.<br>
+            																				 붉은 광장 주변에는 아직도 살았을 때의 모습 그대로 누워있는 레닌의 묘,<br>
+            																				 불균형 속에 조화를 이루고 있는 성 바실리 사원, 국립 역사 박물관,<br>
+            																				 모스크바 최대의 백화점인 굼 등이 있다.<br>
+																							</div>
+																					</div>
+            																		<div class="_local_info txt_box disc"></div>           
+            																		<div class="custom_tag_a">
+            																			<div class="lead_time">
+            																				<div class="time"></div>
+            																				<div class="tour"></div>
+            																			</div>
+            																		</div>
+        																		</div>
+        																		
+        																		<div class="_tit_comt sub"><p class="eps"><b>굼 백화점</b><br>러시아 최대의 굼 백화점</p></div>
+        																		<div class="_info_section cont_box">
+            																		<div class="_thumb thumb">
+            																			<div class="img_list">
+            																				<img src="<%=cp %>/resources/image/list/detail/ne2/ne_1_hh.jpg">
+            																				</div>
+            																		</div>
+            																		<div class="_txt_cont txt_conts">
+            																			<div>붉은 광장 내 레닌 묘 맞은 편에 길게 세워져 있는 베이지 색의 건물이 러시아 최대의<br>
+            																				국영백화점인 굼(Gum)이다. 이 백화점은 러시아의 최대 백화점인 동시에 가장 오래된<br>
+            																				백화점이다. 오랜 역사를 자랑하듯 건물을 밖에서 볼 때는 낡은 건물이지만 1950년대에<br>
+            																				대폭적인 내부 수리가 이루어져 오늘날까지도 러시아에서 최고급 백화점으로 손꼽히고 있다.<br>
+            																				3층 높이의 이 건물의 1, 2층에는 200여점에 이르는 최고급 외제산 상점들이 위치하여<br>
+            																				손님들을 맞이하고 있다. 블라디보스톡에도 체인을 두고 있을 만큼 큰 규모와 양질을<br>
+            																				자랑하는 곳이다. 특히나 모스크바는 세계적인 대부호들이 많이 사는 도시로<br>
+            																				명품들의 명품을 구경할 수 있다.<br>
+																							</div>
+																					</div>
+            																		<div class="_local_info txt_box disc"></div>           
+            																		<div class="custom_tag_a">
+            																			<div class="lead_time">
+            																				<div class="time"></div>
+            																				<div class="tour"></div>
+            																			</div>
+            																		</div>
+        																		</div>
+        																		
+        																		
+        																		
+        																		<hr class="line_white">
+        																		<div class="custom_tag_b">
+        																			<div class="card_notice"> 
+  																						<div class=""><!--custTitle--></div> 
+  																						<div class="notice_cont"><!--custMemo--></div> 
+																					</div>
+																				</div>
+    																		</div>
+																		</div>
+																	</div>
+																</div>
+																
+																
+
+																<div class="detail">
+																<p class="route">석식 (현지식)</p>
+																</div>
+																
+																<div class="detail">
+																<p class="route">호텔로 이동합니다.</p>
+																</div>
+
+															</div>
 														</div>
-													</div>
-												</div>
-											</div>
-										</div>
+														<div class="detail_area">
+															<div class="js_acc">
+																<div class="inr additional_area">
+																	<a href="#add_hotel_0" class="header">
+																		<span class="tit hotel">호텔</span>
+																		<strong>총 <em>1개</em>의 <em>예정 호텔</em>이 있습니다.</strong>
+																			출발 3일전까지 홈페이지를 통해 알려드리겠습니다.
+                                                                   			<p class="stxt3">출발 1일전 발송되는 알림톡에서도 확인가능 합니다.</p>
+                                                                   	</a>
+                                                                   	<div id="add_hotel_0" class="view">
+                                                                   		<div class="additional_list">
+                                                                   			<div class="link_list ing">
+                                                                   				<strong class="tit">히든 베이 호텔</strong>
+                                                                   				<p class="wrap_star">
+                                                                   					<span class="star_value" style="width: 80%;"></span>
+                                                                   				</p>
+                                                                   				
+                                                                   			</div>
+                                                                   		</div>
+                                                                   	</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="js_acc mt0"><!----></div>
+                                                            <div class="additional_area"><span class="tit food">식사</span>
+                                                            	<div class="list_txt">
+                                                            		<span>[조식] <span></span></span>
+                                                            		<span>[중식] <span></span></span>
+                                                            		<span>[석식] <span>현지식</span></span>
+                                                            	</div>
+                                                            </div>
+                                                      	</div>
+                                                    </div>
+                                                </div>
+                                                
 									</div>
 								</div>
 								<hr class="pkg">
@@ -1658,27 +1434,24 @@
 												<div id="tour02" class="panel selected">
 													<div class="spot_detail_wrap">
 														<div class="spot_area">
-															<div class="text_wrap">
-																<strong class="tit">1일차</strong>
-																<span class="txt">2021.01.18(월)</span>
-															</div>
+															
 															<div class="spot_info">
 																<div class="img_box swiper-container prevNext v-swiper2 swiper-container-initialized swiper-container-horizontal">
 																	<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-390px, 0px, 0px);">
 																		<div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="2">
-																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/09/15/10000/e64bd119-27ac-495e-8d38-0469531d16e6.jpg" title="" data-src="" alt="">
+																			<img src="<%=cp %>/resources/image/list/detail/ne2/ne_6_hh.jpg" title="" data-src="" alt="">
 																		</div>
 																		<div class="swiper-slide swiper-slide-active" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0">
-																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/09/15/10000/157b9b06-f6a5-4fbb-a9cf-74dc00b05959.jpg" title="" data-src="" alt="">
+																			<img src="<%=cp %>/resources/image/list/detail/ne2/ne_6_hh.jpg" title="" data-src="" alt="">
 																		</div>
 																		<div class="swiper-slide swiper-slide-next" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="1">
-																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/09/15/10000/5af35c0f-bdd2-4ee4-938b-56ef82515719.jpg" title="" data-src="" alt="">
+																			<img src="<%=cp %>/resources/image/list/detail/ne2/ne_3_hh.jpg" title="" data-src="" alt="">
 																		</div>
 																		<div class="swiper-slide swiper-slide-duplicate-prev" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="2">
-																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/09/15/10000/e64bd119-27ac-495e-8d38-0469531d16e6.jpg" title="" data-src="" alt="">
+																			<img src="<%=cp %>/resources/image/list/detail/ne2/ne_4_hh.jpg" title="" data-src="" alt="">
 																		</div>
 																		<div class="swiper-slide swiper-slide-duplicate" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0">
-																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/09/15/10000/157b9b06-f6a5-4fbb-a9cf-74dc00b05959.jpg" title="" data-src="" alt="">
+																			<img src="<%=cp %>/resources/image/list/detail/ne2/ne_5_hh.jpg" title="" data-src="" alt="">
 																		</div>
 																	</div>
 																	<a href="#none" class="prev" tabindex="0" role="button" aria-label="Previous slide"><span class="blind">이전</span></a>
@@ -1686,11 +1459,9 @@
 																	<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
 																</div>
 																<div class="info">
-																	<div class="text_wrap"><strong class="tit">천은사</strong></div>
-																	<p class="txt">지리산에 위치한 3대 사찰 중 하나로 화엄사, 쌍계사와 함께 지리산을 대표하는 사찰입니다.
-																	 			   통일신라시대 흥덕왕 3년 때 인도 승려 덕운이 창건한 천년고찰로 '아미타후불탱'을 비롯한 문화재와 주변의 빼어난 경치가 볼거리입니다.
-																	  			   앞뜰에 있는 샘물을 마시면  정신이 맑아진다고 하여 감로사라고도 했는데  중건 당시 감로사의 샘가에는 큰 구렁이가 자주 나타나 한 승려가 이를 잡아 죽였더니
-																	   			   그 뒤로부터는 샘이 솟아나지 않았고, 샘이 숨었다 해서 천은사로 개명했다고 합니다.
+																	<div class="text_wrap"><strong class="tit">성 바실리 사원</strong></div>
+																	<p class="txt">붉은 광장 진입로로 들어서는 모든 관광객들의 시선을 한눈에 사로잡아 버리는
+																					아름다우면서도 묘한 느낌을 주는 성바실리 성당이다.
 																	</p>
 																	<a href="#none" class="txt em">자세히보기</a>
 																</div>
@@ -1699,22 +1470,22 @@
 																<div class="img_box swiper-container prevNext v-swiper2 swiper-container-initialized swiper-container-horizontal">
 																	<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-390px, 0px, 0px);">
 																		<div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="3">
-																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2017/02/28/10000/308ddbe2-079f-4772-9eaa-ff30470b7eed.jpg" title="" data-src="" alt="">
+																			<img src="<%=cp %>/resources/image/list/detail/ne2/ne_7_hh.jpg" title="" data-src="" alt="">
 																		</div>
 																		<div class="swiper-slide swiper-slide-active" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0">
-																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2013/05/03/10000/fc63c324-5a48-4458-b33f-9b5865aac533.jpg" title="" data-src="" alt="">
+																			<img src="<%=cp %>/resources/image/list/detail/ne2/ne_7_hh.jpg" title="" data-src="" alt="">
 																		</div>
 																		<div class="swiper-slide swiper-slide-next" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="1">
-																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/02/21/10000/3161a1d7-da4b-48a9-ad5b-0f14c9bf8d12.png" title="" data-src="" alt="">
+																			<img src="<%=cp %>/resources/image/list/detail/ne2/ne_5_hh.jpg" title="" data-src="" alt="">
 																		</div>
 																		<div class="swiper-slide" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="2">
-																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2018/09/10/10000/08c0de01-29ca-4608-8c5d-f5abfca45a4d.JPG" title="" data-src="" alt="">
+																			<img src="<%=cp %>/resources/image/list/detail/ne2/ne_3_hh.jpg" title="" data-src="" alt="">
 																		</div>
 																		<div class="swiper-slide swiper-slide-duplicate-prev" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="3">
-																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2017/02/28/10000/308ddbe2-079f-4772-9eaa-ff30470b7eed.jpg" title="" data-src="" alt="">
+																			<img src="<%=cp %>/resources/image/list/detail/ne2/ne_1_hh.jpg" title="" data-src="" alt="">
 																		</div>
 																		<div class="swiper-slide swiper-slide-duplicate" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0">
-																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2013/05/03/10000/fc63c324-5a48-4458-b33f-9b5865aac533.jpg" title="" data-src="" alt="">
+																			<img src="<%=cp %>/resources/image/list/detail/ne2/ne_2_hh.jpg" title="" data-src="" alt="">
 																		</div>
 																	</div>
 																	<a href="#none" class="prev" tabindex="0" role="button" aria-label="Previous slide"><span class="blind">이전</span></a>
@@ -1722,11 +1493,8 @@
 																	<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
 																</div>
 																<div class="info">
-																	<div class="text_wrap"><strong class="tit">순천만 습지</strong></div>
-																	<p class="txt">한국관광공사 선정 3회 연속 추천 웰니스 관광지로 선정된 순천만 습지는 남북으로 30km에 달하는 세계적인 연안 습지입니다.
-																				   들꽃을 닮은 칠면초와 여의도 면적에 맞먹는 드넓은 갈대밭, 끝이 보이지 않는 광활한 갯벌이 압권입니다.
-																				   겨울이면 흑두루미, 재두루미, 큰고니 등 철새 희귀종들이 순천만을 찾아오며 2008년 국가지정문화재 명승 제41호로 지정된 순천만습지는
-																				   가장 인기 있는 생태문화관광지입니다.
+																	<div class="text_wrap"><strong class="tit">붉은 광장</strong></div>
+																	<p class="txt">붉은 광장은 국립 역사 박물관과 굼 백화점 및 양파머리 모양의 바실리 사원에둘러싸여 있는데 전에는 시내 중심부에 있던 시장이었다.
 																	</p>
 																	<a href="#none" class="txt em">자세히보기</a>
 																</div>
@@ -1735,19 +1503,19 @@
 																<div class="img_box swiper-container prevNext v-swiper2 swiper-container-initialized swiper-container-horizontal">
 																	<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-390px, 0px, 0px);">
 																		<div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="2">
-																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/04/08/460000/e1781f54-035d-40e3-8273-9d5fa5ac9c99.jpg" title="" data-src="" alt="">
+																			<img src="<%=cp %>/resources/image/list/detail/ne2/ne_8_hh.jpg" title="" data-src="" alt="">
 																		</div>
 																		<div class="swiper-slide swiper-slide-active" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0">
-																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/09/15/10000/f721d95f-1307-4166-b211-3861e2fe920f.jpg" title="" data-src="" alt="">
+																			<img src="<%=cp %>/resources/image/list/detail/ne2/ne_8_hh.jpg" title="" data-src="" alt="">
 																		</div>
 																		<div class="swiper-slide swiper-slide-next" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="1">
-																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2008/02/29/10000/9bf39d4a-6c83-4c4a-9e7b-4e795982d76a.jpg" title="" data-src="" alt="">
+																			<img src="<%=cp %>/resources/image/list/detail/ne2/ne_1_hh.jpg" title="" data-src="" alt="">
 																		</div>
 																		<div class="swiper-slide swiper-slide-duplicate-prev" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="2">
-																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/04/08/460000/e1781f54-035d-40e3-8273-9d5fa5ac9c99.jpg" title="" data-src="" alt="">
+																			<img src="<%=cp %>/resources/image/list/detail/ne2/ne_3_hh.jpg" title="" data-src="" alt="">
 																		</div>
 																		<div class="swiper-slide swiper-slide-duplicate" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0">
-																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/09/15/10000/f721d95f-1307-4166-b211-3861e2fe920f.jpg" title="" data-src="" alt="">
+																			<img src="<%=cp %>/resources/image/list/detail/ne2/ne_5_hh.jpg" title="" data-src="" alt="">
 																		</div>
 																	</div>
 																	<a href="#none" class="prev" tabindex="0" role="button" aria-label="Previous slide"><span class="blind">이전</span></a>
@@ -1755,480 +1523,15 @@
 																	<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
 																</div>
 																<div class="info">
-																	<div class="text_wrap"><strong class="tit">호텔 사우나</strong></div>
-																	<p class="txt">호텔 사우나에서 여행 중에 쌓인 피로감과 일상의 스트레스를 말끔히 풀어내는 여유로운 시간을 가질 수 있습니다.
-																				   사우나는 찜질이나 온천욕에 비해 수분을 방출하는 효과가 뛰어나 부종예방에 좋습니다.
-																				   또한 피로회복, 혈액순환 촉진, 노폐물 제거, 원기 충전에 효과적입니다.
-																	</p>
+																	<div class="text_wrap"><strong class="tit">굼 백화점</strong></div>
+																	<p class="txt">붉은 광장 내 레닌 묘 맞은 편에 길게 세워져 있는 베이지 색의 건물이 러시아 최대의 국영백화점인 굼(Gum)이다. </p>
 																	<a href="#none" class="txt em">자세히보기</a>
 																</div>
 															</div>
 														</div>
-														<div class="spot_area">
-															<div class="text_wrap">
-																<strong class="tit">2일차</strong>
-																<span class="txt">2021.01.19(화)</span>
-															</div>
-															<div class="spot_info">
-																<div class="img_box swiper-container prevNext v-swiper2 swiper-container-initialized swiper-container-horizontal">
-																	<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-390px, 0px, 0px);">
-																		<div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="2">
-																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/02/21/10000/cf908e5f-a9bc-4b21-a0b0-cb163e0badda.png" title="" data-src="" alt="">
-																		</div>
-																		<div class="swiper-slide swiper-slide-active" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0">
-																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/02/21/10000/6be279d4-b8f8-49b6-b57d-76db9286a994.png" title="" data-src="" alt="">
-																		</div>
-																		<div class="swiper-slide swiper-slide-next" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="1">
-																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/02/21/10000/55e96fa1-c722-4d4f-8759-4443df5085c5.png" title="" data-src="" alt="">
-																		</div><div class="swiper-slide swiper-slide-duplicate-prev" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="2">
-																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/02/21/10000/cf908e5f-a9bc-4b21-a0b0-cb163e0badda.png" title="" data-src="" alt="">
-																		</div>
-																		<div class="swiper-slide swiper-slide-duplicate" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0">
-																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/02/21/10000/6be279d4-b8f8-49b6-b57d-76db9286a994.png" title="" data-src="" alt="">
-																		</div>
-																	</div>
-																	<a href="#none" class="prev" tabindex="0" role="button" aria-label="Previous slide"><span class="blind">이전</span></a>
-																	<a href="#none" class="next" tabindex="0" role="button" aria-label="Next slide"><span class="blind">다음</span></a>
-																	<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-																</div>
-																<div class="info"><div class="text_wrap"><strong class="tit">여수 해양레일바이크</strong></div>
-																	<p class="txt">국내 최초 '해변을 따라 운행'하는 레일바이크로 탁 트인 여수 바다를 조망하며 3.5km 철길을 따라 달릴 수 있습니다.
-																				   한려해상국립공원의 비경을 즐길 수 있으며 터널 구간의  LED 조명으로 볼거리를 갖춘 여수의 대표적인 이색 레저입니다.
-																				   남녀노소 누구나 즐길 수 있으며 시원한 바닷바람을 맞으며 열심히 페달을 밟다보면 아름다운 낭만의 도시 여수를 만끽할 수 있습니다.											
-																	</p>
-																	<a href="#none" class="txt em">자세히보기</a>
-																</div>
-															</div>
-															<div class="spot_info">
-																<div class="img_box swiper-container prevNext v-swiper2 swiper-container-initialized swiper-container-horizontal">
-																	<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-390px, 0px, 0px);">
-																		<div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="2">
-																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2012/11/21/10000/4289da62-985e-4a54-acaa-bf7e43d55414.jpg" title="" data-src="" alt="">
-																		</div>
-																		<div class="swiper-slide swiper-slide-active" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0">
-																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2016/11/04/10000/7a2e3b6b-ebea-4bd3-be16-184140688fd6.jpg" title="" data-src="" alt="">
-																		</div>
-																		<div class="swiper-slide swiper-slide-next" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="1">
-																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2017/02/27/10000/47656b01-45c3-4c03-aa8b-8a0b7ed846e4.jpg" title="" data-src="" alt="">
-																		</div>
-																		<div class="swiper-slide swiper-slide-duplicate-prev" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="2">
-																			<img src="https://image.hanatour.com/usr/cms/resize/400_0/2012/11/21/10000/4289da62-985e-4a54-acaa-bf7e43d55414.jpg" title="" data-src="" alt="">
-																		</div>
-																	<div class="swiper-slide swiper-slide-duplicate" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0">
-																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2016/11/04/10000/7a2e3b6b-ebea-4bd3-be16-184140688fd6.jpg" title="" data-src="" alt="">
-																	</div>
-																</div>
-																<a href="#none" class="prev" tabindex="0" role="button" aria-label="Previous slide"><span class="blind">이전</span></a>
-																<a href="#none" class="next" tabindex="0" role="button" aria-label="Next slide"><span class="blind">다음</span></a>
-																<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-															</div>
-															<div class="info">
-																<div class="text_wrap">
-																	<strong class="tit">오동도</strong>
-																</div>
-																<p class="txt">한려해상국립공원에 속한 오동도에는 과거 오동나무가 많이 심겨있었습니다.
-																			   멀리서 보면 섬 자체가 '오동나무 잎'을 닮았다고 하여 오동도라는 이름을 얻었습니다.
-																			   이제는 오동나무 대신 '여수의 꽃'인 동백나무 3천여그루가 빼곡히 심겨있습니다.
-																			   오동도 방파제 길은 한국의 아름다운 길 100선에 선정되었으며 입구에는 임진왜란때 이순신 장군이 만들었다는 거북선과 판옥선의 모형이 서 있습니다.
-																</p>
-																<a href="#none" class="txt em">자세히보기</a>
-															</div>
-														</div>
-														<div class="spot_info">
-															<div class="img_box swiper-container prevNext v-swiper2 swiper-container-initialized swiper-container-horizontal">
-																<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-390px, 0px, 0px);">
-																	<div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="2">
-																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2014/06/13/10000/c447bd73-6ec6-40f8-88c8-8b9f2d9be1ae.jpg" title="" data-src="" alt="">
-																	</div>
-																	<div class="swiper-slide swiper-slide-active" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0">
-																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2014/06/13/10000/578adcd9-c7dc-47c3-bfd0-df571b16108d.jpg" title="" data-src="" alt="">
-																	</div><div class="swiper-slide swiper-slide-next" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="1">
-																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2012/08/07/10000/886c2c4f-bb37-4dc6-94f2-7a0e8e7d3f48.jpg" title="" data-src="" alt="">
-																	</div><div class="swiper-slide swiper-slide-duplicate-prev" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="2">
-																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2014/06/13/10000/c447bd73-6ec6-40f8-88c8-8b9f2d9be1ae.jpg" title="" data-src="" alt="">
-																	</div>
-																	<div class="swiper-slide swiper-slide-duplicate" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0">
-																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2014/06/13/10000/578adcd9-c7dc-47c3-bfd0-df571b16108d.jpg" title="" data-src="" alt="">
-																	</div>
-																</div>
-																<a href="#none" class="prev" tabindex="0" role="button" aria-label="Previous slide"><span class="blind">이전</span></a>
-																<a href="#none" class="next" tabindex="0" role="button" aria-label="Next slide"><span class="blind">다음</span></a>
-																<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-															</div>
-															<div class="info">
-																<div class="text_wrap">
-																	<strong class="tit">원예예술촌</strong>
-																</div>
-																<p class="txt">원예 전문가들이 모여 집과 정원을 개인별 작품으로 조성한 마을로 각 나라의 특징적인 정원의 형태와 토피어리, 풍차, 풀꽃 지붕, 채소정원 등이
-																			   조화를 이루고 있습니다. 배우 "박원숙"의 카페가 있어 더욱 유명해졌습니다. 정원, 산책, 포토존, 영상실, 옥외공연장 등
-																			   아름다움과 다양한 문화체험이 가능한 장소입니다.
-																</p>
-																<a href="#none" class="txt em">자세히보기</a>
-															</div>
-														</div>
-														<div class="spot_info">
-															<div class="img_box swiper-container prevNext v-swiper2 swiper-container-initialized swiper-container-horizontal">
-																<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-390px, 0px, 0px);">
-																	<div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="7">
-																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2009/08/06/10000/a7e693bd-c823-4c4b-8088-7f9566a59ffb.jpg" title="" data-src="" alt="">
-																	</div>
-																	<div class="swiper-slide swiper-slide-active" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0">
-																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/09/06/10000/57893558-50d6-415a-b579-d8b814d9e4d7.jpg" title="" data-src="" alt="">
-																	</div>
-																	<div class="swiper-slide swiper-slide-next" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="1">
-																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2015/07/03/10000/2fc8bea9-8c55-4b8e-8a2a-c59173d31000.jpg" title="" data-src="" alt="">
-																	</div>
-																	<div class="swiper-slide" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="2">
-																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2012/08/07/10000/1f0499b6-be19-4caa-a3d5-8f4d7e7c5814.jpg" title="" data-src="" alt="">
-																	</div>
-																	<div class="swiper-slide" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="3">
-																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2009/08/06/10000/eef43683-0752-406d-9a41-cc59e656e9f1.jpg" title="" data-src="" alt="">
-																	</div>
-																	<div class="swiper-slide" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="4">
-																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2009/08/06/10000/90c7216a-16a9-4925-b631-0715cabf4569.jpg" title="" data-src="" alt="">
-																	</div>
-																	<div class="swiper-slide" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="5">
-																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2009/08/06/10000/f7f410aa-0ed6-4885-b320-fb8c7d9ee4c3.jpg" title="" data-src="" alt="">
-																	</div>
-																	<div class="swiper-slide" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="6">
-																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2009/08/06/10000/8744b5b9-b805-4336-9a03-624af0a629d5.jpg" title="" data-src="" alt="">
-																	</div>
-																	<div class="swiper-slide swiper-slide-duplicate-prev" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="7">
-																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2009/08/06/10000/a7e693bd-c823-4c4b-8088-7f9566a59ffb.jpg" title="" data-src="" alt="">
-																	</div>
-																	<div class="swiper-slide swiper-slide-duplicate" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0">
-																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/09/06/10000/57893558-50d6-415a-b579-d8b814d9e4d7.jpg" title="" data-src="" alt="">
-																	</div>
-																</div>
-																<a href="#none" class="prev" tabindex="0" role="button" aria-label="Previous slide"><span class="blind">이전</span></a>
-																<a href="#none" class="next" tabindex="0" role="button" aria-label="Next slide"><span class="blind">다음</span></a>
-																<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-															</div>
-															<div class="info">
-																<div class="text_wrap">
-																	<strong class="tit">독일마을</strong>
-																</div>
-																<p class="txt">독일마을의 주택건축은 독일교포들이 직접 독일의 재료를 수입하여 전통 독일식 주택을 신축하고 있는데 지금은 29동 정도가 완공되어
-																			   독일 교포들이 생활하고 있으며 관광객을 위한 민박을 운영하고 있기도 합니다.																
-																			   독일교포 정착마을은 남해군에서도 가장 아름답고 자연경관이 뛰어난 삼동면 동천마을 문화예술촌 안에 조성되었으며, 남해에서도 산과 바다를 함께 조망할 수 있는 몇 안되는 곳입니다.
-																			   바로 앞으로 펼쳐진 방조어부림의 시원한 바다와 남해안에서 가장 아름다운 해안 드라이브코스인 물미 해안도로와 더불어
-																			   2005년 독일월드컵과 함께 남해 보물섬의 새로운 관광지로 부상하고 있습니다. 정착촌 바로 옆에는 산림욕장, 나비생태공원 등 자연학습장이 들어서고 있으며,
-																			   2001년 10월부터 창선~사천간 연륙교가 완공되어 교통이 더욱 좋아져 한려수도의 중심 휴양지로 자리잡았습니다.
-																</p>
-																<a href="#none" class="txt em">자세히보기</a>
-															</div>
-														</div>
-														<div class="spot_info">
-															<div class="img_box swiper-container prevNext v-swiper2 swiper-container-initialized swiper-container-horizontal">
-																<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-390px, 0px, 0px);">
-																	<div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="2">
-																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/07/07/10000/1af66bfe-f76b-4721-a622-6edfbfb40bb8.jpg" title="" data-src="" alt="">
-																	</div>
-																	<div class="swiper-slide swiper-slide-active" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0">
-																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2008/09/09/10000/68333cc9-2ea9-4818-a22f-ee7b1425fd5b.jpg" title="" data-src="" alt="">
-																	</div>
-																	<div class="swiper-slide swiper-slide-next" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="1">
-																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2008/09/09/10000/772f2d74-014c-4e15-9994-34faa2b5c6d5.jpg" title="" data-src="" alt="">
-																	</div>
-																	<div class="swiper-slide swiper-slide-duplicate-prev" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="2">
-																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/07/07/10000/1af66bfe-f76b-4721-a622-6edfbfb40bb8.jpg" title="" data-src="" alt="">
-																	</div>
-																	<div class="swiper-slide swiper-slide-duplicate" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0">
-																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2008/09/09/10000/68333cc9-2ea9-4818-a22f-ee7b1425fd5b.jpg" title="" data-src="" alt="">
-																	</div>
-																</div>
-																<a href="#none" class="prev" tabindex="0" role="button" aria-label="Previous slide"><span class="blind">이전</span></a>
-																<a href="#none" class="next" tabindex="0" role="button" aria-label="Next slide"><span class="blind">다음</span></a>
-																<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-															</div>
-															<div class="info">
-																<div class="text_wrap"><strong class="tit">창선-삼천포대교</strong></div>
-																<p class="txt">남해의 새로운 관문으로 2003년 개통한 창선-삼천포 대교는 남해 관광자원 개발과 한려수도 관광 활성화 및 이동시간 단축으로 인한
-																		  	   지역경제 활성화 등 큰 기대를 받고있는 의미있는 다리이다.  총 길이 3.4km의 연륙교로 엉개교, 단항대교, 늑도교, 초양교, 삼천포대교라는
-																		  	   다섯 개의 교량이 각기 다른 형식으로 천혜의 자연과 어우러져 특히 야경이 장관이다.	우리나라 최초로 섬과 섬을 연결한 다리이다.								
-																</p>
-																<a href="#none" class="txt em">자세히보기</a>
-															</div>
-														</div>
-														<div class="spot_info">
-															<div class="img_box swiper-container prevNext v-swiper2 swiper-container-initialized swiper-container-horizontal">
-																<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-390px, 0px, 0px);">
-																	<div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="2">
-																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/09/17/20000/f0045e25-873f-4e5b-a2a3-bc5b74223696.jpg" title="" data-src="" alt="">
-																	</div>
-																	<div class="swiper-slide swiper-slide-active" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0">
-																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/09/17/20000/77da6521-5ad4-45f1-8803-553d389b71ce.jpg" title="" data-src="" alt="">
-																	</div>
-																	<div class="swiper-slide swiper-slide-next" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="1">
-																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/09/17/20000/4f8825c8-b5aa-4b6c-ab9d-eb3fad580397.jpg" title="" data-src="" alt="">
-																	</div>
-																	<div class="swiper-slide swiper-slide-duplicate-prev" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="2">
-																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/09/17/20000/f0045e25-873f-4e5b-a2a3-bc5b74223696.jpg" title="" data-src="" alt="">
-																	</div>
-																	<div class="swiper-slide swiper-slide-duplicate" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0">
-																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/09/17/20000/77da6521-5ad4-45f1-8803-553d389b71ce.jpg" title="" data-src="" alt="">
-																	</div>
-																</div>
-																<a href="#none" class="prev" tabindex="0" role="button" aria-label="Previous slide"><span class="blind">이전</span></a>
-																<a href="#none" class="next" tabindex="0" role="button" aria-label="Next slide"><span class="blind">다음</span></a>
-																<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-															</div>
-															<div class="info">
-																<div class="text_wrap"><strong class="tit">사천 바다 케이블카</strong></div>
-																<p class="txt">'산-바다-섬'을 잇는 형식의 국내 최초 케이블카로 2.43km(약 20분)의 길이입니다. 섬(초양도), 바다, 산(각산)을 이으며
-																				3개 정류장의 승하차 시스템으로 다양한 볼거리를 즐길 수 있습니다.
-																				* 기상악화로 케이블카 운행이 불가할 경우 대체 일정으로 진행됩니다. 대체 관광으로 진행될 경우 관광지 입장료 차액 환불은 불가합니다.
-																</p>
-																<a href="#none" class="txt em">자세히보기</a>
-															</div>
-														</div>
-														<div class="spot_info">
-															<div class="img_box swiper-container prevNext v-swiper2 swiper-container-initialized swiper-container-horizontal">
-																<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-390px, 0px, 0px);">
-																	<div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="2">
-																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/04/08/460000/e1781f54-035d-40e3-8273-9d5fa5ac9c99.jpg" title="" data-src="" alt="">
-																	</div>
-																	<div class="swiper-slide swiper-slide-active" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0">
-																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/09/15/10000/f721d95f-1307-4166-b211-3861e2fe920f.jpg" title="" data-src="" alt="">
-																	</div>
-																	<div class="swiper-slide swiper-slide-next" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="1">
-																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2008/02/29/10000/9bf39d4a-6c83-4c4a-9e7b-4e795982d76a.jpg" title="" data-src="" alt="">
-																	</div>
-																	<div class="swiper-slide swiper-slide-duplicate-prev" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="2">
-																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/04/08/460000/e1781f54-035d-40e3-8273-9d5fa5ac9c99.jpg" title="" data-src="" alt="">
-																	</div>
-																	<div class="swiper-slide swiper-slide-duplicate" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0">
-																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/09/15/10000/f721d95f-1307-4166-b211-3861e2fe920f.jpg" title="" data-src="" alt="">
-																	</div>
-																</div>
-																<a href="#none" class="prev" tabindex="0" role="button" aria-label="Previous slide"><span class="blind">이전</span></a>
-																<a href="#none" class="next" tabindex="0" role="button" aria-label="Next slide"><span class="blind">다음</span></a>
-																<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-															</div>
-															<div class="info">
-																<div class="text_wrap"><strong class="tit">호텔 사우나</strong></div>
-																<p class="txt">호텔 사우나에서 여행 중에 쌓인 피로감과 일상의 스트레스를 말끔히 풀어내는 여유로운 시간을 가질 수 있습니다.
-	    																	   사우나는 찜질이나 온천욕에 비해 수분을 방출하는 효과가 뛰어나 부종예방에 좋습니다.
-	    																	   또한 피로회복, 혈액순환 촉진, 노폐물 제거, 원기 충전에 효과적입니다.
-	    														</p>
-	    														<a href="#none" class="txt em">자세히보기</a>
-	    													</div>
-	    												</div>
-	    											</div>
-	    											<div class="spot_area">
-	    												<div class="text_wrap">
-	    													<strong class="tit">3일차</strong>
-	    													<span class="txt">2021.01.20(수) </span>
-	    												</div>
-	    												<div class="spot_info">
-	    													<div class="img_box swiper-container prevNext v-swiper2 swiper-container-initialized swiper-container-horizontal">
-	    														<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-390px, 0px, 0px);">
-	    															<div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="2">
-	    																<img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/01/31/10000/8ea96bb7-701e-4d12-8100-026acba40fac.png" title="" data-src="" alt="">
-	    															</div>
-	    															<div class="swiper-slide swiper-slide-active" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0">
-	    																<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/09/17/20000/0264da7b-bf6b-4095-817d-349bf438e18d.jpg" title="" data-src="" alt="">
-	    															</div>
-	    															<div class="swiper-slide swiper-slide-next" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="1">
-	    																<img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/01/31/10000/1fdf3520-da78-4e64-96cb-f8a793b6eebe.png" title="" data-src="" alt="">
-	    															</div>
-	    															<div class="swiper-slide swiper-slide-duplicate-prev" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="2">
-	    																<img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/01/31/10000/8ea96bb7-701e-4d12-8100-026acba40fac.png" title="" data-src="" alt="">
-	    															</div>
-	    															<div class="swiper-slide swiper-slide-duplicate" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0">
-	    																<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/09/17/20000/0264da7b-bf6b-4095-817d-349bf438e18d.jpg" title="" data-src="" alt="">
-	    															</div>
-	    														</div>
-	    														<a href="#none" class="prev" tabindex="0" role="button" aria-label="Previous slide"><span class="blind">이전</span></a>
-	    														<a href="#none" class="next" tabindex="0" role="button" aria-label="Next slide"><span class="blind">다음</span></a>
-	    														<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-	    													</div>
-	    													<div class="info">
-	    														<div class="text_wrap">
-	    															<strong class="tit">거제 맹종죽 테마파크</strong>
-	    														</div>
-	    														<p class="txt">바다가 보이는 맹종죽 죽림욕장은 "효"의 상징으로 일컫는 맹종죽의 풍부한 음이온을 이용한 자연치유를 목적으로 조성되었습니다.
-	    																	   맹종죽을 이용한 다양한 놀이와 체험이 가능하며 이를 통해 심신의 균형을 잡고 스트레스를 없애는 데 큰 도움이 됩니다.
-	    														</p>
-	    														<a href="#none" class="txt em">자세히보기</a>
-	    													</div>
-	    												</div>
-	    												<div class="spot_info">
-	    													<div class="img_box swiper-container prevNext v-swiper2 swiper-container-initialized swiper-container-horizontal">
-	    														<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-390px, 0px, 0px);">
-	    															<div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="2">
-	    																<img src="https://image.hanatour.com/usr/cms/resize/400_0/2010/12/15/10000/eb96853b-0d43-444a-9640-8a7d81900dac.jpg" title="" data-src="" alt="">
-	    															</div>
-	    															<div class="swiper-slide swiper-slide-active" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0">
-	    																<img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/05/04/10000/fa58d88b-08d3-44c9-93af-afcaa0acbc3a.png" title="" data-src="" alt="">
-	    															</div>
-	    															<div class="swiper-slide swiper-slide-next" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="1">
-	    																<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/08/11/10000/f913d9b6-4823-4cd1-8f22-a6b57b784c1d.jpg" title="" data-src="" alt="">
-	    															</div>
-	    															<div class="swiper-slide swiper-slide-duplicate-prev" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="2">
-	    																<img src="https://image.hanatour.com/usr/cms/resize/400_0/2010/12/15/10000/eb96853b-0d43-444a-9640-8a7d81900dac.jpg" title="" data-src="" alt="">
-	    															</div>
-	    															<div class="swiper-slide swiper-slide-duplicate" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0">
-	    																<img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/05/04/10000/fa58d88b-08d3-44c9-93af-afcaa0acbc3a.png" title="" data-src="" alt="">
-	    															</div>
-	    														</div>
-	    														<a href="#none" class="prev" tabindex="0" role="button" aria-label="Previous slide"><span class="blind">이전</span></a>
-	    														<a href="#none" class="next" tabindex="0" role="button" aria-label="Next slide"><span class="blind">다음</span></a>
-	    														<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-	    													</div>
-	    													<div class="info">
-	    														<div class="text_wrap">
-	    															<strong class="tit">거가 대교</strong>
-	    														</div>
-	    														<p class="txt">부산 가덕도와 거제 유호리를 연결하는 다리로 가덕도-대죽도-중죽도-저도-유호리를 통과합니다.
-	    																	   길이 8.2km, 왕복 4차선 도로로 가덕도-대죽도(3.7km)의 구간을 해저 침매터널로 만들었습니다.
-	    																	   해저 침매터널 구간을 한국에서 최초로 내해(內海)가 아닌 파도와 바람, 조류가 심한 외해(外海)에서 건설되었다는 것에 역사적 의미가 있습니다.
-	    														</p>
-	    														<a href="#none" class="txt em">자세히보기</a>
-	    													</div>
-	    												</div>
-	    												<div class="spot_info">
-	    													<div class="img_box swiper-container prevNext v-swiper2 swiper-container-initialized swiper-container-horizontal">
-	    														<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-390px, 0px, 0px);">
-	    															<div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="6">
-	    																<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/08/07/10000/4b15c234-f458-44ef-98e7-4b2d5f6f1cae.jpg" title="" data-src="" alt="">
-	    															</div>
-	    															<div class="swiper-slide swiper-slide-active" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0">
-	    																<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/08/10/10000/3e55a6bb-0d20-40a9-8edc-54ed7f1284aa.jpg" title="" data-src="" alt="">
-	    															</div>
-	    															<div class="swiper-slide swiper-slide-next" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="1">
-	    																<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/08/10/10000/54a199ee-ac4e-4b93-8b9f-e6070e528a21.jpg" title="" data-src="" alt="">
-	    															</div>
-	    															<div class="swiper-slide" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="2">
-	    																<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/08/07/10000/31dd033b-27b7-4b5a-92a7-ec15e6d74112.JPG" title="" data-src="" alt="">
-	    															</div>
-	    															<div class="swiper-slide" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="3">
-	    																<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/08/07/10000/7b129a3b-920d-41e3-8bd9-dc403b1f20d3.JPG" title="" data-src="" alt="">
-	    															</div>
-	    															<div class="swiper-slide" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="4">
-	    																<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/08/07/10000/ad7c0aa7-94a3-469f-b58c-10aeaf564a66.jpg" title="" data-src="" alt="">
-	    															</div>
-	    															<div class="swiper-slide" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="5">
-	    																<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/08/07/10000/be95134a-c364-4cad-ba65-e350c4f8e0f8.JPG" title="" data-src="" alt="">
-	    															</div>
-	    															<div class="swiper-slide swiper-slide-duplicate-prev" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="6">
-	    																<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/08/07/10000/4b15c234-f458-44ef-98e7-4b2d5f6f1cae.jpg" title="" data-src="" alt="">
-	    															</div><div class="swiper-slide swiper-slide-duplicate" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0">
-	    																<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/08/10/10000/3e55a6bb-0d20-40a9-8edc-54ed7f1284aa.jpg" title="" data-src="" alt="">
-	    															</div>
-	    														</div>
-	    														<a href="#none" class="prev" tabindex="0" role="button" aria-label="Previous slide"><span class="blind">이전</span></a>
-	    														<a href="#none" class="next" tabindex="0" role="button" aria-label="Next slide"><span class="blind">다음</span></a>
-	    														<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-	    													</div>
-	    													<div class="info">
-	    														<div class="text_wrap">
-	    															<strong class="tit">바람의 언덕(신선대)</strong>
-	    														</div>
-	    														<p class="txt">바람의 언덕의 옛 이름은 '띠밭늘'로, 바닷바람이 세게 분다고 하여 이름이 변경되었습니다.
-	    																	   언덕에서 한려수도 바다를 바라보며 시원한 바람이 상쾌함을 선사합니다. 언덕에 풍차가 있어 이국적이면서도
-	    																	   아름다운 바람의 언덕은 남해안 경관 명소 20곳에 선정되기도 했습니다.
-	    																	   남쪽으로는 거친 해식애 지형인 신선대가 있어 천천히 걸으며 구경할 수 있습니다.
-	    														</p>
-	    														<a href="#none" class="txt em">자세히보기</a>
-	    													</div>
-	    												</div>
-	    												<div class="spot_info">
-	    													<div class="img_box swiper-container prevNext v-swiper2 swiper-container-initialized swiper-container-horizontal">
-	    														<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
-	    															<div class="swiper-slide swiper-slide-active" style="width: 380px; margin-right: 10px;"><img src="" title="" data-src="" alt="" class="noimg"></div>
-	    														</div>
-	    														<a href="#none" class="prev swiper-button-disabled" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"><span class="blind">이전</span></a>
-	    														<a href="#none" class="next swiper-button-disabled" tabindex="0" role="button" aria-label="Next slide" aria-disabled="true"><span class="blind">다음</span></a>
-	    														<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-	    													</div>
-	    													<div class="info">
-	    														<div class="text_wrap">
-	    															<strong class="tit">오륙도 스카이워크</strong>
-	    														</div>
-	    														<p class="txt">동해와 남해의 경계지점의 말의 안장처럼 생긴 승두말에 위치한 오륙도 스카이워크는 2013년도에 개장하였습니다.
-	    																	   35m 해안절벽 위에 놓인 15m 길이의 유리 다리 위에서 파도가 절벽을 치는 모습을 보며 걷는 아찔한 경험을 해볼 수 있고,
-	    																	   날씨가 맑으면 대마도까지도 볼 수 있습니다.
-	    														</p>
-	    														<a href="#none" class="txt em">자세히보기</a>
-	    													</div>
-	    												</div>
-	    											</div>
-	    											<div class="spot_area">
-	    												<div class="text_wrap">
-	    													<strong class="tit">4일차</strong>
-	    													<span class="txt">2021.01.21(목) </span>
-	    												</div>
-	    												<div class="spot_info">
-	    													<div class="img_box swiper-container prevNext v-swiper2 swiper-container-initialized swiper-container-horizontal">
-	    														<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-390px, 0px, 0px);">
-	    															<div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="2">
-	    																<img src="https://image.hanatour.com/usr/cms/resize/400_0/2016/11/09/10000/7de7821d-3210-445d-b200-c5f481b38143.jpg" title="" data-src="" alt="">
-	    															</div>
-	    															<div class="swiper-slide swiper-slide-active" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0">
-	    																<img src="https://image.hanatour.com/usr/cms/resize/400_0/2016/11/09/10000/ad951bf6-d6bc-4f50-a78e-32bdddf62494.jpg" title="" data-src="" alt="">
-	    															</div>
-	    															<div class="swiper-slide swiper-slide-next" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="1">
-	    																<img src="https://image.hanatour.com/usr/cms/resize/400_0/2016/11/09/10000/b021d787-27d3-45f4-8bb0-4fef1212fdd0.jpg" title="" data-src="" alt="">
-	    															</div>
-	    															<div class="swiper-slide swiper-slide-duplicate-prev" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="2">
-	    																<img src="https://image.hanatour.com/usr/cms/resize/400_0/2016/11/09/10000/7de7821d-3210-445d-b200-c5f481b38143.jpg" title="" data-src="" alt="">
-	    															</div>
-	    															<div class="swiper-slide swiper-slide-duplicate" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0">
-	    																<img src="https://image.hanatour.com/usr/cms/resize/400_0/2016/11/09/10000/ad951bf6-d6bc-4f50-a78e-32bdddf62494.jpg" title="" data-src="" alt="">
-	    															</div>
-	    														</div>
-	    														<a href="#none" class="prev" tabindex="0" role="button" aria-label="Previous slide"><span class="blind">이전</span></a>
-	    														<a href="#none" class="next" tabindex="0" role="button" aria-label="Next slide"><span class="blind">다음</span></a>
-	    														<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-	    													</div>
-	    													<div class="info">
-	    														<div class="text_wrap">
-	    															<strong class="tit">해운대 동백섬</strong>
-	    														</div>
-	    														<p class="txt">가수 '조용필'의 노랫가락에도 소개되는 해운대의 동백섬은 원래는 독립된 섬이었으나 현재는 육지가 되었습니다.
-	    																	   동백섬 안에는 세계의 정상들이 모여 회의를 하던 누리마루APEC하우스가 있습니다.
-	    																	   소나무와 동백숲으로 울창하여 사시사철 늘 푸르고 광안대교와 오륙도를 조망 할 수 있습니다.
-	    														</p>
-	    														<a href="#none" class="txt em">자세히보기</a>
-	    													</div>
-	    												</div>
-	    												<div class="spot_info">
-	    													<div class="img_box swiper-container prevNext v-swiper2 swiper-container-initialized swiper-container-horizontal">
-	    														<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-390px, 0px, 0px);">
-	    															<div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="2">
-	    																<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/09/17/20000/11a7afa7-7c15-4852-a8df-e22f6842a1ad.jpg" title="" data-src="" alt="">
-	    															</div>
-	    															<div class="swiper-slide swiper-slide-active" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0">
-	    																<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/09/17/20000/02ef7a2c-1cf7-4b81-b153-699a595ac7cb.jpg" title="" data-src="" alt="">
-	    															</div>
-	    															<div class="swiper-slide swiper-slide-next" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="1">
-	    																<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/09/17/20000/53433fd3-df80-4b3a-bf79-caf6ea85d724.jpg" title="" data-src="" alt="">
-	    															</div>
-	    															<div class="swiper-slide swiper-slide-duplicate-prev" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="2">
-	    																<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/09/17/20000/11a7afa7-7c15-4852-a8df-e22f6842a1ad.jpg" title="" data-src="" alt="">
-	    															</div>
-	    															<div class="swiper-slide swiper-slide-duplicate" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0">
-	    																<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/09/17/20000/02ef7a2c-1cf7-4b81-b153-699a595ac7cb.jpg" title="" data-src="" alt="">
-	    															</div>
-	    														</div>
-	    														<a href="#none" class="prev" tabindex="0" role="button" aria-label="Previous slide"><span class="blind">이전</span></a>
-	    														<a href="#none" class="next" tabindex="0" role="button" aria-label="Next slide"><span class="blind">다음</span></a>
-	    														<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-	    													</div>
-	    													<div class="info">
-	    														<div class="text_wrap">
-	    															<strong class="tit">통도사</strong>
-	    														</div>
-	    														<p class="txt">양산의 영축산에 자리한 한국의 3대 사찰 중 하나로 부처의 진신사리를 모시고 있는 '불보사찰'로 불립니다.
-	    																	   신라 선덕여왕 때 자장이 창건해 1,500년에 이르는 역사를 지닌 국보급 사찰입니다.
-	    																	   신라의 승단(僧團)을 체계화하는 중심지가 되었습니다.
-	    																	   창건의 정신적 근거이며 중심인 금강계단은 부처의 진신사리를 안치하여 오늘날까지 잘 보존되고 있습니다.
-	    														</p>
-	    														<a href="#none" class="txt em">자세히보기</a>
-	    													</div>
-	    												</div>
-	    											</div>
+
+	    											
+	    											
 	    										</div>
 	    									</div>
 	    										<!-- 호텔&관광지 Tabs // 호텔 정보 상세내용 -->
@@ -2245,20 +1548,20 @@
 	    											<ul id="hotel" class="tabs">
 	    												<li class="selected" style="width: 33.3333%;">
 	    													<a href="#none">
-	    														<span class="city ing">한국(여수GH시)</span>
-	    														<strong>히든 베이 호텔</strong>
+	    														<span class="city ing">러시아(모스크바)</span>
+	    														<strong>홀리데이 인 모스크바 셀리게르스카야</strong>
 	    													</a>
 	    												</li>
 	    												<li class="" style="width: 33.3333%;">
 	    													<a href="#none">
-	    														<span class="city ing">한국(거제시)</span>
-	    														<strong>삼성 호텔 거제</strong>
+	    														<span class="city ing">스웨덴(칼스타드)</span>
+	    														<strong>스칸딕 윅</strong>
 	    													</a>
 	    												</li>
 	    												<li class="" style="width: 33.3333%;">
 	    													<a href="#none">
-	    														<span class="city ing">한국(undefined)</span>
-	    														<strong>부산 웨스틴조선호텔</strong>
+	    														<span class="city ing">덴마크(코펜하겐)</span>
+	    														<strong>AC 호텔 바이 메리어트 벨라 스카이 코펜하겐</strong>
 	    													</a>
 	    												</li>
 	    											</ul>
@@ -2272,19 +1575,19 @@
 	    																	<img src="https://image.hanatour.com/usr/cms/resize/400_0/2012/08/29/10000/b5c0b3bb-efa8-4867-87c5-d1a67d196cd3.jpg" title="" data-src="">
 	    																	</div>
 	    																	<div class="swiper-slide" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0">
-	    																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2012/08/29/10000/9b7c6d16-59c3-48d1-9736-f441187394d2.jpg" title="" data-src="" alt="" class="">
+	    																		<img src="<%=cp %>/resources/image/list/detail/ne2/ne_9_hh.jpg" title="" data-src="" alt="" class="">
 	    																	</div>
 	    																	<div class="swiper-slide" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="1">
 	    																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2012/08/29/10000/279d432c-1986-4153-bfe1-d78b83238515.jpg" title="" data-src="" alt="">
 	    																	</div>
 	    																	<div class="swiper-slide" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="2">
-	    																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2012/08/29/10000/1a634732-8626-43ad-af8e-2c5cd029aedc.jpg" title="" data-src="" alt="">
+	    																		<img src="<%=cp %>/resources/image/list/detail/ne2/ne_10_hh.jpg" title="" data-src="" alt="">
 	    																	</div>
 	    																	<div class="swiper-slide" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="3">
 	    																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2012/08/29/10000/0bf11078-60df-44c2-93d7-15c8a092ef4d.jpg" title="" data-src="" alt="">
 	    																	</div>
 	    																	<div class="swiper-slide" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="4">
-	    																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2012/08/29/10000/b5c0b3bb-efa8-4867-87c5-d1a67d196cd3.jpg" title="" data-src="" alt="">
+	    																		<img src="<%=cp %>/resources/image/list/detail/ne2/ne_11_hh.jpg" title="" data-src="" alt="">
 	    																	</div>
 	    																	<div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0">
 	    																		<img src="https://image.hanatour.com/usr/cms/resize/400_0/2012/08/29/10000/9b7c6d16-59c3-48d1-9736-f441187394d2.jpg" title="" data-src="" alt="" class="noimg">
@@ -2298,10 +1601,10 @@
 	    															<div id="hotel3" class="img_box swiper-container prevNext v-swiper2 swiper-container-initialized swiper-container-horizontal" style="display: none;"><div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-390px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="23" style="width: 380px; margin-right: 10px;"><img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/04/04/10000/a09fd1ce-3777-43b4-a5d8-f002f0368009.jpg" title="" data-src="" alt=""></div><div class="swiper-slide swiper-slide-active" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0"><img src="https://image.hanatour.com/usr/cms/resize/400_0/2010/12/24/10000/9e864e8b-1f2a-4be4-a614-3171ccd029d8.jpg" title="" data-src="" alt="" class=""></div><div class="swiper-slide swiper-slide-next" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="1"><img src="https://image.hanatour.com/usr/cms/resize/400_0/2011/08/04/10000/5c361261-ed7c-4c28-9d7d-3d4a114b6786.jpg" title="" data-src="" alt=""></div><div class="swiper-slide" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="2"><img src="https://image.hanatour.com/usr/cms/resize/400_0/2011/08/04/10000/38dffbe3-a5a1-4629-9b25-e68b321d2d1d.jpg" title="" data-src="" alt=""></div><div class="swiper-slide" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="3"><img src="https://image.hanatour.com/usr/cms/resize/400_0/2011/08/04/10000/3a9b4f62-4ceb-46e4-b70b-7a2627bec7d3.jpg" title="" data-src="" alt=""></div><div class="swiper-slide" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="4"><img src="https://image.hanatour.com/usr/cms/resize/400_0/2009/04/03/10000/6c14c7e5-261e-45b8-98f3-1f9002fb2f74.jpg" title="" data-src="" alt=""></div><div class="swiper-slide" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="5"><img src="https://image.hanatour.com/usr/cms/resize/400_0/2009/04/03/10000/8bb327e2-1ece-426a-9ffb-cca63818a87e.jpg" title="" data-src="" alt=""></div><div class="swiper-slide" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="6"><img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/04/04/10000/110ca176-dbc2-4e00-88bb-65c553ff6157.jpg" title="" data-src="" alt=""></div><div class="swiper-slide" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="7"><img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/04/04/10000/2422aef5-67bf-4aac-901f-12c9082a6243.jpg" title="" data-src="" alt=""></div><div class="swiper-slide" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="8"><img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/04/04/10000/b211eab6-224c-4449-b62c-91e1819618a0.jpg" title="" data-src="" alt=""></div><div class="swiper-slide" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="9"><img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/04/04/10000/5927c74d-7b3b-48f8-9a8e-94dc92c5edef.jpg" title="" data-src="" alt=""></div><div class="swiper-slide" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="10"><img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/04/04/10000/b931602c-1ff6-4967-b386-fbc22363bcd7.jpg" title="" data-src="" alt=""></div><div class="swiper-slide" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="11"><img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/04/04/10000/9fdd4cb2-8402-4298-851d-0575662b3e2a.jpg" title="" data-src="" alt=""></div><div class="swiper-slide" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="12"><img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/04/04/10000/d380939a-c254-411d-b532-f1b39af17e5e.jpg" title="" data-src="" alt=""></div><div class="swiper-slide" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="13"><img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/04/04/10000/22477c2b-899c-4b5a-baf0-567f8dff3340.jpg" title="" data-src="" alt=""></div><div class="swiper-slide" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="14"><img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/04/04/10000/0a8a3cbd-7a85-4ffc-bd23-af9f403435b9.jpg" title="" data-src="" alt=""></div><div class="swiper-slide" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="15"><img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/04/04/10000/10353167-ff00-40c1-acf5-6fc2570a3a2a.jpg" title="" data-src="" alt=""></div><div class="swiper-slide" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="16"><img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/04/04/10000/6dfc61a8-e7d4-49b6-9f9d-e21b844872a7.jpg" title="" data-src="" alt=""></div><div class="swiper-slide" data-swiper-slide-index="17" style="width: 380px; margin-right: 10px;"><img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/04/04/10000/cd2c0cba-4773-4ebd-83e0-af46035c9d04.jpg" title="" data-src="" alt=""></div><div class="swiper-slide" data-swiper-slide-index="18" style="width: 380px; margin-right: 10px;"><img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/04/04/10000/4ccf7ad2-7975-4c06-bd99-e3e4c428ebc7.jpg" title="" data-src="" alt=""></div><div class="swiper-slide" data-swiper-slide-index="19" style="width: 380px; margin-right: 10px;"><img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/04/04/10000/e7675489-b4d0-48b8-848c-fbebed6f21cf.jpg" title="" data-src="" alt=""></div><div class="swiper-slide" data-swiper-slide-index="20" style="width: 380px; margin-right: 10px;"><img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/04/04/10000/f5115e9e-9b4b-4d98-9d48-f5e5422468e7.jpg" title="" data-src="" alt=""></div><div class="swiper-slide" data-swiper-slide-index="21" style="width: 380px; margin-right: 10px;"><img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/04/04/10000/1c64b795-a340-44d3-9f4c-193e7ffd1528.jpg" title="" data-src="" alt=""></div><div class="swiper-slide" data-swiper-slide-index="22" style="width: 380px; margin-right: 10px;"><img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/04/04/10000/42437de3-e9ec-4b5a-af79-532136cfc20a.jpg" title="" data-src="" alt=""></div><div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="23" style="width: 380px; margin-right: 10px;"><img src="https://image.hanatour.com/usr/cms/resize/400_0/2019/04/04/10000/a09fd1ce-3777-43b4-a5d8-f002f0368009.jpg" title="" data-src="" alt=""></div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" style="width: 380px; margin-right: 10px;" data-swiper-slide-index="0"><img src="https://image.hanatour.com/usr/cms/resize/400_0/2010/12/24/10000/9e864e8b-1f2a-4be4-a614-3171ccd029d8.jpg" title="" data-src="" alt="" class=""></div></div> <a href="#none" class="prev" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="false"><span class="blind">이전</span></a> <a href="#none" class="next" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"><span class="blind">다음</span></a><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
 	    															<div class="info">
 	    																<div class="text_wrap">
-	    																	<strong class="tit">히든 베이 호텔</strong>
-	    																	<span>HIDDEN BAY HOTEL</span>
+	    																	<strong class="tit">홀리데이 인 모스크바 셀리게르스카야</strong>
+	    																	<span>HOLIDAY INN MOSCOW SELIGERSKAYA </span>
 	    																</div>
-	    																<p class="txt">여수 히든베이호텔</p>
+	    																<p class="txt">홀리데이 인 모스크바 셀리게르스카야</p>
 	    															</div>
 	    														</div>
 	    														<div class="hotel_benefit">
@@ -2616,7 +1919,7 @@
 										<li>
 											<p class="tit">
 												<span class="txt">성인</span>
-												<span class="price">960,000원</span>
+												<span class="price">7,590,000원</span>
 											</p>
 											<span id="adult" class="num_count_group">
 												<button class="btn_decrement down"></button>
@@ -2632,7 +1935,7 @@
 														<span class="tooltiptext">아동(만 12세 미만)<br>2009.02.02 ~ 2019.02.01</span>
 													</span>
 												</span>
-												<span class="price">768,000원</span>
+												<span class="price">6,831,000원</span>
 											</p>
 											<span id="child" class="num_count_group">
 												<button class="btn_decrement down"></button>
@@ -2648,9 +1951,9 @@
 														<span class="tooltiptext">유아(만 2세 미만)<br>2019.02.02 ~ 2021.02.01<br></span>
 													</span>
 												</span>
-												<span class="price">-</span>
+												<span class="price">759,000원</span>
 											</p>
-											<span class="num_count_group">
+											<span id="baby" class="num_count_group">
 												<button class="btn_decrement down"></button>
 												<span class="inpt_counter">0</span>
 												<button class="btn_increment up"></button>
@@ -2664,7 +1967,7 @@
 									<div class="total_money">
 										<p class="tit">총 금액</p>
 										<!-- 여기 금액은 el로 처리해야될거 같습니다 -->
-										<p id="price" class="price">960,000<span>원</span></p>
+										<p id="price" class="price">7,590,000<span>원</span></p>
 										<div class="mileage_save">
 											<a href="#none" class="txt arrow_r">하나투어 마일리지 <em>9,600<span class="icn mileage em"></span></em>적립예정</a>
 										</div>

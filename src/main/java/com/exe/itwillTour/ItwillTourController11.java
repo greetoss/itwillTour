@@ -41,12 +41,19 @@ public class ItwillTourController11 {
 	
 	@ResponseBody
 	@PostMapping("fileUpload.action")
-	public String fileUploadTestAction(MultipartHttpServletRequest multi) {
+	public String fileUploadTestAction(MultipartHttpServletRequest multi,HttpSession session) {
 		
 		String uploadPath = multi.getSession().getServletContext().getRealPath("/").replace(".metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\", "")+"src\\main\\webapp\\resources\\upload\\";
 		
+		
+		//test
+		session.setAttribute("sessionUserId", "apple");
+		//test
+				
+		String user_id = (String) session.getAttribute("sessionUserId");
+		
 		Map<String, String> paramMap = new HashMap<String, String>();
-		paramMap.put("user_id", multi.getParameter("user_id"));
+		paramMap.put("user_id", user_id);
 		paramMap.put("user_name", multi.getParameter("user_name"));
 		paramMap.put("user_tel", multi.getParameter("user_tel"));
 		paramMap.put("user_email", multi.getParameter("user_email"));
